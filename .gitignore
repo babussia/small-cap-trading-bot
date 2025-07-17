@@ -1,0 +1,26 @@
+# 🔐 Secrets
+.env
+
+# 🧠 Cached configs or logs
+*.json
+*.log
+
+# 📦 Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# 📁 OS/system files
+.DS_Store
+Thumbs.db
+
+# 🧪 Optional: Jupyter/IPython
+.ipynb_checkpoints/
+
+# 🐳 Optional: virtualenv or poetry
+venv/
+.env/
+.venv/
+
