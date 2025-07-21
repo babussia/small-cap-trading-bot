@@ -13,7 +13,6 @@ import concurrent.futures
 from threading import Semaphore
 from config import Config
 
-
 # Сторонні бібліотеки
 import pytz
 import alpaca_trade_api as tradeapi
@@ -58,6 +57,7 @@ SCAN_START_HOUR = Config.SCAN_START_HOUR
 SCAN_END_HOUR = Config.SCAN_END_HOUR
 QUANTITY = Config.QUANTITY
 VOLUME_THRESHOLD = Config.VOLUME_THRESHOLD 
+VOLUME_5MIN_THRESHOLD = Config.VOLUME_5MIN_THRESHOLD
 SPREAD_THRESHOLD = Config.SPREAD_THRESHOLD 
 FLASH_SPIKE_TRADE_COUNT = Config.FLASH_SPIKE_TRADE_COUNT
 FLASH_SPIKE_AVG_VOLUME = Config.FLASH_SPIKE_AVG_VOLUME
@@ -417,8 +417,31 @@ async def handle_quote(q):
         return
     if not in_window() or in_position.get(sym) or sym in executed:
         return
+    
+    # === Rule 1: Flash spike detection based on recent trades volume only
+    recent_trades = get_recent_trades(sym, within_ms=1000)
+    if len(recent_trades) >= FLASH_SPIKE_TRADE_COUNT:
+        avg_volume = sum(t.size for t in recent_trades) / len(recent_trades)
 
-    # === Rule 1: Rolling 5-min window price increase by at least 3%
+        # Check volume AFTER price rule regardless of price move
+        vol_total = total_volume_since_4am[sym]
+        if vol_total >= VOLUME_THRESHOLD:
+            logger.info(f"{sym}: Volume exceeded {VOLUME_THRESHOLD:,} AFTER price rule — blocking permanently.")
+            executed.add(sym)
+            save_executed()
+            return
+        
+        if avg_volume >= FLASH_SPIKE_AVG_VOLUME:
+            logger.info(f"{sym}: Flash spike detected — {len(recent_trades)} trades, avg vol {avg_volume:.0f}.")
+            # continue to order
+        else:
+            logger.info(f"{sym}: No flash spike — trades: {len(recent_trades)}, avg vol: {avg_volume:.0f}.")
+            return
+    else:
+        logger.info(f"{sym}: Not enough recent trades ({len(recent_trades)}) for flash spike detection.")
+        return
+
+    # === Rule 2: Rolling 5-min window price increase by at least 3%
     price_record.setdefault(sym, []).append((ts, price))
     cutoff = ts - timedelta(minutes=5)
     price_record[sym] = [(t, p) for t, p in price_record[sym] if t >= cutoff]
@@ -442,33 +465,16 @@ async def handle_quote(q):
     if change_5min < PROFIT_TRIGGER:
         logger.info(f"{sym}: Price hasn't moved +3% from 5-min low — skipping.")
 
-    # Check volume AFTER price rule regardless of price move
-    vol_total = total_volume_since_4am[sym]
-    if vol_total >= VOLUME_THRESHOLD:
-        logger.info(f"{sym}: Volume exceeded {VOLUME_THRESHOLD:,} AFTER price rule — blocking permanently.")
-        executed.add(sym)
-        save_executed()
-        return
-
     if change_5min < PROFIT_TRIGGER:
         return
-
-    # === Rule 2: Flash spike detection based on recent trades volume only
-    recent_trades = get_recent_trades(sym, within_ms=1000)
-    if len(recent_trades) >= FLASH_SPIKE_TRADE_COUNT:
-        avg_volume = sum(t.size for t in recent_trades) / len(recent_trades)
-
-        if avg_volume >= FLASH_SPIKE_AVG_VOLUME:
-            logger.info(f"{sym}: Flash spike detected — {len(recent_trades)} trades, avg vol {avg_volume:.0f}.")
-            # continue to order
-        else:
-            logger.info(f"{sym}: No flash spike — trades: {len(recent_trades)}, avg vol: {avg_volume:.0f}.")
-            return
-    else:
-        logger.info(f"{sym}: Not enough recent trades ({len(recent_trades)}) for flash spike detection.")
+    
+    # === Rule 3: 5-minute rolling volume window
+    vol_5min = sum(volume_window[sym])
+    if vol_5min < VOLUME_5MIN_THRESHOLD:
+        logger.info(f"{sym}: 5-min volume too low ({vol_5min}) — skipping.")
         return
 
-    # === Additional Quote Validations and Order Submission (Rule 3)
+    # === Additional Quote Validations and Order Submission (Rule 4)
     if q.ask_price == 0 or q.bid_price == 0:
         logger.info(f"{sym}: Incomplete quote (ask/bid = 0) — skipping.")
         return
@@ -492,7 +498,7 @@ async def handle_quote(q):
         return
 
     qty = QUANTITY
-    limit_px = round(price + 0.1, 2)
+    limit_px = round(price + 0.17, 2)
     logger.info(f"Entry Signal {sym} | Price jump: {change_5min*100:.2f}% | BUY {qty} at {limit_px}")
 
     try:

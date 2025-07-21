@@ -26,6 +26,7 @@ class Config:
 
     # ✅ Trading Thresholds
     VOLUME_THRESHOLD = int(os.getenv("VOLUME_THRESHOLD", 29000))
+    VOLUME_5MIN_THRESHOLD = int(os.getenv("VOLUME_5MIN_THRESHOLD", 1200))
     SPREAD_THRESHOLD = float(os.getenv("SPREAD_THRESHOLD", 0.20))
     PROFIT_TRIGGER = float(os.getenv("PROFIT_TRIGGER", 0.03))
     STOP_LOSS_ABS = float(os.getenv("STOP_LOSS_ABS", 0.15))
@@ -33,7 +34,7 @@ class Config:
     SCAN_START_HOUR = int(os.getenv("SCAN_START_HOUR", 4))
     SCAN_END_HOUR = int(os.getenv("SCAN_END_HOUR", 20))
     FLASH_SPIKE_TRADE_COUNT = int(os.getenv("FLASH_SPIKE_TRADE_COUNT", 6))
-    FLASH_SPIKE_AVG_VOLUME = int(os.getenv("FLASH_SPIKE_AVG_VOLUME", 90))
+    FLASH_SPIKE_AVG_VOLUME = int(os.getenv("FLASH_SPIKE_AVG_VOLUME", 80))
 
 
     # ✅ Position Sizing
