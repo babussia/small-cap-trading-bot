@@ -11,6 +11,7 @@ from datetime import datetime, timedelta, timezone
 from collections import deque, defaultdict
 import concurrent.futures
 from threading import Semaphore
+import contextlib  # add this at the top if not already
 from config import Config
 
 # Сторонні бібліотеки
@@ -26,7 +27,6 @@ recent_trades_window = defaultdict(lambda: deque(maxlen=100))  # symbol: [TradeE
 # Limit to ~5 requests per second = 300 per minute
 FMP_RATE_LIMIT = 5
 fmp_semaphore = Semaphore(FMP_RATE_LIMIT)
-
 
 # --- Ключі доступу до API ---
 API_KEY = Config.API_KEY
@@ -46,8 +46,6 @@ EXECUTED_FILE = Config.EXECUTED_FILE
 # --- Таймінги кешів ---
 EXECUTED_EXPIRY_HOURS = Config.EXECUTED_EXPIRY_HOURS
 CACHE_EXPIRY_HOURS = Config.CACHE_EXPIRY_HOURS
-
-
 
 # === Configurable Trading Parameters ===
 PROFIT_TRIGGER = Config.PROFIT_TRIGGER
@@ -250,43 +248,6 @@ def play_sound():
     except Exception as e:
         logger.warning(f"Sound failed: {e}")
 
-news_cache = {}  # {symbol: (timestamp, headline)}
-
-# async def has_today_news_async(symbol):
-#     # Перевіряємо кеш (оновлення кешу кожні 10 хв)
-#     now = datetime.now(timezone.utc)
-#     cache_entry = news_cache.get(symbol)
-#     if cache_entry:
-#         cached_time, cached_headline = cache_entry
-#         if (now - cached_time).total_seconds() < 600:  # 10 хв
-#             return True, cached_headline
-
-#     try:
-#         today = now.strftime("%Y-%m-%d")
-#         url = (
-#             f"https://api.polygon.io/benzinga/v1/news?"
-#             f"tickers={symbol}&published_utc.gte={today}T00:00:00Z&published_utc.lte={today}T23:59:59Z&apiKey={POLYGON_API_KEY}"
-#         )
-#         async with aiohttp.ClientSession() as session:
-#             async with session.get(url, timeout=10) as resp:
-#                 if resp.status == 200:
-#                     data = await resp.json()
-#                     results = data.get("results", [])
-#                     if results:
-#                         headline = results[0].get("title", "No title")
-#                         ts = results[0].get("published_utc", "")[:19].replace("T", " ")
-#                         logger.info(f"{symbol} Benzinga News {ts}: {headline}")
-#                         news_cache[symbol] = (now, headline)
-#                         return True, headline
-#                     else:
-#                         return False, None
-#                 else:
-#                     logger.warning(f"Benzinga news error {resp.status} for {symbol}")
-#                     return False, None
-#     except Exception as e:
-#         logger.warning(f"Benzinga news exception for {symbol}: {e}")
-#         return False, None
-
     
 def get_price_5min_ago(sym, current_time, minutes_ago=5):
     cutoff = current_time - timedelta(minutes=minutes_ago)
@@ -394,13 +355,6 @@ async def manual_exit(symbol):
         in_position[symbol] = False
         cooldowns[symbol] = now_et() + timedelta(minutes=COOLDOWN_MINUTES)
 
-        # Volume rejection early
-    # vol_total = total_volume_since_4am[sym]
-    # if vol_total >= 29000:
-    #     logger.info(f"{sym}: Total volume too high ({vol_total:,}) — skipping before flash spike check.")
-    #     executed.add(sym)
-    #     save_executed()
-    #     return
 
 # Обробка надходження нової котировки
 async def handle_quote(q):
@@ -442,32 +396,36 @@ async def handle_quote(q):
         return
 
     # === Rule 2: Rolling 5-min window price increase by at least 3%
-    price_record.setdefault(sym, []).append((ts, price))
-    cutoff = ts - timedelta(minutes=5)
-    price_record[sym] = [(t, p) for t, p in price_record[sym] if t >= cutoff]
-
-    prices = [p for t, p in price_record[sym] if t >= cutoff]
-
-    if not prices:
+    if sym not in price_record:
+        # Отримати fallback-ціну
         fallback_price = await get_last_known_price(sym)
         if not fallback_price or fallback_price == 0:
             fallback_price = await get_previous_day_close(sym)
             if not fallback_price or fallback_price == 0:
                 logger.info(f"{sym}: No valid fallback price available — skipping.")
                 return
-        lowest_price = fallback_price
-    else:
-        lowest_price = min(prices)
+        # Ініціалізація запису з fallback-ціною
+        price_record[sym] = [(ts - timedelta(seconds=1), fallback_price)]
 
+    # Додати поточну ціну до історії
+    price_record[sym].append((ts, price))
+
+    # Фільтрувати історію на останні 5 хвилин
+    cutoff = ts - timedelta(minutes=5)
+    price_record[sym] = [(t, p) for t, p in price_record[sym] if t >= cutoff]
+
+    # Отримати всі ціни в межах вікна
+    prices = [p for t, p in price_record[sym]]
+
+    # Обрахунок приросту
+    lowest_price = min(prices)
     change_5min = (price - lowest_price) / lowest_price
     PROFIT_TRIGGER = 0.03  # 3% threshold
 
     if change_5min < PROFIT_TRIGGER:
         logger.info(f"{sym}: Price hasn't moved +3% from 5-min low — skipping.")
-
-    if change_5min < PROFIT_TRIGGER:
         return
-    
+        
     # === Rule 3: 5-minute rolling volume window
     vol_5min = sum(volume_window[sym])
     if vol_5min < VOLUME_5MIN_THRESHOLD:
@@ -545,30 +503,43 @@ async def handle_trade(t):
         return
 
     sym = t.symbol
-    current_min = now_et().minute
+    current_time = now_et()
+    current_min = current_time.minute
+
+    # --- Оновлення 5-хв price_record ---
+    price_record[sym].append((current_time, t.price))
+    cutoff = current_time - timedelta(minutes=5)
+    price_record[sym] = [(ts, pr) for ts, pr in price_record[sym] if ts >= cutoff]
+
+    # --- Оновлення volume_window по хвилинах ---
     if last_minute[sym] != current_min:
         volume_window[sym].append(0)
-        price_history[sym].append((now_et(), t.price))
+        price_history[sym].append((current_time, t.price))
         last_minute[sym] = current_min
     if not volume_window[sym]:
         volume_window[sym].append(0)
     volume_window[sym][-1] += t.size
 
+    # --- Загальний обсяг з 4:00 ---
     total_volume_since_4am[sym] += t.size
-    recent_trades_window[sym].append(TradeEvent(
-            timestamp=now_et(),
-            price=t.price,
-            size=t.size
-        ))
 
+    # --- Оновлення вікна останніх трейдів ---
+    recent_trades_window[sym].append(TradeEvent(
+        timestamp=current_time,
+        price=t.price,
+        size=t.size
+    ))
+
+    # --- Спроба визначити сторону трейду ---
     try:
         quote = await asyncio.to_thread(rest.get_latest_quote, sym)
         is_buy = t.price >= quote.ask_price
-        trade_history[sym].append((now_et(), is_buy))
+        trade_history[sym].append((current_time, is_buy))
     except Exception as e:
         logger.warning(f"{sym}: Failed quote for trade side check: {e}")
-        trade_history[sym].append((now_et(), False))
+        trade_history[sym].append((current_time, False))
 
+    # --- Профіт / стоп логіка (можна додати) ---
     if not in_position.get(sym):
         return
     ep = entry_price.get(sym)
@@ -627,7 +598,6 @@ async def listen_for_pause():
         else:
             logger.info(f"Unknown or redundant command: {cmd}")
 
-import contextlib  # add this at the top if not already
 
 async def main():
     logger.info("Bot initialized.")
