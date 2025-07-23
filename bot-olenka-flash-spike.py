@@ -366,6 +366,7 @@ async def handle_quote(q):
     price = q.ask_price
     ts = now_et()
 
+
     # Skip if cooldown, not in window, already in position, or already executed
     if sym in cooldowns and ts < cooldowns[sym]:
         return

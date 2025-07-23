@@ -59,6 +59,7 @@ VOLUME_5MIN_THRESHOLD = Config.VOLUME_5MIN_THRESHOLD
 SPREAD_THRESHOLD = Config.SPREAD_THRESHOLD 
 FLASH_SPIKE_TRADE_COUNT = Config.FLASH_SPIKE_TRADE_COUNT
 FLASH_SPIKE_AVG_VOLUME = Config.FLASH_SPIKE_AVG_VOLUME
+MIN_BUY_PRICE_MOVE = Config.MIN_BUY_PRICE_MOVE
 
 
 # === Alpaca API Setup ===
@@ -220,10 +221,14 @@ price_history = defaultdict(lambda: deque(maxlen=6))
 trade_history = defaultdict(lambda: deque(maxlen=300))
 quote_queue = asyncio.Queue()
 MAX_CONCURRENT_WORKERS = 6
-
+processing_symbols = set()
 
 tz = pytz.timezone('America/New_York')
 paused = False
+
+def assign_symbols_to_worker(symbols, worker_index, num_workers):
+    return [s for s in symbols if hash(s) % num_workers == worker_index]
+
 
 # НОВЕ: загальний обсяг від 4:00
 total_volume_since_4am = defaultdict(int)
@@ -357,6 +362,7 @@ async def manual_exit(symbol):
     finally:
         in_position[symbol] = False
         cooldowns[symbol] = now_et() + timedelta(minutes=COOLDOWN_MINUTES)
+        processing_symbols.discard(symbol)
 
 
 async def handle_quote(q):
@@ -372,6 +378,9 @@ async def process_quote(q):
     price = q.ask_price
     ts = now_et()
 
+    if sym in processing_symbols:
+        return
+
     # Skip if cooldown, not in window, already in position, or already executed
     if sym in cooldowns and ts < cooldowns[sym]:
         return
@@ -381,6 +390,13 @@ async def process_quote(q):
     # === Rule 1: Flash spike detection based on recent trades volume only
     recent_trades = get_recent_trades(sym, within_ms=1000)
     if len(recent_trades) >= FLASH_SPIKE_TRADE_COUNT:
+        # Check price movement across all recent trades (no side filtering)
+        trade_prices = [t.price for t in recent_trades]
+        price_move = max(trade_prices) - min(trade_prices)
+        if price_move < MIN_BUY_PRICE_MOVE:
+            logger.info(f"{sym}: Price range within recent trades too narrow (${price_move:.2f}) — skipping.")
+            return
+
         avg_volume = sum(t.size for t in recent_trades) / len(recent_trades)
 
         # Check volume AFTER price rule regardless of price move
@@ -390,9 +406,9 @@ async def process_quote(q):
             executed.add(sym)
             save_executed()
             return
-        
+
         if avg_volume >= FLASH_SPIKE_AVG_VOLUME:
-            logger.info(f"{sym}: Flash spike detected — {len(recent_trades)} trades, avg vol {avg_volume:.0f}.")
+            logger.info(f"{sym}: Flash spike detected — {len(recent_trades)} trades, avg vol {avg_volume:.0f}, price move ${price_move:.2f}.")
             # continue to order
         else:
             logger.info(f"{sym}: No flash spike - trades: {len(recent_trades)}, avg vol: {avg_volume:.0f}.")
@@ -400,6 +416,7 @@ async def process_quote(q):
     else:
         logger.info(f"{sym}: Not enough recent trades ({len(recent_trades)}) for flash spike detection.")
         return
+
 
     # === Rule 2: Rolling 5-min window price increase by at least 3%
     if sym not in price_record:
@@ -460,10 +477,15 @@ async def process_quote(q):
         executed.add(sym)
         save_executed()
         return
+    
+    # === 🛑 Ось сюди встав:
+    if sym in processing_symbols:
+        return
+    processing_symbols.add(sym)
 
     qty = QUANTITY
     limit_px = round(price + 0.17, 2)
-    logger.info(f"Entry Signal {sym} | Price jump: {change_5min*100:.2f}% | BUY {qty} at {limit_px}")
+    logger.info(f"Entry Signal {sym} | Price jump: {change_5min*100:.2f}% | BUY {qty} at {limit_px} | 5-min volume: {vol_5min}")
 
     try:
         await asyncio.to_thread(
@@ -481,10 +503,11 @@ async def process_quote(q):
         logger.error(f"Failed to submit order for {sym}: {e}")
         in_position[sym] = False
         executed.add(sym)
+        processing_symbols.discard(sym)
         save_executed()
         return
 
-    # Confirm fill or fail
+    # === Перевірка на заповнення позиції ===
     for _ in range(4):
         try:
             position = await asyncio.to_thread(rest.get_position, sym)
@@ -493,13 +516,15 @@ async def process_quote(q):
             entry_price[sym] = ep
             in_position[sym] = True
             cooldowns[sym] = now_et() + timedelta(minutes=COOLDOWN_MINUTES)
-            return
+            return  # тут уже НЕ треба повторно add(discard), бо символ уже у processing
         except:
             await asyncio.sleep(1)
 
+    # Якщо не заповнило — розблокуємо
     logger.warning(f"{sym} not filled.")
     in_position[sym] = False
     executed.add(sym)
+    processing_symbols.discard(sym)
     save_executed()
 
 # Обробка нового трейду (запис об'єму, ціни)
@@ -608,15 +633,16 @@ async def listen_for_pause():
         else:
             logger.info(f"Unknown or redundant command: {cmd}")
 
-async def quote_worker():
+async def quote_worker(worker_index, assigned_symbols):
     while True:
         q = await quote_queue.get()
         try:
-            await process_quote(q)
+            if q.symbol in assigned_symbols:
+                await process_quote(q)
         except Exception as e:
-            logger.exception(f"Error processing {q.symbol}: {e}")
-        quote_queue.task_done()
-
+            logger.exception(f"Worker {worker_index} error on {q.symbol}: {e}")
+        finally:
+            quote_queue.task_done()
 
 async def log_queue_size():
     while True:
@@ -633,8 +659,10 @@ async def main():
         stream.subscribe_quotes(handle_quote, sym)
         stream.subscribe_trades(handle_trade, sym)
     # Запускаємо воркерів для обробки котировок з черги
-    for _ in range(MAX_CONCURRENT_WORKERS):
-        asyncio.create_task(quote_worker())
+    for i in range(MAX_CONCURRENT_WORKERS):
+        assigned = assign_symbols_to_worker(symbols, i, MAX_CONCURRENT_WORKERS)
+        asyncio.create_task(quote_worker(i, assigned))
+
 
     # Запускаємо логування розміру черги
     asyncio.create_task(log_queue_size())
