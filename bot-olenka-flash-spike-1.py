@@ -13,6 +13,7 @@ import concurrent.futures
 from threading import Semaphore
 import contextlib  # add this at the top if not already
 from config import Config
+import hashlib
 
 # Сторонні бібліотеки
 import pytz
@@ -60,6 +61,7 @@ SPREAD_THRESHOLD = Config.SPREAD_THRESHOLD
 FLASH_SPIKE_TRADE_COUNT = Config.FLASH_SPIKE_TRADE_COUNT
 FLASH_SPIKE_AVG_VOLUME = Config.FLASH_SPIKE_AVG_VOLUME
 MIN_BUY_PRICE_MOVE = Config.MIN_BUY_PRICE_MOVE
+MIN_CONSECUTIVE_INCREASES = Config.MIN_CONSECUTIVE_INCREASES
 
 
 # === Alpaca API Setup ===
@@ -220,14 +222,21 @@ last_minute = defaultdict(lambda: None)
 price_history = defaultdict(lambda: deque(maxlen=6))
 trade_history = defaultdict(lambda: deque(maxlen=300))
 quote_queue = asyncio.Queue()
+trade_queue = asyncio.Queue()
 MAX_CONCURRENT_WORKERS = 6
+MAX_TRADE_WORKERS = 10
 processing_symbols = set()
+trade_queues = [asyncio.Queue() for _ in range(MAX_TRADE_WORKERS)]
 
 tz = pytz.timezone('America/New_York')
 paused = False
 
 def assign_symbols_to_worker(symbols, worker_index, num_workers):
     return [s for s in symbols if hash(s) % num_workers == worker_index]
+
+def consistent_hash(symbol: str, num_buckets: int) -> int:
+    h = hashlib.md5(symbol.encode()).hexdigest()
+    return int(h, 16) % num_buckets
 
 
 # НОВЕ: загальний обсяг від 4:00
@@ -392,6 +401,21 @@ async def process_quote(q):
     if len(recent_trades) >= FLASH_SPIKE_TRADE_COUNT:
         # Check price movement across all recent trades (no side filtering)
         trade_prices = [t.price for t in recent_trades]
+
+        # At least 3 consecutive increasing prices ===
+        increasing_streak = 0
+        for i in range(1, len(trade_prices)):
+            if trade_prices[i] > trade_prices[i - 1]:
+                increasing_streak += 1
+                if increasing_streak >= MIN_CONSECUTIVE_INCREASES - 1:
+                    break
+            else:
+                increasing_streak = 0
+
+        if increasing_streak < MIN_CONSECUTIVE_INCREASES - 1:
+            logger.info(f"{sym}: No {MIN_CONSECUTIVE_INCREASES} consecutive increasing prices found — skipping.")
+            return
+        
         price_move = max(trade_prices) - min(trade_prices)
         if price_move < MIN_BUY_PRICE_MOVE:
             logger.info(f"{sym}: Price range within recent trades too narrow (${price_move:.2f}) — skipping.")
@@ -527,26 +551,24 @@ async def process_quote(q):
     processing_symbols.discard(sym)
     save_executed()
 
-# Обробка нового трейду (запис об'єму, ціни)
 async def handle_trade(t):
-    global paused
-    if paused:
-        return
+    if not paused:
+        worker_index = consistent_hash(t.symbol, MAX_TRADE_WORKERS)
+        await trade_queues[worker_index].put(t)
 
+
+async def process_trade(t):
     sym = t.symbol
     current_time = now_et()
     current_min = current_time.minute
 
-    # Ініціалізуємо price_record, якщо немає
     if sym not in price_record:
         price_record[sym] = []
 
-    # --- Оновлення 5-хв price_record ---
     price_record[sym].append((current_time, t.price))
     cutoff = current_time - timedelta(minutes=5)
     price_record[sym] = [(ts, pr) for ts, pr in price_record[sym] if ts >= cutoff]
 
-    # --- Оновлення volume_window по хвилинах ---
     if last_minute[sym] != current_min:
         volume_window[sym].append(0)
         price_history[sym].append((current_time, t.price))
@@ -555,17 +577,14 @@ async def handle_trade(t):
         volume_window[sym].append(0)
     volume_window[sym][-1] += t.size
 
-    # --- Загальний обсяг з 4:00 ---
     total_volume_since_4am[sym] += t.size
 
-    # --- Оновлення вікна останніх трейдів ---
     recent_trades_window[sym].append(TradeEvent(
         timestamp=current_time,
         price=t.price,
         size=t.size
     ))
 
-    # --- Спроба визначити сторону трейду ---
     try:
         quote = await asyncio.to_thread(rest.get_latest_quote, sym)
         is_buy = t.price >= quote.ask_price
@@ -574,7 +593,6 @@ async def handle_trade(t):
         logger.warning(f"{sym}: Failed quote for trade side check: {e}")
         trade_history[sym].append((current_time, False))
 
-    # --- Профіт / стоп логіка (можна додати) ---
     if not in_position.get(sym):
         return
     ep = entry_price.get(sym)
@@ -644,11 +662,49 @@ async def quote_worker(worker_index, assigned_symbols):
         finally:
             quote_queue.task_done()
 
+BATCH_SIZE = 20
+BATCH_TIMEOUT = 0.05  # 50 мс
+
+async def trade_worker(worker_index):
+    logger.info(f"Trade worker {worker_index} started")
+    queue = trade_queues[worker_index]
+
+    while True:
+        batch = []
+        start_time = asyncio.get_event_loop().time()
+
+        while len(batch) < BATCH_SIZE:
+            timeout = max(0, BATCH_TIMEOUT - (asyncio.get_event_loop().time() - start_time))
+            try:
+                t = await asyncio.wait_for(queue.get(), timeout=timeout)
+                batch.append(t)
+            except asyncio.TimeoutError:
+                break
+
+        if not batch:
+            await asyncio.sleep(0.001)
+            continue
+
+        for t in batch:
+            try:
+                await process_trade(t)
+            except Exception as e:
+                logger.exception(f"Trade worker {worker_index} error: {e}")
+
+
 async def log_queue_size():
     while True:
         await asyncio.sleep(2)
         if not paused:
             logger.info(f"Quote queue size: {quote_queue.qsize()}")
+
+async def log_trade_queues_size():
+    while True:
+        await asyncio.sleep(2)
+        if not paused:
+            sizes = [q.qsize() for q in trade_queues]
+            total = sum(sizes)
+            logger.info(f"Trade queues: total={total}, per_worker={sizes}")
 
 
 async def main():
@@ -662,10 +718,12 @@ async def main():
     for i in range(MAX_CONCURRENT_WORKERS):
         assigned = assign_symbols_to_worker(symbols, i, MAX_CONCURRENT_WORKERS)
         asyncio.create_task(quote_worker(i, assigned))
-
-
+    # Запускаємо воркерів для обробки трейдів
+    for i in range(MAX_TRADE_WORKERS):
+        asyncio.create_task(trade_worker(i))
     # Запускаємо логування розміру черги
     asyncio.create_task(log_queue_size())
+    asyncio.create_task(log_trade_queues_size())
 
     try:
         await asyncio.gather(

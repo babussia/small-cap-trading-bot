@@ -36,6 +36,7 @@ class Config:
     FLASH_SPIKE_TRADE_COUNT = int(os.getenv("FLASH_SPIKE_TRADE_COUNT", 6))
     FLASH_SPIKE_AVG_VOLUME = int(os.getenv("FLASH_SPIKE_AVG_VOLUME", 80))
     MIN_BUY_PRICE_MOVE = float(os.getenv("MIN_BUY_PRICE_MOVE", 0.03))
+    MIN_CONSECUTIVE_INCREASES = int(os.getenv("MIN_CONSECUTIVE_INCREASES", 10))
 
 
     # ✅ Position Sizing
