@@ -14,6 +14,7 @@ from threading import Semaphore
 import contextlib  # add this at the top if not already
 from config import Config
 import hashlib
+import xxhash
 
 # Сторонні бібліотеки
 import pytz
@@ -223,20 +224,20 @@ price_history = defaultdict(lambda: deque(maxlen=6))
 trade_history = defaultdict(lambda: deque(maxlen=300))
 quote_queue = asyncio.Queue()
 trade_queue = asyncio.Queue()
-MAX_CONCURRENT_WORKERS = 6
-MAX_TRADE_WORKERS = 10
+MAX_CONCURRENT_WORKERS = 2
+MAX_TRADE_WORKERS = 8
 processing_symbols = set()
 trade_queues = [asyncio.Queue() for _ in range(MAX_TRADE_WORKERS)]
 
 tz = pytz.timezone('America/New_York')
 paused = False
 
-def assign_symbols_to_worker(symbols, worker_index, num_workers):
-    return [s for s in symbols if hash(s) % num_workers == worker_index]
 
 def consistent_hash(symbol: str, num_buckets: int) -> int:
-    h = hashlib.md5(symbol.encode()).hexdigest()
-    return int(h, 16) % num_buckets
+    return xxhash.xxh32(symbol).intdigest() % num_buckets
+
+def assign_symbols_to_worker(symbols, worker_index, num_workers):
+    return [s for s in symbols if consistent_hash(s, num_workers) == worker_index]
 
 
 # НОВЕ: загальний обсяг від 4:00
@@ -344,6 +345,22 @@ def initialize_total_volume(symbol):
     except Exception as e:
         logger.warning(f"Failed to fetch volume for {symbol}: {e}")
 
+async def periodic_volume_blocker():
+    while True:
+        try:
+            logger.info("Running periodic volume checker...")
+            for sym in symbols:
+                vol_total = total_volume_since_4am.get(sym, 0)
+                if sym not in executed and vol_total >= VOLUME_THRESHOLD:
+                    logger.info(f"{sym}: Periodic check — volume exceeded {VOLUME_THRESHOLD:,}. Blocking permanently.")
+                    executed.add(sym)
+            save_executed()
+        except Exception as e:
+            logger.warning(f"Volume blocker error: {e}")
+        
+        await asyncio.sleep(900)  # 15 minutes = 900 seconds
+
+
 
 async def manual_exit(symbol):
     try:
@@ -422,14 +439,6 @@ async def process_quote(q):
             return
 
         avg_volume = sum(t.size for t in recent_trades) / len(recent_trades)
-
-        # Check volume AFTER price rule regardless of price move
-        vol_total = total_volume_since_4am[sym]
-        if vol_total >= VOLUME_THRESHOLD:
-            logger.info(f"{sym}: Volume exceeded {VOLUME_THRESHOLD:,} AFTER price rule — blocking permanently.")
-            executed.add(sym)
-            save_executed()
-            return
 
         if avg_volume >= FLASH_SPIKE_AVG_VOLUME:
             logger.info(f"{sym}: Flash spike detected — {len(recent_trades)} trades, avg vol {avg_volume:.0f}, price move ${price_move:.2f}.")
@@ -724,6 +733,9 @@ async def main():
     # Запускаємо логування розміру черги
     asyncio.create_task(log_queue_size())
     asyncio.create_task(log_trade_queues_size())
+
+    # NEW: Periodic volume rule enforcement
+    asyncio.create_task(periodic_volume_blocker())
 
     try:
         await asyncio.gather(

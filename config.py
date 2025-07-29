@@ -27,16 +27,16 @@ class Config:
     # ✅ Trading Thresholds
     VOLUME_THRESHOLD = int(os.getenv("VOLUME_THRESHOLD", 29000))
     VOLUME_5MIN_THRESHOLD = int(os.getenv("VOLUME_5MIN_THRESHOLD", 1200))
-    SPREAD_THRESHOLD = float(os.getenv("SPREAD_THRESHOLD", 0.20))
+    SPREAD_THRESHOLD = float(os.getenv("SPREAD_THRESHOLD", 0.55))
     PROFIT_TRIGGER = float(os.getenv("PROFIT_TRIGGER", 0.03))
     STOP_LOSS_ABS = float(os.getenv("STOP_LOSS_ABS", 0.15))
     COOLDOWN_MINUTES = int(os.getenv("COOLDOWN_MINUTES", 10))
     SCAN_START_HOUR = int(os.getenv("SCAN_START_HOUR", 4))
     SCAN_END_HOUR = int(os.getenv("SCAN_END_HOUR", 20))
-    FLASH_SPIKE_TRADE_COUNT = int(os.getenv("FLASH_SPIKE_TRADE_COUNT", 6))
-    FLASH_SPIKE_AVG_VOLUME = int(os.getenv("FLASH_SPIKE_AVG_VOLUME", 80))
+    FLASH_SPIKE_TRADE_COUNT = int(os.getenv("FLASH_SPIKE_TRADE_COUNT", 5))
+    FLASH_SPIKE_AVG_VOLUME = int(os.getenv("FLASH_SPIKE_AVG_VOLUME", 60))
     MIN_BUY_PRICE_MOVE = float(os.getenv("MIN_BUY_PRICE_MOVE", 0.03))
-    MIN_CONSECUTIVE_INCREASES = int(os.getenv("MIN_CONSECUTIVE_INCREASES", 10))
+    MIN_CONSECUTIVE_INCREASES = int(os.getenv("MIN_CONSECUTIVE_INCREASES", 3))
 
 
     # ✅ Position Sizing
