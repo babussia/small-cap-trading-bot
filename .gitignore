@@ -1,6 +1,8 @@
 # 🔐 Secrets
 .env
-# trade_log.txt
+trade_log.txt
+streams/*.csv
+trade_log/*.txt
 
 # 🧠 Cached configs or logs
 *.json
