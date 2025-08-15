@@ -2241,3 +2241,173 @@
 2025-08-15 09:25:42,226 - CYCC: Not enough recent trades (0) for flash spike detection.
 2025-08-15 09:25:42,958 - SNGX: Not enough recent trades (0) for flash spike detection.
 2025-08-15 09:25:42,958 - SNGX: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:43,462 - PLTD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:43,799 - Quote queue size: 0
+2025-08-15 09:25:43,947 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:45,403 - ARAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:45,404 - ARAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:45,407 - ARAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:45,812 - Quote queue size: 0
+2025-08-15 09:25:45,957 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:46,438 - WHLR: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:46,683 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:46,684 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:47,827 - Quote queue size: 0
+2025-08-15 09:25:47,962 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:48,384 - IVF: Not enough recent trades (1) for flash spike detection.
+2025-08-15 09:25:49,828 - Quote queue size: 0
+2025-08-15 09:25:49,979 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:51,429 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,430 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,431 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,432 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,433 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,434 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,746 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,746 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:51,844 - Quote queue size: 0
+2025-08-15 09:25:51,995 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:53,704 - TSLG: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:53,856 - Quote queue size: 0
+2025-08-15 09:25:54,003 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:54,141 - THAR: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:55,267 - PLTD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:55,268 - PLTD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:55,269 - PLTD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:55,322 - PLTD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:55,868 - Quote queue size: 0
+2025-08-15 09:25:56,016 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:57,151 - CDT: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:57,564 - IVF: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:57,565 - IVF: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:25:57,874 - Quote queue size: 0
+2025-08-15 09:25:58,029 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:25:59,877 - Quote queue size: 0
+2025-08-15 09:26:00,042 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:00,173 - CDT: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:01,884 - Quote queue size: 0
+2025-08-15 09:26:02,044 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:02,231 - SIF: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:02,244 - CDT: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:02,245 - CDT: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:03,893 - Quote queue size: 0
+2025-08-15 09:26:04,048 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:05,262 - Running periodic volume checker...
+2025-08-15 09:26:05,813 - YHC: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:05,902 - Quote queue size: 0
+2025-08-15 09:26:06,064 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:07,440 - XOS: Not enough recent trades (1) for flash spike detection.
+2025-08-15 09:26:07,442 - XOS: Not enough recent trades (1) for flash spike detection.
+2025-08-15 09:26:07,906 - Quote queue size: 0
+2025-08-15 09:26:08,070 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:09,914 - Quote queue size: 0
+2025-08-15 09:26:10,075 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:10,543 - TRAW: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:11,925 - Quote queue size: 0
+2025-08-15 09:26:12,077 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:13,938 - Quote queue size: 0
+2025-08-15 09:26:14,086 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:15,819 - YHC: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:15,953 - Quote queue size: 0
+2025-08-15 09:26:16,089 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:17,955 - Quote queue size: 0
+2025-08-15 09:26:18,093 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:18,186 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,187 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,188 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,198 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,199 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,276 - SCNI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:18,443 - BMRA: Not enough recent trades (2) for flash spike detection.
+2025-08-15 09:26:18,444 - BMRA: Not enough recent trades (2) for flash spike detection.
+2025-08-15 09:26:19,951 - XOS: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:19,954 - XOS: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:19,967 - Quote queue size: 0
+2025-08-15 09:26:20,096 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:20,190 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:20,190 - NVDD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:21,198 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:21,200 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:21,201 - BMRA: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:21,979 - Quote queue size: 0
+2025-08-15 09:26:22,111 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:23,995 - Quote queue size: 0
+2025-08-15 09:26:24,124 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:25,997 - Quote queue size: 0
+2025-08-15 09:26:26,130 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:28,003 - Quote queue size: 0
+2025-08-15 09:26:28,133 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:30,005 - Quote queue size: 0
+2025-08-15 09:26:30,134 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:31,387 - SCNI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:31,388 - SCNI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:31,390 - SCNI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:32,018 - Quote queue size: 0
+2025-08-15 09:26:32,143 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:33,414 - BTAI: Not enough recent trades (1) for flash spike detection.
+2025-08-15 09:26:33,415 - BTAI: Not enough recent trades (1) for flash spike detection.
+2025-08-15 09:26:34,026 - Quote queue size: 0
+2025-08-15 09:26:34,123 - GNLN: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:34,157 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:35,440 - BSLK: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:36,029 - Quote queue size: 0
+2025-08-15 09:26:36,165 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:38,043 - Quote queue size: 0
+2025-08-15 09:26:38,175 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:38,488 - BTAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:39,029 - CYCC: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:39,031 - CYCC: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:39,033 - CYCC: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:40,046 - Quote queue size: 0
+2025-08-15 09:26:40,130 - CLRB: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:40,192 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:42,059 - Quote queue size: 0
+2025-08-15 09:26:42,197 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:42,662 - TSLG: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:42,850 - OFAL: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:44,065 - Quote queue size: 0
+2025-08-15 09:26:44,208 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:45,392 - SCNI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:45,393 - VSEE: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:46,068 - Quote queue size: 0
+2025-08-15 09:26:46,214 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:46,985 - AMOD: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:47,448 - BSLK: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:47,532 - MBIO: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:47,927 - PHIO: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:48,076 - Quote queue size: 0
+2025-08-15 09:26:48,222 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:50,092 - Quote queue size: 0
+2025-08-15 09:26:50,237 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:51,187 - PHIO: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:51,948 - XOS: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:52,104 - Quote queue size: 0
+2025-08-15 09:26:52,244 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:53,648 - DLPN: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:53,928 - BTAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:53,929 - BTAI: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:54,111 - Quote queue size: 0
+2025-08-15 09:26:54,260 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:56,004 - DARE: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:56,124 - Quote queue size: 0
+2025-08-15 09:26:56,261 - BSLK: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:56,262 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-08-15 09:26:57,148 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,241 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,241 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,242 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,243 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,244 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,244 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,266 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,339 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,430 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,431 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,433 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,433 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,434 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,438 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,482 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,484 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,486 - SMCZ: Not enough recent trades (0) for flash spike detection.
+2025-08-15 09:26:57,491 - SMCZ: Not enough recent trades (0) for flash spike detection.
