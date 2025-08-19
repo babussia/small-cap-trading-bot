@@ -138,7 +138,7 @@ def load_symbols():
                     
                     bars = rest.get_bars(sym, tradeapi.TimeFrame.Minute, start.isoformat(), end.isoformat())
                     total_volume = sum(bar.v for bar in bars)
-                    if total_volume > 9000:
+                    if total_volume > 15000:
                         return None
                 except Exception:
                     return None
