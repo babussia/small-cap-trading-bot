@@ -501,16 +501,29 @@ async def process_quote(q):
         return
     processing_symbols.add(sym)
 
-    # === NEW: Write symbol to trade.txt for AHK instead of Alpaca order
+# === NEW: Write symbol to trade.txt for AHK instead of Alpaca order
     try:
-        with open("trade.txt", "a") as f:
+        with open("trade.txt", "r+") as f:
+            symbols_in_file = {line.strip() for line in f}
+            if sym not in symbols_in_file:
+                f.write(f"{sym}\n")
+                logger.info(f"{sym} written to trade.txt for AHK. "
+                            f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
+                play_sound()
+            else:
+                logger.info(f"{sym} already exists in trade.txt — skipping.")
+    except FileNotFoundError:
+        # If file doesn't exist yet, create and write the first symbol
+        with open("trade.txt", "w") as f:
             f.write(f"{sym}\n")
-        logger.info(f"{sym} written to trade.txt for AHK. Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
+        logger.info(f"{sym} written to new trade.txt for AHK. "
+                    f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
         play_sound()
     except Exception as e:
         logger.error(f"Failed to write {sym} to trade.txt: {e}")
 
     processing_symbols.discard(sym)
+
 
 async def handle_trade(t):
     if not paused:
