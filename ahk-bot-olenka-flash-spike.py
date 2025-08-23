@@ -15,6 +15,7 @@ import contextlib  # add this at the top if not already
 from config import Config
 import hashlib
 import xxhash
+from bisect import bisect_left
 
 # Сторонні бібліотеки
 import pytz
@@ -418,18 +419,19 @@ async def process_quote(q):
         # Check price movement across all recent trades (no side filtering)
         trade_prices = [t.price for t in recent_trades]
 
-        # At least 3 consecutive increasing prices ===
-        increasing_streak = 0
-        for i in range(1, len(trade_prices)):
-            if trade_prices[i] > trade_prices[i - 1]:
-                increasing_streak += 1
-                if increasing_streak >= MIN_CONSECUTIVE_INCREASES - 1:
-                    break
+        # --- Inline increasing subsequence check ---
+        subseq = []
+        for price in trade_prices:
+            i = bisect_left(subseq, price)
+            if i < len(subseq):
+                subseq[i] = price
             else:
-                increasing_streak = 0
+                subseq.append(price)
+            if len(subseq) >= MIN_CONSECUTIVE_INCREASES:
+                break  # found the increasing subsequence
 
-        if increasing_streak < MIN_CONSECUTIVE_INCREASES - 1:
-            logger.info(f"{sym}: No {MIN_CONSECUTIVE_INCREASES} consecutive increasing prices found — skipping.")
+        if len(subseq) < MIN_CONSECUTIVE_INCREASES:
+            logger.info(f"{sym}: No {MIN_CONSECUTIVE_INCREASES}-step increasing trend found — skipping.")
             return
         
         price_move = max(trade_prices) - min(trade_prices)
