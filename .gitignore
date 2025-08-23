@@ -3,6 +3,7 @@
 trade_log.txt
 streams/*.csv
 trade_log/*.txt
+trade-symbols-signals/*.txt
 
 # 🧠 Cached configs or logs
 *.json
