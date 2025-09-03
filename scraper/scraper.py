@@ -3,15 +3,17 @@ import requests
 from bs4 import BeautifulSoup
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from plyer import notification
 import tkinter as tk
-import threading
+from queue import Queue
 import webbrowser
+import threading
 import screeninfo  # pip install screeninfo
 
 BASE_URL = "https://www.stocktitan.net/overview/"
 TRADE_FILE = "../trade.txt"
 OUTPUT_DIR = "results_md"
+
+popup_queue = Queue()  # для передачі даних від watchdog до головного потоку
 
 
 def scrape(symbol: str):
@@ -48,22 +50,18 @@ def scrape(symbol: str):
         if news_page.status_code == 200:
             news_soup = BeautifulSoup(news_page.text, "html.parser")
 
-            # Full news content
             content_tag = news_soup.select_one("div.news-content")
             if content_tag:
                 news_content = content_tag.get_text(strip=True)
 
-            # --- scrape <time> ---
             time_tag = news_soup.select_one("time[datetime]")
             if time_tag:
                 news_time = time_tag.get_text(strip=True)
 
-            # --- scrape Rhea-AI summary ---
             summary_tag = news_soup.select_one("div.news-card-summary #summary")
             if summary_tag:
                 summary_text = summary_tag.get_text(strip=True)
 
-            # --- scrape stock data ---
             for div in news_soup.select("div.news-list-item.stock-data"):
                 label = div.find("label")
                 if not label:
@@ -117,75 +115,52 @@ def save_to_md(data, output_dir=OUTPUT_DIR):
     return filename
 
 
-def show_popup_with_link(data):
-    notification.notify(
-        title=f"{data['symbol']} – News",
-        message=f"{data['news_title']}\nDate: {data['news_date']}\nImpact: {data['price_impact']}",
-        timeout=8
+def show_popup(data):
+    popup = tk.Toplevel(root)
+    popup.title(f"{data['symbol']} – News")
+    popup.attributes('-topmost', True)
+
+    # визначаємо другий монітор
+    screens = screeninfo.get_monitors()
+    if len(screens) > 1:
+        second = screens[1]
+        x = second.x + 50
+        y = second.y + 50
+    else:
+        x, y = 50, 50
+
+    popup.geometry(f"500x600+{x}+{y}")
+
+    canvas = tk.Canvas(popup)
+    scrollbar = tk.Scrollbar(popup, orient="vertical", command=canvas.yview)
+    scrollable_frame = tk.Frame(canvas)
+    scrollable_frame.bind(
+        "<Configure>",
+        lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
     )
+    canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+    canvas.configure(yscrollcommand=scrollbar.set)
+    canvas.pack(side="left", fill="both", expand=True)
+    scrollbar.pack(side="right", fill="y")
 
-    def popup():
-        root = tk.Tk()
-        root.title(f"{data['symbol']} – News")
-        root.attributes('-topmost', True)  # stay on top
+    # Текст новини
+    label_text = f"{data['news_title']}\nDate: {data['news_date']} {data['news_time']}\nImpact: {data['price_impact']}"
+    tk.Label(scrollable_frame, text=label_text, font=("Arial", 12), justify="left", wraplength=480).pack(pady=(10,5))
 
-        # Detect screens and move to second screen if available
-        screens = screeninfo.get_monitors()
-        if len(screens) > 1:
-            second = screens[1]
-            x = second.x + 50
-            y = second.y + 50
-        else:
-            x, y = 50, 50
+    def open_link(event):
+        webbrowser.open(data['news_url'])
 
-        # Create scrollable frame
-        canvas = tk.Canvas(root)
-        scrollbar = tk.Scrollbar(root, orient="vertical", command=canvas.yview)
-        scrollable_frame = tk.Frame(canvas)
+    link = tk.Label(scrollable_frame, text="Read full article", fg="blue", cursor="hand2", font=("Arial", 12, "underline"))
+    link.pack()
+    link.bind("<Button-1>", open_link)
 
-        scrollable_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(
-                scrollregion=canvas.bbox("all")
-            )
-        )
+    tk.Label(scrollable_frame, text=data['summary'], font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
+    tk.Label(scrollable_frame, text=data['news_content'], font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
 
-        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
-
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-
-        root.geometry(f"500x600+{x}+{y}")  # initial window size
-
-        # News title and info
-        label_text = f"{data['news_title']}\nDate: {data['news_date']} {data['news_time']}\nImpact: {data['price_impact']}"
-        tk.Label(scrollable_frame, text=label_text, font=("Arial", 12), justify="left", wraplength=480).pack(pady=(10,5))
-
-        # Link
-        def open_link(event):
-            webbrowser.open(data['news_url'])
-
-        link = tk.Label(scrollable_frame, text="Read full article", fg="blue", cursor="hand2", font=("Arial", 12, "underline"))
-        link.pack()
-        link.bind("<Button-1>", open_link)
-
-        # Summary
-        tk.Label(scrollable_frame, text=data['summary'], font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
-        
-        # Full news content
-        tk.Label(scrollable_frame, text=data['news_content'], font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
-
-        # Stock data
-        stock_text = "\n".join([f"{k.replace('_',' ').title()}: {data.get(k,'N/A')}" for k in [
-            "market_cap","float","insiders_ownership","institutions_ownership","short_percent",
-            "industry","sector","website","country","city"]])
-        tk.Label(scrollable_frame, text=stock_text, font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
-
-        root.mainloop()
-
-    threading.Thread(target=popup, daemon=True).start()
-
+    stock_text = "\n".join([f"{k.replace('_',' ').title()}: {data.get(k,'N/A')}" for k in [
+        "market_cap","float","insiders_ownership","institutions_ownership","short_percent",
+        "industry","sector","website","country","city"]])
+    tk.Label(scrollable_frame, text=stock_text, font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
 
 
 class TradeFileHandler(FileSystemEventHandler):
@@ -201,25 +176,39 @@ class TradeFileHandler(FileSystemEventHandler):
             for symbol in new_symbols:
                 info = scrape(symbol)
                 if info:
-                    filepath = save_to_md(info)
-                    print(f"✅ Scraped & saved {filepath}")
-                    show_popup_with_link(info)
+                    save_to_md(info)
+                    print(f"✅ Scraped & saved {symbol}")
+                    popup_queue.put(info)  # додаємо в чергу для головного потоку
                 self.seen.add(symbol)
 
 
-if __name__ == "__main__":
-    print("🚀 Watching trade.txt for new symbols (Ctrl+C to stop)...")
-
+def start_watchdog():
     event_handler = TradeFileHandler()
     observer = Observer()
     observer.schedule(event_handler, path=os.path.dirname(TRADE_FILE) or ".", recursive=False)
     observer.start()
-
     try:
         while True:
             pass
     except KeyboardInterrupt:
         observer.stop()
-        print("\n🛑 Stopped by user.")
     observer.join()
 
+
+if __name__ == "__main__":
+    print("🚀 Watching trade.txt for new symbols (Ctrl+C to stop)...")
+
+    # Стартуємо watchdog у фоновому потоці
+    threading.Thread(target=start_watchdog, daemon=True).start()
+
+    # Головний цикл Tkinter (в головному потоці)
+    def check_queue():
+        while not popup_queue.empty():
+            data = popup_queue.get()
+            show_popup(data)  # створює попап на другому моніторі
+        root.after(1000, check_queue)  # перевірка черги кожну секунду
+
+    root = tk.Tk()
+    root.withdraw()  # сховати основне вікно
+    root.after(1000, check_queue)
+    root.mainloop()
