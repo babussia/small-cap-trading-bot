@@ -198,17 +198,18 @@ def start_watchdog():
 if __name__ == "__main__":
     print("🚀 Watching trade.txt for new symbols (Ctrl+C to stop)...")
 
-    # Стартуємо watchdog у фоновому потоці
     threading.Thread(target=start_watchdog, daemon=True).start()
 
-    # Головний цикл Tkinter (в головному потоці)
     def check_queue():
         while not popup_queue.empty():
             data = popup_queue.get()
-            show_popup(data)  # створює попап на другому моніторі
-        root.after(1000, check_queue)  # перевірка черги кожну секунду
+            show_popup(data)
+        root.after(1000, check_queue)
 
     root = tk.Tk()
-    root.withdraw()  # сховати основне вікно
+    root.withdraw()
     root.after(1000, check_queue)
-    root.mainloop()
+    try:
+        root.mainloop()
+    except KeyboardInterrupt:
+        print("\n👋 Exiting gracefully...")

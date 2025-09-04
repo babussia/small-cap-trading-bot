@@ -45,7 +45,7 @@ Loop {
             Sleep 200
 
             CoordMode "Mouse", "Window"
-            Click 13, 101  ; Replace with your Market Depth X,Y
+            Click 124, 105  ; Replace with your Market Depth X,Y
             Sleep 100
             SendText symbol
             Sleep 50

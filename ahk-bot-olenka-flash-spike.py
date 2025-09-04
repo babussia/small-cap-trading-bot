@@ -11,9 +11,7 @@ from datetime import datetime, timedelta, timezone
 from collections import deque, defaultdict
 import concurrent.futures
 from threading import Semaphore
-import contextlib  # add this at the top if not already
 from config import Config
-import hashlib
 import xxhash
 from bisect import bisect_left
 
@@ -21,6 +19,9 @@ from bisect import bisect_left
 import pytz
 import alpaca_trade_api as tradeapi
 from collections import namedtuple
+import ssl, certifi
+
+ssl_context = ssl.create_default_context(cafile=certifi.where())
 
 TradeEvent = namedtuple("TradeEvent", ["timestamp", "price", "size"])
 recent_trades_window = defaultdict(lambda: deque(maxlen=100))  # symbol: [TradeEvent]
@@ -68,7 +69,13 @@ MIN_CONSECUTIVE_INCREASES = Config.MIN_CONSECUTIVE_INCREASES
 
 # === Alpaca API Setup ===
 rest = tradeapi.REST(API_KEY, API_SECRET, BASE_URL, api_version='v2')
-stream = tradeapi.Stream(API_KEY, API_SECRET, base_url=DATA_STREAM_URL, data_feed='sip')
+stream = tradeapi.Stream(
+    API_KEY,
+    API_SECRET,
+    base_url=DATA_STREAM_URL,
+    data_feed="sip",
+    websocket_params={"ssl": ssl_context}  # ✅ added SSL fix
+)
 
 # Безпечний запит з обмеженням по FMP API
 def fmp_safe_request(url):
