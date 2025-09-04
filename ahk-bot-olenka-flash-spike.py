@@ -7,13 +7,13 @@ import logging
 import threading
 import requests
 import platform
+from datetime import date
 from datetime import datetime, timedelta, timezone
 from collections import deque, defaultdict
 import concurrent.futures
 from threading import Semaphore
-import contextlib  # add this at the top if not already
 from config import Config
-import hashlib
+from bisect import bisect_left
 import xxhash
 
 # Сторонні бібліотеки
@@ -166,16 +166,31 @@ def load_symbols():
 
     return filtered
 
-# Логгер для консолі та файлу
+
+# --- Папки ---
+TRADE_DIR = "symbol-signals"
+LOG_DIR = "trade_logs"
+os.makedirs(TRADE_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+
+# --- Дата ---
+today_str = date.today().strftime("%Y-%m-%d")
+
+# --- Файли ---
+TRADE_FILE = os.path.join(TRADE_DIR, f"trade-{today_str}.txt")
+LOG_FILE = os.path.join(LOG_DIR, f"trade_log-{today_str}.txt")
+
+# --- Логгер ---
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 fmt = logging.Formatter('%(asctime)s - %(message)s')
 console = logging.StreamHandler()
 console.setFormatter(fmt)
 logger.addHandler(console)
-fileh = logging.FileHandler("trade_log.txt")
+fileh = logging.FileHandler(LOG_FILE)
 fileh.setFormatter(fmt)
 logger.addHandler(fileh)
+
 
 # Завантаження списку вже виконаних операцій
 def load_executed():
@@ -412,24 +427,25 @@ async def process_quote(q):
     if not in_window() or in_position.get(sym) or sym in executed:
         return
     
-    # === Rule 1: Flash spike detection based on recent trades volume only
+# === Rule 1: Flash spike detection based on recent trades volume only
     recent_trades = get_recent_trades(sym, within_ms=1000)
     if len(recent_trades) >= FLASH_SPIKE_TRADE_COUNT:
         # Check price movement across all recent trades (no side filtering)
         trade_prices = [t.price for t in recent_trades]
 
-        # At least 3 consecutive increasing prices ===
-        increasing_streak = 0
-        for i in range(1, len(trade_prices)):
-            if trade_prices[i] > trade_prices[i - 1]:
-                increasing_streak += 1
-                if increasing_streak >= MIN_CONSECUTIVE_INCREASES - 1:
-                    break
+        # --- Inline increasing subsequence check ---
+        subseq = []
+        for price in trade_prices:
+            i = bisect_left(subseq, price)
+            if i < len(subseq):
+                subseq[i] = price
             else:
-                increasing_streak = 0
+                subseq.append(price)
+            if len(subseq) >= MIN_CONSECUTIVE_INCREASES:
+                break  # found the increasing subsequence
 
-        if increasing_streak < MIN_CONSECUTIVE_INCREASES - 1:
-            logger.info(f"{sym}: No {MIN_CONSECUTIVE_INCREASES} consecutive increasing prices found — skipping.")
+        if len(subseq) < MIN_CONSECUTIVE_INCREASES:
+            logger.info(f"{sym}: No {MIN_CONSECUTIVE_INCREASES}-step increasing trend found — skipping.")
             return
         
         price_move = max(trade_prices) - min(trade_prices)
@@ -448,7 +464,6 @@ async def process_quote(q):
     else:
         logger.info(f"{sym}: Not enough recent trades ({len(recent_trades)}) for flash spike detection.")
         return
-
 
     # === Rule 2: Rolling 5-min window price increase by at least 3%
     if sym not in price_record:
@@ -501,26 +516,44 @@ async def process_quote(q):
         return
     processing_symbols.add(sym)
 
-# === NEW: Write symbol to trade.txt for AHK instead of Alpaca order
+    # === NEW: Write symbol to dated trade.txt for AHK instead of Alpaca order
     try:
-        with open("trade.txt", "r+") as f:
+        with open(TRADE_FILE, "r+") as f:
             symbols_in_file = {line.strip() for line in f}
             if sym not in symbols_in_file:
                 f.write(f"{sym}\n")
-                logger.info(f"{sym} written to trade.txt for AHK. "
-                            f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
+
+                logger.info(
+                    f"{sym} detected | price_at_detection={price:.2f} | "
+                    f"low_price_5_min={lowest_price:.2f} | "
+                    f"price_jump={change_5min*100:.2f}% | "
+                    f"avg_vol_1sec={avg_volume:.0f} | "
+                    f"num_trades_1sec={len(recent_trades)} | "
+                    f"vol_5min={vol_5min} | "
+                    f"price_diff={price_move:.2f}"
+                )
+
                 play_sound()
             else:
-                logger.info(f"{sym} already exists in trade.txt — skipping.")
+                logger.info(f"{sym} already exists in {TRADE_FILE} — skipping.")
     except FileNotFoundError:
         # If file doesn't exist yet, create and write the first symbol
-        with open("trade.txt", "w") as f:
+        with open(TRADE_FILE, "w") as f:
             f.write(f"{sym}\n")
-        logger.info(f"{sym} written to new trade.txt for AHK. "
-                    f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
+
+        logger.info(
+            f"{sym} detected (new file) | price_at_detection={price:.2f} | "
+            f"low_price_5_min={lowest_price:.2f} | "
+            f"price_jump={change_5min*100:.2f}% | "
+            f"avg_vol_1sec={avg_volume:.0f} | "
+            f"num_trades_1sec={len(recent_trades)} | "
+            f"vol_5min={vol_5min} | "
+            f"price_diff={price_move:.2f}"
+        )
+
         play_sound()
     except Exception as e:
-        logger.error(f"Failed to write {sym} to trade.txt: {e}")
+        logger.error(f"Failed to write {sym} to {TRADE_FILE}: {e}")
 
     processing_symbols.discard(sym)
 

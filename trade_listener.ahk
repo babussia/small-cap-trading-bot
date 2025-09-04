@@ -2,8 +2,9 @@
 #SingleInstance Force
 #Warn
 
+FormatTime, todayStr,, yyyy-MM-dd
 dir := A_ScriptDir
-tradeFile := dir "\trade.txt"
+tradeFile := dir "\trade-" todayStr ".txt"
 
 ; Create file if it doesn't exist
 if !FileExist(tradeFile)
