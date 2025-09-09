@@ -36248,3 +36248,251 @@
 2025-09-09 14:14:46,188 - Quote queue size: 0
 2025-09-09 14:14:46,331 - Async tasks cancelled cleanly.
 2025-09-09 14:14:46,331 - Shutting down WebSocket connection...
+2025-09-09 15:59:42,960 - Loaded 57 executed symbols from cache.
+2025-09-09 15:59:46,701 - Bot initialized.
+2025-09-09 16:01:02,757 - Trade worker 0 started
+2025-09-09 16:01:02,758 - Trade worker 1 started
+2025-09-09 16:01:02,758 - Trade worker 2 started
+2025-09-09 16:01:02,758 - Trade worker 3 started
+2025-09-09 16:01:02,758 - Trade worker 4 started
+2025-09-09 16:01:02,758 - Trade worker 5 started
+2025-09-09 16:01:02,758 - Trade worker 6 started
+2025-09-09 16:01:02,759 - Trade worker 7 started
+2025-09-09 16:01:02,759 - Trade worker 8 started
+2025-09-09 16:01:02,759 - Trade worker 9 started
+2025-09-09 16:01:02,759 - Running periodic volume checker...
+2025-09-09 16:01:02,759 - ADTX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,759 - AEI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,760 - AGH: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,760 - AGMH: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,760 - AIXI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,760 - AKTX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,761 - ALBT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,761 - ALZN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,761 - AMIX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,761 - AMOD: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,761 - AMZE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,762 - ANTE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,762 - APVO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,762 - AQB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,762 - ARAI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,763 - ARTL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,763 - ASTI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,763 - ATHR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,763 - AUST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,764 - AUUD: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,764 - AZTR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,764 - BAOS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,764 - BCG: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,765 - BFRG: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,765 - BFRI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,765 - BIVI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,765 - BKYI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,766 - BMGL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,766 - BMRA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,766 - BNED: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,766 - BNGO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,767 - BNZI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,767 - BTBD: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,767 - BTX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,768 - CAMP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,768 - CLDI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,768 - CLNN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,769 - CMCM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,769 - CNF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,769 - CPHI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,770 - CTOR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,770 - CYN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,770 - DARE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,770 - DEVS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,770 - DPRO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,771 - DSS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,771 - DTST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,771 - DXST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,771 - EFTY: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,771 - EJH: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,772 - ENGS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,772 - ENVB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,772 - FEAM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,772 - FGL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,773 - FLD: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,773 - FRGT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,773 - FSCO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,773 - GCTK: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,773 - GLE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,774 - GLMD: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,774 - GLO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,774 - GLXG: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,774 - GNLN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,774 - GRI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - GTBP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - GWH: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - GXAI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - HCHL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - HUHU: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,775 - HUSA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,776 - HXHX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,776 - INAB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,776 - INBS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,776 - INDO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,777 - INDP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,777 - INLF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,777 - IPWR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,777 - IQST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,777 - IVDA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,778 - IVF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,778 - IVP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,778 - JAGX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,778 - JBDI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,778 - JZ: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KAVL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KITT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KLRS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KSCP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KTTA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,779 - KWM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,780 - LCFY: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,780 - LHAI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,780 - LITB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,780 - LITM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,780 - LIXT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,781 - LTRN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,781 - LVLU: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,781 - MBIO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,781 - MDCX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,782 - MEGL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,782 - MEIP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,782 - MGRX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,782 - MLGO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,782 - MNTS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,783 - MOB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,783 - MOVE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,783 - MRM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,783 - MSPR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,783 - MTEK: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,784 - MWYN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,784 - MJID: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,788 - MYSZ: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,788 - NAMI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,788 - NCI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,788 - NCPL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,788 - OGEN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,789 - OST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,789 - PCF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,789 - PEW: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,789 - PHIO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,789 - PLCE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - PLRZ: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - PMCB: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - PMEC: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - PMM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - PODC: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,790 - POLA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,791 - PPSI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,791 - PRFX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,791 - PTNM: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,791 - QMCO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,792 - RBNE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,792 - RCT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,792 - SABS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,792 - SAGT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,792 - SCNI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,793 - SCNX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,793 - SDOT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,793 - SDST: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,793 - SEED: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,794 - SFHG: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,794 - SINT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,794 - SLE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,794 - SLXN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,795 - SMTK: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,795 - SNES: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,795 - SNGX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,795 - SNTI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,795 - SOAR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,796 - SOPA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,796 - SPAI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,796 - SSKN: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,796 - STI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,796 - SVCO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,797 - SYTA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,797 - TAOP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,797 - TAOX: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,797 - TGL: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,798 - TIVC: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,798 - TMDE: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,798 - TNON: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,798 - TOP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,799 - TPET: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,800 - TRNR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,800 - TRUG: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,800 - TZUP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,801 - UCAR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,801 - ULY: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,801 - USOY: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,802 - VELO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,802 - VIVS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,802 - VMAR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,803 - VVOS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,803 - WAI: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,803 - WFF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,804 - WHLR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,804 - WKSP: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,804 - WLDS: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,805 - WNW: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,805 - WTF: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,805 - XFOR: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,806 - XXII: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,806 - YIBO: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,806 - YQ: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,807 - YSXT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,807 - ZENA: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,807 - ZSPC: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,808 - ZYBT: Periodic check — volume exceeded 29,000. Blocking permanently.
+2025-09-09 16:01:02,812 - started stock data stream
+2025-09-09 16:01:02,812 - starting stock data websocket connection
+2025-09-09 16:01:03,435 - connected to: wss://stream.data.alpaca.markets/v2/sip
+2025-09-09 16:01:03,754 - subscribed to trades: ['AAME', 'ABTS', 'ACON', 'ACTU', 'ACXP', 'ADD', 'ADN', 'ADTX', 'ADXN', 'AEHL', 'AEI', 'AENT', 'AEON', 'AFRI', 'AGH', 'AGMH', 'AGRI', 'AHT', 'AIFF', 'AIFU', 'AIHS', 'AIM', 'AIMD', 'AIRI', 'AIXI', 'AKAN', 'AKTX', 'ALBT', 'ALUR', 'ALZN', 'AMBI', 'AMBO', 'AMIX', 'AMOD', 'AMS', 'AMST', 'AMTD', 'AMZE', 'ANGH', 'ANTE', 'APDN', 'APLM', 'APM', 'APRE', 'APT', 'APUS', 'APVO', 'APWC', 'AQB', 'AQMS', 'ARAI', 'ARBB', 'ARBKL', 'AREN', 'ARKR', 'ARTL', 'ARTV', 'ARTW', 'ASPSW', 'ASTC', 'ASTI', 'ATER', 'ATHE', 'ATHR', 'AUST', 'AUUD', 'AWX', 'AXIL', 'AYTU', 'AZTR', 'BAFN', 'BAOS', 'BBGI', 'BBLG', 'BCDA', 'BCG', 'BCTX', 'BDRX', 'BEDU', 'BFRG', 'BFRI', 'BGI', 'BGLC', 'BGM', 'BHAT', 'BIRD', 'BIVI', 'BJDX', 'BKHAR', 'BKYI', 'BLBX', 'BLIN', 'BLIV', 'BLNE', 'BMGL', 'BMRA', 'BNED', 'BNGO', 'BNRG', 'BNZI', 'BODI', 'BOF', 'BOLT', 'BON', 'BOSC', 'BOWN', 'BOXL', 'BQ', 'BREA', 'BRFH', 'BRIA', 'BRID', 'BRLS', 'BRN', 'BRTX', 'BTBD', 'BTX', 'BYFC', 'CALC', 'CAMP', 'CAPS', 'CARV', 'CASI', 'CCEL', 'CCIRW', 'CCM', 'CCTG', 'CDIO', 'CELZ', 'CERO', 'CETX', 'CHNR', 'CIGL', 'CING', 'CISS', 'CJMB', 'CLDI', 'CLNN', 'CLRB', 'CLRO', 'CLWT', 'CMCM', 'CMCT', 'CMMB', 'CMND', 'CNCKW', 'CNET', 'CNF', 'CNFR', 'CNSP', 'COCP', 'CODA', 'CPHI', 'CPIX', 'CPOP', 'CREG', 'CREV', 'CREX', 'CRT', 'CSBR', 'CSCI', 'CTNT', 'CTOR', 'CV', 'CVV', 'CWD', 'CXH', 'CYCC', 'CYCCP', 'CYCN', 'CYN', 'DAAQW', 'DAIO', 'DARE', 'DATS', 'DEVS', 'DFSC', 'DGLY', 'DGNX', 'DLPN', 'DMA', 'DOMH', 'DPRO', 'DRMA', 'DSS', 'DSWL', 'DTCK', 'DTSS', 'DTST', 'DWSH', 'DWTX', 'DXST', 'DYNXW', 'EBON', 'ECOR', 'EDBL', 'EDSA', 'EDTK', 'EDUC', 'EFOI', 'EFTY', 'EHLD', 'EJH', 'EKSO', 'ELA', 'ELAB', 'ELSE', 'ELWS', 'ENFY', 'ENGS', 'ENSC', 'ENTO', 'ENVB', 'EQS', 'ERNA', 'EVAX', 'EVGN', 'EVOK', 'EVTV', 'FAMI', 'FAT', 'FATBB', 'FATBP', 'FATBW', 'FATN', 'FBYDW', 'FCO', 'FCUV', 'FEAM', 'FENG', 'FGBI', 'FGI', 'FGL', 'FKWL', 'FLD', 'FLNT', 'FNWB', 'FOXX', 'FPAY', 'FRGT', 'FSCO', 'FTCI', 'FTFT', 'GBIO', 'GBR', 'GCTK', 'GDL', 'GDTC', 'GELS', 'GIGM', 'GIPR', 'GITS', 'GLBZ', 'GLE', 'GLMD', 'GLO', 'GLXG', 'GNLN', 'GORV', 'GRAN', 'GREEL', 'GRI', 'GRNQ', 'GSRTR', 'GSUN', 'GTBP', 'GTIM', 'GV', 'GVH', 'GWH', 'GXAI', 'HBNB', 'HCHL', 'HCTI', 'HCWB', 'HGLB', 'HHS', 'HIHO', 'HKIT', 'HKPD', 'HOLO', 'HONDW', 'HPAI', 'HSCS', 'HSDT', 'HTCO', 'HTLM', 'HTOO', 'HUDI', 'HUHU', 'HUSA', 'HWH', 'HXHX', 'HYFM', 'ICCC', 'ICON', 'IDAI', 'IHT', 'IMCC', 'IMDX', 'IMNN', 'IMRN', 'IMTE', 'INAB', 'INBS', 'INDO', 'INDP', 'INEO', 'INLF', 'INM', 'IPDN', 'IPM', 'IPWR', 'IQST', 'IROH', 'ISPO', 'IVDA', 'IVF', 'IVP', 'JAGX', 'JBDI', 'JCSE', 'JCTC', 'JDZG', 'JFB', 'JFBR', 'JFU', 'JL', 'JLHL', 'JMM', 'JRSH', 'JTAI', 'JVA', 'JWEL', 'JZ', 'KAVL', 'KFFB', 'KITT', 'KLRS', 'KNW', 'KORE', 'KOSS', 'KPRX', 'KPTI', 'KSCP', 'KTTA', 'KUKE', 'KWM', 'KZIA', 'KZR', 'LASE', 'LBGJ', 'LCFY', 'LDWY', 'LEDS', 'LEE', 'LGCB', 'LGL', 'LGPS', 'LHAI', 'LICN', 'LIQT', 'LITB', 'LITM', 'LITP', 'LIXT', 'LMFA', 'LOAN', 'LOCL', 'LPA', 'LPCN', 'LRE', 'LRHC', 'LSB', 'LSE', 'LSF', 'LSH', 'LSTA', 'LTRN', 'LUCY', 'LVLU', 'LVRO', 'LXEH', 'LYRA', 'LZMH', 'MAMO', 'MARPS', 'MAV', 'MAXN', 'MBIO', 'MBS', 'MCRP', 'MDBH', 'MDCX', 'MEGL', 'MEIP', 'MGRT', 'MGRX', 'MHH', 'MI', 'MINM', 'MITQ', 'MJID', 'MKZR', 'MLEC', 'MLGO', 'MNDR', 'MNTS', 'MOB', 'MOGU', 'MOVE', 'MRM', 'MRNO', 'MRSN', 'MSGM', 'MSPR', 'MSW', 'MTEK', 'MTNB', 'MTR', 'MVO', 'MWYN', 'MXC', 'MYNZ', 'MYSZ', 'NAAS', 'NAII', 'NAKA', 'NAMI', 'NAMM', 'NAOV', 'NCI', 'NCNA', 'NCPL', 'NCRA', 'NCT', 'NDRA', 'NERV', 'NEUE', 'NHTC', 'NIOBW', 'NISN', 'NIVF', 'NL', 'NLSP', 'NRT', 'NRXS', 'NTCL', 'NTHI', 'NTIC', 'NTRB', 'NTRBW', 'NTRP', 'NTZ', 'NUWE', 'NWGL', 'NWTG', 'NXGL', 'NXTC', 'OACCW', 'OBLG', 'OCC', 'OCSAW', 'OESX', 'OFAL', 'OGEN', 'OKUR', 'OLB', 'OMCC', 'ONCO', 'ONFO', 'OP', 'OPINL', 'OPTX', 'OST', 'OWLT', 'OXBR', 'PASG', 'PAVS', 'PBM', 'PC', 'PCF', 'PEW', 'PFAI', 'PHIO', 'PHOE', 'PIII', 'PLAG', 'PLCE', 'PLRZ', 'PLUR', 'PLUT', 'PMCB', 'PMEC', 'PMM', 'PNF', 'POCI', 'PODC', 'POLA', 'PPSI', 'PRFX', 'PRT', 'PRTG', 'PTIX', 'PTNM', 'PULM', 'PW', 'PXS', 'PYN', 'PYPD', 'QETAR', 'QLGN', 'QMCO', 'QNRX', 'QTTB', 'QVCGP', 'RADX', 'RAIN', 'RAVE', 'RBNE', 'RBOT', 'RCG', 'RCT', 'RDAGW', 'RDGT', 'RDHL', 'REBN', 'RECT', 'RELI', 'RENT', 'REVB', 'RFIL', 'RIME', 'RKDA', 'RMCF', 'RMCO', 'RMSG', 'ROLR', 'RTACW', 'RUBI', 'SABS', 'SAGT', 'SANW', 'SBC', 'SBEV', 'SBFM', 'SCKT', 'SCNI', 'SCNX', 'SCOR', 'SDOT', 'SDST', 'SEED', 'SER', 'SFHG', 'SGD', 'SGLY', 'SGMA', 'SGN', 'SHFS', 'SHIM', 'SHPH', 'SIF', 'SINT', 'SISI', 'SLE', 'SLND', 'SLNG', 'SLNHP', 'SLRX', 'SLXN', 'SMCZ', 'SMTK', 'SNES', 'SNGX', 'SNOA', 'SNSE', 'SNTI', 'SNYR', 'SOAR', 'SOBR', 'SONN', 'SOPA', 'SORA', 'SOWG', 'SPAI', 'SPPL', 'SPRC', 'SQFT', 'SSII', 'SSKN', 'SST', 'SSY', 'STAK', 'STI', 'STRM', 'SUGP', 'SUNE', 'SVCO', 'SWVL', 'SXTP', 'SYBX', 'SYNX', 'SYTA', 'TAOP', 'TAOX', 'TCRT', 'TENX', 'TGE', 'TGL', 'TIVC', 'TKLF', 'TLF', 'TLSIW', 'TMDE', 'TNFA', 'TNGY', 'TNON', 'TOP', 'TOPS', 'TORO', 'TOYO', 'TPCS', 'TPET', 'TRAW', 'TRNR', 'TRSG', 'TRT', 'TRUG', 'TSLS', 'TTNP', 'TURB', 'TURN', 'TWNP', 'TZUP', 'UCAR', 'UG', 'UHGWW', 'ULY', 'UPC', 'USEA', 'USGOW', 'USOY', 'UTSI', 'UUU', 'VATE', 'VBIX', 'VELO', 'VERO', 'VGAS', 'VIVS', 'VMAR', 'VNCE', 'VRCA', 'VS', 'VTAK', 'VVOS', 'VVPR', 'WAI', 'WATT', 'WAVE', 'WBUY', 'WBX', 'WETO', 'WFF', 'WHLR', 'WHLRP', 'WKEY', 'WKSP', 'WLDS', 'WLDSW', 'WNW', 'WTF', 'WTO', 'WVVI', 'WVVIP', 'WXM', 'WYY', 'XAGE', 'XBIO', 'XCUR', 'XELB', 'XFOR', 'XIN', 'XOS', 'XPON', 'XRTX', 'XTLB', 'XWEL', 'XXII', 'XYLO', 'YCBD', 'YHC', 'YI', 'YIBO', 'YMAT', 'YOSH', 'YQ', 'YSXT', 'YYAI', 'ZBAI', 'ZENA', 'ZJK', 'ZKIN', 'ZSPC', 'ZYBT'], quotes: ['AAME', 'ABTS', 'ACON', 'ACTU', 'ACXP', 'ADD', 'ADN', 'ADTX', 'ADXN', 'AEHL', 'AEI', 'AENT', 'AEON', 'AFRI', 'AGH', 'AGMH', 'AGRI', 'AHT', 'AIFF', 'AIFU', 'AIHS', 'AIM', 'AIMD', 'AIRI', 'AIXI', 'AKAN', 'AKTX', 'ALBT', 'ALUR', 'ALZN', 'AMBI', 'AMBO', 'AMIX', 'AMOD', 'AMS', 'AMST', 'AMTD', 'AMZE', 'ANGH', 'ANTE', 'APDN', 'APLM', 'APM', 'APRE', 'APT', 'APUS', 'APVO', 'APWC', 'AQB', 'AQMS', 'ARAI', 'ARBB', 'ARBKL', 'AREN', 'ARKR', 'ARTL', 'ARTV', 'ARTW', 'ASPSW', 'ASTC', 'ASTI', 'ATER', 'ATHE', 'ATHR', 'AUST', 'AUUD', 'AWX', 'AXIL', 'AYTU', 'AZTR', 'BAFN', 'BAOS', 'BBGI', 'BBLG', 'BCDA', 'BCG', 'BCTX', 'BDRX', 'BEDU', 'BFRG', 'BFRI', 'BGI', 'BGLC', 'BGM', 'BHAT', 'BIRD', 'BIVI', 'BJDX', 'BKHAR', 'BKYI', 'BLBX', 'BLIN', 'BLIV', 'BLNE', 'BMGL', 'BMRA', 'BNED', 'BNGO', 'BNRG', 'BNZI', 'BODI', 'BOF', 'BOLT', 'BON', 'BOSC', 'BOWN', 'BOXL', 'BQ', 'BREA', 'BRFH', 'BRIA', 'BRID', 'BRLS', 'BRN', 'BRTX', 'BTBD', 'BTX', 'BYFC', 'CALC', 'CAMP', 'CAPS', 'CARV', 'CASI', 'CCEL', 'CCIRW', 'CCM', 'CCTG', 'CDIO', 'CELZ', 'CERO', 'CETX', 'CHNR', 'CIGL', 'CING', 'CISS', 'CJMB', 'CLDI', 'CLNN', 'CLRB', 'CLRO', 'CLWT', 'CMCM', 'CMCT', 'CMMB', 'CMND', 'CNCKW', 'CNET', 'CNF', 'CNFR', 'CNSP', 'COCP', 'CODA', 'CPHI', 'CPIX', 'CPOP', 'CREG', 'CREV', 'CREX', 'CRT', 'CSBR', 'CSCI', 'CTNT', 'CTOR', 'CV', 'CVV', 'CWD', 'CXH', 'CYCC', 'CYCCP', 'CYCN', 'CYN', 'DAAQW', 'DAIO', 'DARE', 'DATS', 'DEVS', 'DFSC', 'DGLY', 'DGNX', 'DLPN', 'DMA', 'DOMH', 'DPRO', 'DRMA', 'DSS', 'DSWL', 'DTCK', 'DTSS', 'DTST', 'DWSH', 'DWTX', 'DXST', 'DYNXW', 'EBON', 'ECOR', 'EDBL', 'EDSA', 'EDTK', 'EDUC', 'EFOI', 'EFTY', 'EHLD', 'EJH', 'EKSO', 'ELA', 'ELAB', 'ELSE', 'ELWS', 'ENFY', 'ENGS', 'ENSC', 'ENTO', 'ENVB', 'EQS', 'ERNA', 'EVAX', 'EVGN', 'EVOK', 'EVTV', 'FAMI', 'FAT', 'FATBB', 'FATBP', 'FATBW', 'FATN', 'FBYDW', 'FCO', 'FCUV', 'FEAM', 'FENG', 'FGBI', 'FGI', 'FGL', 'FKWL', 'FLD', 'FLNT', 'FNWB', 'FOXX', 'FPAY', 'FRGT', 'FSCO', 'FTCI', 'FTFT', 'GBIO', 'GBR', 'GCTK', 'GDL', 'GDTC', 'GELS', 'GIGM', 'GIPR', 'GITS', 'GLBZ', 'GLE', 'GLMD', 'GLO', 'GLXG', 'GNLN', 'GORV', 'GRAN', 'GREEL', 'GRI', 'GRNQ', 'GSRTR', 'GSUN', 'GTBP', 'GTIM', 'GV', 'GVH', 'GWH', 'GXAI', 'HBNB', 'HCHL', 'HCTI', 'HCWB', 'HGLB', 'HHS', 'HIHO', 'HKIT', 'HKPD', 'HOLO', 'HONDW', 'HPAI', 'HSCS', 'HSDT', 'HTCO', 'HTLM', 'HTOO', 'HUDI', 'HUHU', 'HUSA', 'HWH', 'HXHX', 'HYFM', 'ICCC', 'ICON', 'IDAI', 'IHT', 'IMCC', 'IMDX', 'IMNN', 'IMRN', 'IMTE', 'INAB', 'INBS', 'INDO', 'INDP', 'INEO', 'INLF', 'INM', 'IPDN', 'IPM', 'IPWR', 'IQST', 'IROH', 'ISPO', 'IVDA', 'IVF', 'IVP', 'JAGX', 'JBDI', 'JCSE', 'JCTC', 'JDZG', 'JFB', 'JFBR', 'JFU', 'JL', 'JLHL', 'JMM', 'JRSH', 'JTAI', 'JVA', 'JWEL', 'JZ', 'KAVL', 'KFFB', 'KITT', 'KLRS', 'KNW', 'KORE', 'KOSS', 'KPRX', 'KPTI', 'KSCP', 'KTTA', 'KUKE', 'KWM', 'KZIA', 'KZR', 'LASE', 'LBGJ', 'LCFY', 'LDWY', 'LEDS', 'LEE', 'LGCB', 'LGL', 'LGPS', 'LHAI', 'LICN', 'LIQT', 'LITB', 'LITM', 'LITP', 'LIXT', 'LMFA', 'LOAN', 'LOCL', 'LPA', 'LPCN', 'LRE', 'LRHC', 'LSB', 'LSE', 'LSF', 'LSH', 'LSTA', 'LTRN', 'LUCY', 'LVLU', 'LVRO', 'LXEH', 'LYRA', 'LZMH', 'MAMO', 'MARPS', 'MAV', 'MAXN', 'MBIO', 'MBS', 'MCRP', 'MDBH', 'MDCX', 'MEGL', 'MEIP', 'MGRT', 'MGRX', 'MHH', 'MI', 'MINM', 'MITQ', 'MJID', 'MKZR', 'MLEC', 'MLGO', 'MNDR', 'MNTS', 'MOB', 'MOGU', 'MOVE', 'MRM', 'MRNO', 'MRSN', 'MSGM', 'MSPR', 'MSW', 'MTEK', 'MTNB', 'MTR', 'MVO', 'MWYN', 'MXC', 'MYNZ', 'MYSZ', 'NAAS', 'NAII', 'NAKA', 'NAMI', 'NAMM', 'NAOV', 'NCI', 'NCNA', 'NCPL', 'NCRA', 'NCT', 'NDRA', 'NERV', 'NEUE', 'NHTC', 'NIOBW', 'NISN', 'NIVF', 'NL', 'NLSP', 'NRT', 'NRXS', 'NTCL', 'NTHI', 'NTIC', 'NTRB', 'NTRBW', 'NTRP', 'NTZ', 'NUWE', 'NWGL', 'NWTG', 'NXGL', 'NXTC', 'OACCW', 'OBLG', 'OCC', 'OCSAW', 'OESX', 'OFAL', 'OGEN', 'OKUR', 'OLB', 'OMCC', 'ONCO', 'ONFO', 'OP', 'OPINL', 'OPTX', 'OST', 'OWLT', 'OXBR', 'PASG', 'PAVS', 'PBM', 'PC', 'PCF', 'PEW', 'PFAI', 'PHIO', 'PHOE', 'PIII', 'PLAG', 'PLCE', 'PLRZ', 'PLUR', 'PLUT', 'PMCB', 'PMEC', 'PMM', 'PNF', 'POCI', 'PODC', 'POLA', 'PPSI', 'PRFX', 'PRT', 'PRTG', 'PTIX', 'PTNM', 'PULM', 'PW', 'PXS', 'PYN', 'PYPD', 'QETAR', 'QLGN', 'QMCO', 'QNRX', 'QTTB', 'QVCGP', 'RADX', 'RAIN', 'RAVE', 'RBNE', 'RBOT', 'RCG', 'RCT', 'RDAGW', 'RDGT', 'RDHL', 'REBN', 'RECT', 'RELI', 'RENT', 'REVB', 'RFIL', 'RIME', 'RKDA', 'RMCF', 'RMCO', 'RMSG', 'ROLR', 'RTACW', 'RUBI', 'SABS', 'SAGT', 'SANW', 'SBC', 'SBEV', 'SBFM', 'SCKT', 'SCNI', 'SCNX', 'SCOR', 'SDOT', 'SDST', 'SEED', 'SER', 'SFHG', 'SGD', 'SGLY', 'SGMA', 'SGN', 'SHFS', 'SHIM', 'SHPH', 'SIF', 'SINT', 'SISI', 'SLE', 'SLND', 'SLNG', 'SLNHP', 'SLRX', 'SLXN', 'SMCZ', 'SMTK', 'SNES', 'SNGX', 'SNOA', 'SNSE', 'SNTI', 'SNYR', 'SOAR', 'SOBR', 'SONN', 'SOPA', 'SORA', 'SOWG', 'SPAI', 'SPPL', 'SPRC', 'SQFT', 'SSII', 'SSKN', 'SST', 'SSY', 'STAK', 'STI', 'STRM', 'SUGP', 'SUNE', 'SVCO', 'SWVL', 'SXTP', 'SYBX', 'SYNX', 'SYTA', 'TAOP', 'TAOX', 'TCRT', 'TENX', 'TGE', 'TGL', 'TIVC', 'TKLF', 'TLF', 'TLSIW', 'TMDE', 'TNFA', 'TNGY', 'TNON', 'TOP', 'TOPS', 'TORO', 'TOYO', 'TPCS', 'TPET', 'TRAW', 'TRNR', 'TRSG', 'TRT', 'TRUG', 'TSLS', 'TTNP', 'TURB', 'TURN', 'TWNP', 'TZUP', 'UCAR', 'UG', 'UHGWW', 'ULY', 'UPC', 'USEA', 'USGOW', 'USOY', 'UTSI', 'UUU', 'VATE', 'VBIX', 'VELO', 'VERO', 'VGAS', 'VIVS', 'VMAR', 'VNCE', 'VRCA', 'VS', 'VTAK', 'VVOS', 'VVPR', 'WAI', 'WATT', 'WAVE', 'WBUY', 'WBX', 'WETO', 'WFF', 'WHLR', 'WHLRP', 'WKEY', 'WKSP', 'WLDS', 'WLDSW', 'WNW', 'WTF', 'WTO', 'WVVI', 'WVVIP', 'WXM', 'WYY', 'XAGE', 'XBIO', 'XCUR', 'XELB', 'XFOR', 'XIN', 'XOS', 'XPON', 'XRTX', 'XTLB', 'XWEL', 'XXII', 'XYLO', 'YCBD', 'YHC', 'YI', 'YIBO', 'YMAT', 'YOSH', 'YQ', 'YSXT', 'YYAI', 'ZBAI', 'ZENA', 'ZJK', 'ZKIN', 'ZSPC', 'ZYBT'], bars: [], updatedBars: [], dailyBars: [], statuses: [], lulds: [], cancelErrors: ['AAME', 'ABTS', 'ACON', 'ACTU', 'ACXP', 'ADD', 'ADN', 'ADTX', 'ADXN', 'AEHL', 'AEI', 'AENT', 'AEON', 'AFRI', 'AGH', 'AGMH', 'AGRI', 'AHT', 'AIFF', 'AIFU', 'AIHS', 'AIM', 'AIMD', 'AIRI', 'AIXI', 'AKAN', 'AKTX', 'ALBT', 'ALUR', 'ALZN', 'AMBI', 'AMBO', 'AMIX', 'AMOD', 'AMS', 'AMST', 'AMTD', 'AMZE', 'ANGH', 'ANTE', 'APDN', 'APLM', 'APM', 'APRE', 'APT', 'APUS', 'APVO', 'APWC', 'AQB', 'AQMS', 'ARAI', 'ARBB', 'ARBKL', 'AREN', 'ARKR', 'ARTL', 'ARTV', 'ARTW', 'ASPSW', 'ASTC', 'ASTI', 'ATER', 'ATHE', 'ATHR', 'AUST', 'AUUD', 'AWX', 'AXIL', 'AYTU', 'AZTR', 'BAFN', 'BAOS', 'BBGI', 'BBLG', 'BCDA', 'BCG', 'BCTX', 'BDRX', 'BEDU', 'BFRG', 'BFRI', 'BGI', 'BGLC', 'BGM', 'BHAT', 'BIRD', 'BIVI', 'BJDX', 'BKHAR', 'BKYI', 'BLBX', 'BLIN', 'BLIV', 'BLNE', 'BMGL', 'BMRA', 'BNED', 'BNGO', 'BNRG', 'BNZI', 'BODI', 'BOF', 'BOLT', 'BON', 'BOSC', 'BOWN', 'BOXL', 'BQ', 'BREA', 'BRFH', 'BRIA', 'BRID', 'BRLS', 'BRN', 'BRTX', 'BTBD', 'BTX', 'BYFC', 'CALC', 'CAMP', 'CAPS', 'CARV', 'CASI', 'CCEL', 'CCIRW', 'CCM', 'CCTG', 'CDIO', 'CELZ', 'CERO', 'CETX', 'CHNR', 'CIGL', 'CING', 'CISS', 'CJMB', 'CLDI', 'CLNN', 'CLRB', 'CLRO', 'CLWT', 'CMCM', 'CMCT', 'CMMB', 'CMND', 'CNCKW', 'CNET', 'CNF', 'CNFR', 'CNSP', 'COCP', 'CODA', 'CPHI', 'CPIX', 'CPOP', 'CREG', 'CREV', 'CREX', 'CRT', 'CSBR', 'CSCI', 'CTNT', 'CTOR', 'CV', 'CVV', 'CWD', 'CXH', 'CYCC', 'CYCCP', 'CYCN', 'CYN', 'DAAQW', 'DAIO', 'DARE', 'DATS', 'DEVS', 'DFSC', 'DGLY', 'DGNX', 'DLPN', 'DMA', 'DOMH', 'DPRO', 'DRMA', 'DSS', 'DSWL', 'DTCK', 'DTSS', 'DTST', 'DWSH', 'DWTX', 'DXST', 'DYNXW', 'EBON', 'ECOR', 'EDBL', 'EDSA', 'EDTK', 'EDUC', 'EFOI', 'EFTY', 'EHLD', 'EJH', 'EKSO', 'ELA', 'ELAB', 'ELSE', 'ELWS', 'ENFY', 'ENGS', 'ENSC', 'ENTO', 'ENVB', 'EQS', 'ERNA', 'EVAX', 'EVGN', 'EVOK', 'EVTV', 'FAMI', 'FAT', 'FATBB', 'FATBP', 'FATBW', 'FATN', 'FBYDW', 'FCO', 'FCUV', 'FEAM', 'FENG', 'FGBI', 'FGI', 'FGL', 'FKWL', 'FLD', 'FLNT', 'FNWB', 'FOXX', 'FPAY', 'FRGT', 'FSCO', 'FTCI', 'FTFT', 'GBIO', 'GBR', 'GCTK', 'GDL', 'GDTC', 'GELS', 'GIGM', 'GIPR', 'GITS', 'GLBZ', 'GLE', 'GLMD', 'GLO', 'GLXG', 'GNLN', 'GORV', 'GRAN', 'GREEL', 'GRI', 'GRNQ', 'GSRTR', 'GSUN', 'GTBP', 'GTIM', 'GV', 'GVH', 'GWH', 'GXAI', 'HBNB', 'HCHL', 'HCTI', 'HCWB', 'HGLB', 'HHS', 'HIHO', 'HKIT', 'HKPD', 'HOLO', 'HONDW', 'HPAI', 'HSCS', 'HSDT', 'HTCO', 'HTLM', 'HTOO', 'HUDI', 'HUHU', 'HUSA', 'HWH', 'HXHX', 'HYFM', 'ICCC', 'ICON', 'IDAI', 'IHT', 'IMCC', 'IMDX', 'IMNN', 'IMRN', 'IMTE', 'INAB', 'INBS', 'INDO', 'INDP', 'INEO', 'INLF', 'INM', 'IPDN', 'IPM', 'IPWR', 'IQST', 'IROH', 'ISPO', 'IVDA', 'IVF', 'IVP', 'JAGX', 'JBDI', 'JCSE', 'JCTC', 'JDZG', 'JFB', 'JFBR', 'JFU', 'JL', 'JLHL', 'JMM', 'JRSH', 'JTAI', 'JVA', 'JWEL', 'JZ', 'KAVL', 'KFFB', 'KITT', 'KLRS', 'KNW', 'KORE', 'KOSS', 'KPRX', 'KPTI', 'KSCP', 'KTTA', 'KUKE', 'KWM', 'KZIA', 'KZR', 'LASE', 'LBGJ', 'LCFY', 'LDWY', 'LEDS', 'LEE', 'LGCB', 'LGL', 'LGPS', 'LHAI', 'LICN', 'LIQT', 'LITB', 'LITM', 'LITP', 'LIXT', 'LMFA', 'LOAN', 'LOCL', 'LPA', 'LPCN', 'LRE', 'LRHC', 'LSB', 'LSE', 'LSF', 'LSH', 'LSTA', 'LTRN', 'LUCY', 'LVLU', 'LVRO', 'LXEH', 'LYRA', 'LZMH', 'MAMO', 'MARPS', 'MAV', 'MAXN', 'MBIO', 'MBS', 'MCRP', 'MDBH', 'MDCX', 'MEGL', 'MEIP', 'MGRT', 'MGRX', 'MHH', 'MI', 'MINM', 'MITQ', 'MJID', 'MKZR', 'MLEC', 'MLGO', 'MNDR', 'MNTS', 'MOB', 'MOGU', 'MOVE', 'MRM', 'MRNO', 'MRSN', 'MSGM', 'MSPR', 'MSW', 'MTEK', 'MTNB', 'MTR', 'MVO', 'MWYN', 'MXC', 'MYNZ', 'MYSZ', 'NAAS', 'NAII', 'NAKA', 'NAMI', 'NAMM', 'NAOV', 'NCI', 'NCNA', 'NCPL', 'NCRA', 'NCT', 'NDRA', 'NERV', 'NEUE', 'NHTC', 'NIOBW', 'NISN', 'NIVF', 'NL', 'NLSP', 'NRT', 'NRXS', 'NTCL', 'NTHI', 'NTIC', 'NTRB', 'NTRBW', 'NTRP', 'NTZ', 'NUWE', 'NWGL', 'NWTG', 'NXGL', 'NXTC', 'OACCW', 'OBLG', 'OCC', 'OCSAW', 'OESX', 'OFAL', 'OGEN', 'OKUR', 'OLB', 'OMCC', 'ONCO', 'ONFO', 'OP', 'OPINL', 'OPTX', 'OST', 'OWLT', 'OXBR', 'PASG', 'PAVS', 'PBM', 'PC', 'PCF', 'PEW', 'PFAI', 'PHIO', 'PHOE', 'PIII', 'PLAG', 'PLCE', 'PLRZ', 'PLUR', 'PLUT', 'PMCB', 'PMEC', 'PMM', 'PNF', 'POCI', 'PODC', 'POLA', 'PPSI', 'PRFX', 'PRT', 'PRTG', 'PTIX', 'PTNM', 'PULM', 'PW', 'PXS', 'PYN', 'PYPD', 'QETAR', 'QLGN', 'QMCO', 'QNRX', 'QTTB', 'QVCGP', 'RADX', 'RAIN', 'RAVE', 'RBNE', 'RBOT', 'RCG', 'RCT', 'RDAGW', 'RDGT', 'RDHL', 'REBN', 'RECT', 'RELI', 'RENT', 'REVB', 'RFIL', 'RIME', 'RKDA', 'RMCF', 'RMCO', 'RMSG', 'ROLR', 'RTACW', 'RUBI', 'SABS', 'SAGT', 'SANW', 'SBC', 'SBEV', 'SBFM', 'SCKT', 'SCNI', 'SCNX', 'SCOR', 'SDOT', 'SDST', 'SEED', 'SER', 'SFHG', 'SGD', 'SGLY', 'SGMA', 'SGN', 'SHFS', 'SHIM', 'SHPH', 'SIF', 'SINT', 'SISI', 'SLE', 'SLND', 'SLNG', 'SLNHP', 'SLRX', 'SLXN', 'SMCZ', 'SMTK', 'SNES', 'SNGX', 'SNOA', 'SNSE', 'SNTI', 'SNYR', 'SOAR', 'SOBR', 'SONN', 'SOPA', 'SORA', 'SOWG', 'SPAI', 'SPPL', 'SPRC', 'SQFT', 'SSII', 'SSKN', 'SST', 'SSY', 'STAK', 'STI', 'STRM', 'SUGP', 'SUNE', 'SVCO', 'SWVL', 'SXTP', 'SYBX', 'SYNX', 'SYTA', 'TAOP', 'TAOX', 'TCRT', 'TENX', 'TGE', 'TGL', 'TIVC', 'TKLF', 'TLF', 'TLSIW', 'TMDE', 'TNFA', 'TNGY', 'TNON', 'TOP', 'TOPS', 'TORO', 'TOYO', 'TPCS', 'TPET', 'TRAW', 'TRNR', 'TRSG', 'TRT', 'TRUG', 'TSLS', 'TTNP', 'TURB', 'TURN', 'TWNP', 'TZUP', 'UCAR', 'UG', 'UHGWW', 'ULY', 'UPC', 'USEA', 'USGOW', 'USOY', 'UTSI', 'UUU', 'VATE', 'VBIX', 'VELO', 'VERO', 'VGAS', 'VIVS', 'VMAR', 'VNCE', 'VRCA', 'VS', 'VTAK', 'VVOS', 'VVPR', 'WAI', 'WATT', 'WAVE', 'WBUY', 'WBX', 'WETO', 'WFF', 'WHLR', 'WHLRP', 'WKEY', 'WKSP', 'WLDS', 'WLDSW', 'WNW', 'WTF', 'WTO', 'WVVI', 'WVVIP', 'WXM', 'WYY', 'XAGE', 'XBIO', 'XCUR', 'XELB', 'XFOR', 'XIN', 'XOS', 'XPON', 'XRTX', 'XTLB', 'XWEL', 'XXII', 'XYLO', 'YCBD', 'YHC', 'YI', 'YIBO', 'YMAT', 'YOSH', 'YQ', 'YSXT', 'YYAI', 'ZBAI', 'ZENA', 'ZJK', 'ZKIN', 'ZSPC', 'ZYBT'], corrections: ['AAME', 'ABTS', 'ACON', 'ACTU', 'ACXP', 'ADD', 'ADN', 'ADTX', 'ADXN', 'AEHL', 'AEI', 'AENT', 'AEON', 'AFRI', 'AGH', 'AGMH', 'AGRI', 'AHT', 'AIFF', 'AIFU', 'AIHS', 'AIM', 'AIMD', 'AIRI', 'AIXI', 'AKAN', 'AKTX', 'ALBT', 'ALUR', 'ALZN', 'AMBI', 'AMBO', 'AMIX', 'AMOD', 'AMS', 'AMST', 'AMTD', 'AMZE', 'ANGH', 'ANTE', 'APDN', 'APLM', 'APM', 'APRE', 'APT', 'APUS', 'APVO', 'APWC', 'AQB', 'AQMS', 'ARAI', 'ARBB', 'ARBKL', 'AREN', 'ARKR', 'ARTL', 'ARTV', 'ARTW', 'ASPSW', 'ASTC', 'ASTI', 'ATER', 'ATHE', 'ATHR', 'AUST', 'AUUD', 'AWX', 'AXIL', 'AYTU', 'AZTR', 'BAFN', 'BAOS', 'BBGI', 'BBLG', 'BCDA', 'BCG', 'BCTX', 'BDRX', 'BEDU', 'BFRG', 'BFRI', 'BGI', 'BGLC', 'BGM', 'BHAT', 'BIRD', 'BIVI', 'BJDX', 'BKHAR', 'BKYI', 'BLBX', 'BLIN', 'BLIV', 'BLNE', 'BMGL', 'BMRA', 'BNED', 'BNGO', 'BNRG', 'BNZI', 'BODI', 'BOF', 'BOLT', 'BON', 'BOSC', 'BOWN', 'BOXL', 'BQ', 'BREA', 'BRFH', 'BRIA', 'BRID', 'BRLS', 'BRN', 'BRTX', 'BTBD', 'BTX', 'BYFC', 'CALC', 'CAMP', 'CAPS', 'CARV', 'CASI', 'CCEL', 'CCIRW', 'CCM', 'CCTG', 'CDIO', 'CELZ', 'CERO', 'CETX', 'CHNR', 'CIGL', 'CING', 'CISS', 'CJMB', 'CLDI', 'CLNN', 'CLRB', 'CLRO', 'CLWT', 'CMCM', 'CMCT', 'CMMB', 'CMND', 'CNCKW', 'CNET', 'CNF', 'CNFR', 'CNSP', 'COCP', 'CODA', 'CPHI', 'CPIX', 'CPOP', 'CREG', 'CREV', 'CREX', 'CRT', 'CSBR', 'CSCI', 'CTNT', 'CTOR', 'CV', 'CVV', 'CWD', 'CXH', 'CYCC', 'CYCCP', 'CYCN', 'CYN', 'DAAQW', 'DAIO', 'DARE', 'DATS', 'DEVS', 'DFSC', 'DGLY', 'DGNX', 'DLPN', 'DMA', 'DOMH', 'DPRO', 'DRMA', 'DSS', 'DSWL', 'DTCK', 'DTSS', 'DTST', 'DWSH', 'DWTX', 'DXST', 'DYNXW', 'EBON', 'ECOR', 'EDBL', 'EDSA', 'EDTK', 'EDUC', 'EFOI', 'EFTY', 'EHLD', 'EJH', 'EKSO', 'ELA', 'ELAB', 'ELSE', 'ELWS', 'ENFY', 'ENGS', 'ENSC', 'ENTO', 'ENVB', 'EQS', 'ERNA', 'EVAX', 'EVGN', 'EVOK', 'EVTV', 'FAMI', 'FAT', 'FATBB', 'FATBP', 'FATBW', 'FATN', 'FBYDW', 'FCO', 'FCUV', 'FEAM', 'FENG', 'FGBI', 'FGI', 'FGL', 'FKWL', 'FLD', 'FLNT', 'FNWB', 'FOXX', 'FPAY', 'FRGT', 'FSCO', 'FTCI', 'FTFT', 'GBIO', 'GBR', 'GCTK', 'GDL', 'GDTC', 'GELS', 'GIGM', 'GIPR', 'GITS', 'GLBZ', 'GLE', 'GLMD', 'GLO', 'GLXG', 'GNLN', 'GORV', 'GRAN', 'GREEL', 'GRI', 'GRNQ', 'GSRTR', 'GSUN', 'GTBP', 'GTIM', 'GV', 'GVH', 'GWH', 'GXAI', 'HBNB', 'HCHL', 'HCTI', 'HCWB', 'HGLB', 'HHS', 'HIHO', 'HKIT', 'HKPD', 'HOLO', 'HONDW', 'HPAI', 'HSCS', 'HSDT', 'HTCO', 'HTLM', 'HTOO', 'HUDI', 'HUHU', 'HUSA', 'HWH', 'HXHX', 'HYFM', 'ICCC', 'ICON', 'IDAI', 'IHT', 'IMCC', 'IMDX', 'IMNN', 'IMRN', 'IMTE', 'INAB', 'INBS', 'INDO', 'INDP', 'INEO', 'INLF', 'INM', 'IPDN', 'IPM', 'IPWR', 'IQST', 'IROH', 'ISPO', 'IVDA', 'IVF', 'IVP', 'JAGX', 'JBDI', 'JCSE', 'JCTC', 'JDZG', 'JFB', 'JFBR', 'JFU', 'JL', 'JLHL', 'JMM', 'JRSH', 'JTAI', 'JVA', 'JWEL', 'JZ', 'KAVL', 'KFFB', 'KITT', 'KLRS', 'KNW', 'KORE', 'KOSS', 'KPRX', 'KPTI', 'KSCP', 'KTTA', 'KUKE', 'KWM', 'KZIA', 'KZR', 'LASE', 'LBGJ', 'LCFY', 'LDWY', 'LEDS', 'LEE', 'LGCB', 'LGL', 'LGPS', 'LHAI', 'LICN', 'LIQT', 'LITB', 'LITM', 'LITP', 'LIXT', 'LMFA', 'LOAN', 'LOCL', 'LPA', 'LPCN', 'LRE', 'LRHC', 'LSB', 'LSE', 'LSF', 'LSH', 'LSTA', 'LTRN', 'LUCY', 'LVLU', 'LVRO', 'LXEH', 'LYRA', 'LZMH', 'MAMO', 'MARPS', 'MAV', 'MAXN', 'MBIO', 'MBS', 'MCRP', 'MDBH', 'MDCX', 'MEGL', 'MEIP', 'MGRT', 'MGRX', 'MHH', 'MI', 'MINM', 'MITQ', 'MJID', 'MKZR', 'MLEC', 'MLGO', 'MNDR', 'MNTS', 'MOB', 'MOGU', 'MOVE', 'MRM', 'MRNO', 'MRSN', 'MSGM', 'MSPR', 'MSW', 'MTEK', 'MTNB', 'MTR', 'MVO', 'MWYN', 'MXC', 'MYNZ', 'MYSZ', 'NAAS', 'NAII', 'NAKA', 'NAMI', 'NAMM', 'NAOV', 'NCI', 'NCNA', 'NCPL', 'NCRA', 'NCT', 'NDRA', 'NERV', 'NEUE', 'NHTC', 'NIOBW', 'NISN', 'NIVF', 'NL', 'NLSP', 'NRT', 'NRXS', 'NTCL', 'NTHI', 'NTIC', 'NTRB', 'NTRBW', 'NTRP', 'NTZ', 'NUWE', 'NWGL', 'NWTG', 'NXGL', 'NXTC', 'OACCW', 'OBLG', 'OCC', 'OCSAW', 'OESX', 'OFAL', 'OGEN', 'OKUR', 'OLB', 'OMCC', 'ONCO', 'ONFO', 'OP', 'OPINL', 'OPTX', 'OST', 'OWLT', 'OXBR', 'PASG', 'PAVS', 'PBM', 'PC', 'PCF', 'PEW', 'PFAI', 'PHIO', 'PHOE', 'PIII', 'PLAG', 'PLCE', 'PLRZ', 'PLUR', 'PLUT', 'PMCB', 'PMEC', 'PMM', 'PNF', 'POCI', 'PODC', 'POLA', 'PPSI', 'PRFX', 'PRT', 'PRTG', 'PTIX', 'PTNM', 'PULM', 'PW', 'PXS', 'PYN', 'PYPD', 'QETAR', 'QLGN', 'QMCO', 'QNRX', 'QTTB', 'QVCGP', 'RADX', 'RAIN', 'RAVE', 'RBNE', 'RBOT', 'RCG', 'RCT', 'RDAGW', 'RDGT', 'RDHL', 'REBN', 'RECT', 'RELI', 'RENT', 'REVB', 'RFIL', 'RIME', 'RKDA', 'RMCF', 'RMCO', 'RMSG', 'ROLR', 'RTACW', 'RUBI', 'SABS', 'SAGT', 'SANW', 'SBC', 'SBEV', 'SBFM', 'SCKT', 'SCNI', 'SCNX', 'SCOR', 'SDOT', 'SDST', 'SEED', 'SER', 'SFHG', 'SGD', 'SGLY', 'SGMA', 'SGN', 'SHFS', 'SHIM', 'SHPH', 'SIF', 'SINT', 'SISI', 'SLE', 'SLND', 'SLNG', 'SLNHP', 'SLRX', 'SLXN', 'SMCZ', 'SMTK', 'SNES', 'SNGX', 'SNOA', 'SNSE', 'SNTI', 'SNYR', 'SOAR', 'SOBR', 'SONN', 'SOPA', 'SORA', 'SOWG', 'SPAI', 'SPPL', 'SPRC', 'SQFT', 'SSII', 'SSKN', 'SST', 'SSY', 'STAK', 'STI', 'STRM', 'SUGP', 'SUNE', 'SVCO', 'SWVL', 'SXTP', 'SYBX', 'SYNX', 'SYTA', 'TAOP', 'TAOX', 'TCRT', 'TENX', 'TGE', 'TGL', 'TIVC', 'TKLF', 'TLF', 'TLSIW', 'TMDE', 'TNFA', 'TNGY', 'TNON', 'TOP', 'TOPS', 'TORO', 'TOYO', 'TPCS', 'TPET', 'TRAW', 'TRNR', 'TRSG', 'TRT', 'TRUG', 'TSLS', 'TTNP', 'TURB', 'TURN', 'TWNP', 'TZUP', 'UCAR', 'UG', 'UHGWW', 'ULY', 'UPC', 'USEA', 'USGOW', 'USOY', 'UTSI', 'UUU', 'VATE', 'VBIX', 'VELO', 'VERO', 'VGAS', 'VIVS', 'VMAR', 'VNCE', 'VRCA', 'VS', 'VTAK', 'VVOS', 'VVPR', 'WAI', 'WATT', 'WAVE', 'WBUY', 'WBX', 'WETO', 'WFF', 'WHLR', 'WHLRP', 'WKEY', 'WKSP', 'WLDS', 'WLDSW', 'WNW', 'WTF', 'WTO', 'WVVI', 'WVVIP', 'WXM', 'WYY', 'XAGE', 'XBIO', 'XCUR', 'XELB', 'XFOR', 'XIN', 'XOS', 'XPON', 'XRTX', 'XTLB', 'XWEL', 'XXII', 'XYLO', 'YCBD', 'YHC', 'YI', 'YIBO', 'YMAT', 'YOSH', 'YQ', 'YSXT', 'YYAI', 'ZBAI', 'ZENA', 'ZJK', 'ZKIN', 'ZSPC', 'ZYBT']
+2025-09-09 16:01:04,759 - Quote queue size: 0
+2025-09-09 16:01:04,760 - Trade queues: total=10, per_worker=[3, 0, 0, 0, 0, 0, 3, 0, 4, 0]
+2025-09-09 16:01:05,564 - RTACW: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:06,078 - HSDT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:06,079 - HSDT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:06,079 - HSDT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:06,081 - HSDT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:06,762 - Quote queue size: 0
+2025-09-09 16:01:06,763 - Trade queues: total=87, per_worker=[0, 0, 0, 0, 0, 32, 0, 4, 51, 0]
+2025-09-09 16:01:07,028 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:07,177 - BOF: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:07,336 - KPTI: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:08,770 - Quote queue size: 0
+2025-09-09 16:01:08,770 - Trade queues: total=132, per_worker=[0, 0, 0, 4, 0, 21, 0, 0, 99, 8]
+2025-09-09 16:01:09,063 - GLBZ: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,015 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,359 - PLUT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,487 - PLUT: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,528 - CXH: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,591 - ARTV: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:10,773 - Quote queue size: 0
+2025-09-09 16:01:10,773 - Trade queues: total=195, per_worker=[0, 0, 0, 1, 0, 24, 26, 0, 144, 0]
+2025-09-09 16:01:12,781 - Quote queue size: 0
+2025-09-09 16:01:12,781 - Trade queues: total=199, per_worker=[0, 0, 0, 0, 8, 17, 10, 0, 164, 0]
+2025-09-09 16:01:14,788 - Quote queue size: 0
+2025-09-09 16:01:14,789 - Trade queues: total=251, per_worker=[0, 0, 3, 0, 0, 11, 39, 0, 198, 0]
+2025-09-09 16:01:15,601 - GTIM: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:16,805 - Quote queue size: 0
+2025-09-09 16:01:16,805 - Trade queues: total=339, per_worker=[0, 0, 0, 0, 0, 100, 27, 0, 212, 0]
+2025-09-09 16:01:16,896 - AREN: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:16,897 - AREN: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:18,812 - Quote queue size: 0
+2025-09-09 16:01:18,812 - Trade queues: total=373, per_worker=[0, 4, 0, 0, 13, 96, 8, 0, 252, 0]
+2025-09-09 16:01:19,447 - QLGN: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:20,816 - Quote queue size: 0
+2025-09-09 16:01:20,816 - Trade queues: total=371, per_worker=[0, 0, 0, 0, 1, 98, 2, 0, 270, 0]
+2025-09-09 16:01:20,868 - MHH: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:20,869 - MHH: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:21,461 - MHH: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:21,461 - MHH: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:22,311 - PLAG: Not enough recent trades (0) for flash spike detection.
+2025-09-09 16:01:22,643 - Async tasks cancelled cleanly.
+2025-09-09 16:01:22,644 - Shutting down WebSocket connection...

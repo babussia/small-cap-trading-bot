@@ -1,0 +1,5 @@
+requests
+xxhash
+pytz
+alpaca_trade_api
+certifi
