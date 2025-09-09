@@ -14,6 +14,7 @@ from threading import Semaphore
 from config import Config
 import xxhash
 from bisect import bisect_left
+from datetime import datetime
 
 # Сторонні бібліотеки
 import pytz
@@ -174,14 +175,25 @@ def load_symbols():
 
     return filtered
 
-# Логгер для консолі та файлу
+# --- Setup logger ---
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 fmt = logging.Formatter('%(asctime)s - %(message)s')
+
+# Console handler
 console = logging.StreamHandler()
 console.setFormatter(fmt)
 logger.addHandler(console)
-fileh = logging.FileHandler("trade_log.txt")
+
+# Ensure trade_logs/ exists
+os.makedirs("trade_logs", exist_ok=True)
+
+# Daily log filename
+today_str = datetime.now().strftime("%Y-%m-%d")
+log_file = os.path.join("trade_logs", f"trade_log_{today_str}.txt")
+
+# File handler (append mode by default)
+fileh = logging.FileHandler(log_file, mode="a")
 fileh.setFormatter(fmt)
 logger.addHandler(fileh)
 
@@ -510,29 +522,45 @@ async def process_quote(q):
         return
     processing_symbols.add(sym)
 
-# === NEW: Write symbol to trade.txt for AHK instead of Alpaca order
+    # Build dynamic filename
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    trade_file = os.path.join("symbol-signals", f"trade-{today_str}.txt")
+
+    # === NEW: Write symbol to trade-{date}.txt for AHK instead of Alpaca order
     try:
-        with open("trade.txt", "r+") as f:
+        # Ensure folder exists
+        os.makedirs("symbol-signals", exist_ok=True)
+
+        with open(trade_file, "a+") as f:
+            f.seek(0)  # Move cursor to beginning to read existing content
             symbols_in_file = {line.strip() for line in f}
             if sym not in symbols_in_file:
                 f.write(f"{sym}\n")
-                logger.info(f"{sym} written to trade.txt for AHK. "
-                            f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
+
+                price_at_detection = price  # current ask price at detection
+                low_price_5min = lowest_price
+                price_jump = change_5min * 100
+                number_of_trades_1sec = len(recent_trades)
+                avg_vol_1sec = avg_volume
+                price_diff_1sec = price_move
+
+                logger.info(
+                    f"{sym} written to {trade_file} for AHK | "
+                    f"price_at_detection={price_at_detection:.2f}, "
+                    f"low_price_5min={low_price_5min:.2f}, "
+                    f"price_jump={price_jump:.2f}%, "
+                    f"vol_5min={vol_5min}, "
+                    f"number_of_trades_1sec={number_of_trades_1sec}, "
+                    f"avg_vol_1sec={avg_vol_1sec:.0f}, "
+                    f"price_diff_1sec={price_diff_1sec:.2f}"
+                )
                 play_sound()
             else:
-                logger.info(f"{sym} already exists in trade.txt — skipping.")
-    except FileNotFoundError:
-        # If file doesn't exist yet, create and write the first symbol
-        with open("trade.txt", "w") as f:
-            f.write(f"{sym}\n")
-        logger.info(f"{sym} written to new trade.txt for AHK. "
-                    f"Price jump: {change_5min*100:.2f}% | 5-min volume: {vol_5min}")
-        play_sound()
+                logger.info(f"{sym} already exists in {trade_file} — skipping.")
     except Exception as e:
-        logger.error(f"Failed to write {sym} to trade.txt: {e}")
+        logger.error(f"Failed to write {sym} to {trade_file}: {e}")
 
     processing_symbols.discard(sym)
-
 
 async def handle_trade(t):
     if not paused:

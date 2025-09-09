@@ -3,7 +3,10 @@
 #Warn
 
 dir := A_ScriptDir
-tradeFile := dir "\trade.txt"
+
+; --- dynamically get today's date in YYYY-MM-DD format ---
+today := FormatTime(A_Now, "yyyy-MM-dd")
+tradeFile := dir "\symbol-signals\trade-" today ".txt"
 
 ; Create file if it doesn't exist
 if !FileExist(tradeFile)
@@ -11,6 +14,7 @@ if !FileExist(tradeFile)
 
 lastSymbol := ""
 lastSymbolSent := ""
+
 
 Loop {
     try symbol := Trim(FileRead(tradeFile, "UTF-8"))
@@ -45,7 +49,7 @@ Loop {
             Sleep 200
 
             CoordMode "Mouse", "Window"
-            Click 124, 105  ; Replace with your Market Depth X,Y
+            Click 22, 111  ; Replace with your Market Depth X,Y
             Sleep 100
             SendText symbol
             Sleep 50

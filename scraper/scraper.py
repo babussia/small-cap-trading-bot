@@ -7,27 +7,34 @@ import tkinter as tk
 from queue import Queue
 import webbrowser
 import threading
-import screeninfo  # pip install screeninfo
+import screeninfo
+import datetime
+import time
+from concurrent.futures import ThreadPoolExecutor
+import csv
 
 BASE_URL = "https://www.stocktitan.net/overview/"
-TRADE_FILE = "../trade.txt"
-OUTPUT_DIR = "results_md"
 
-popup_queue = Queue()  # для передачі даних від watchdog до головного потоку
+# --- dynamic trade file ---
+today = datetime.date.today().strftime("%Y-%m-%d")
+TRADE_FILE = os.path.join("..", "symbol-signals", f"trade-{today}.txt")
 
+# --- output folder by date ---
+OUTPUT_DIR = os.path.join("results_csv", today)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+popup_queue = Queue()
+executor = ThreadPoolExecutor(max_workers=5)  # scrape multiple symbols faster
 
 def scrape(symbol: str):
     overview_url = f"{BASE_URL}{symbol}"
-    
     r = requests.get(overview_url, headers={"User-Agent": "Mozilla/5.0"})
     if r.status_code != 200:
-        print(f"❌ Failed to load overview: {symbol}")
         return None
     
     soup = BeautifulSoup(r.text, "html.parser")
     latest_news = soup.select_one("div.st-panel-body.news-list div.news-item")
     if not latest_news:
-        print(f"⚠️ No news found for {symbol}")
         return None
 
     news_link_tag = latest_news.select_one("h3.news-title a")
@@ -37,9 +44,7 @@ def scrape(symbol: str):
     news_date = news_date_tag["title"] if news_date_tag and news_date_tag.has_attr("title") else ""
 
     # --- fetch full news page ---
-    news_content = ""
-    news_time = ""
-    summary_text = ""
+    news_content, news_time, summary_text = "", "", ""
     stock_data = {field.lower().replace(" ", "_"): "N/A" for field in [
         "Market Cap", "Float", "Insiders Ownership", "Institutions Ownership",
         "Short Percent", "Industry", "Sector", "Website", "Country", "City"
@@ -91,36 +96,36 @@ def scrape(symbol: str):
     data.update(stock_data)
     return data
 
-
-def save_to_md(data, output_dir=OUTPUT_DIR):
-    os.makedirs(output_dir, exist_ok=True)
-    filename = os.path.join(output_dir, f"{data['symbol']}.md")
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write(f"# {data['symbol']}\n\n")
-        f.write(f"**Latest News:** [{data['news_title']}]({data['news_url']})\n\n")
-        f.write(f"- **Date:** {data['news_date']}\n")
-        f.write(f"- **Time:** {data['news_time']}\n")
-        f.write(f"- **Price Impact:** {data['price_impact']}\n\n")
-
-        f.write("## Summary\n")
-        f.write(f"{data['summary']}\n\n")
-
-        f.write("## Full News Content\n")
-        f.write(f"{data['news_content']}\n\n")
-
-        f.write("## Stock Data\n")
-        for key in ["market_cap", "float", "insiders_ownership", "institutions_ownership",
-                    "short_percent", "industry", "sector", "website", "country", "city"]:
-            f.write(f"- **{key.replace('_',' ').title()}:** {data.get(key,'N/A')}\n")
+# --- CSV save/load ---
+def save_to_csv(data, output_dir=OUTPUT_DIR):
+    filename = os.path.join(output_dir, f"{data['symbol']}.csv")
+    fieldnames = list(data.keys())
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(data)
     return filename
 
+def load_from_csv(symbol, output_dir=OUTPUT_DIR):
+    filename = os.path.join(output_dir, f"{symbol}.csv")
+    if not os.path.exists(filename):
+        return None
+    with open(filename, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        return next(reader)
 
-def show_popup(data):
+# --- popup window ---
+def show_popup(symbol):
+    data = load_from_csv(symbol)
+    if not data:
+        print(f"❌ No CSV found for {symbol}")
+        return
+
     popup = tk.Toplevel(root)
     popup.title(f"{data['symbol']} – News")
     popup.attributes('-topmost', True)
 
-    # визначаємо другий монітор
+    # place on second monitor if exists
     screens = screeninfo.get_monitors()
     if len(screens) > 1:
         second = screens[1]
@@ -143,7 +148,6 @@ def show_popup(data):
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-    # Текст новини
     label_text = f"{data['news_title']}\nDate: {data['news_date']} {data['news_time']}\nImpact: {data['price_impact']}"
     tk.Label(scrollable_frame, text=label_text, font=("Arial", 12), justify="left", wraplength=480).pack(pady=(10,5))
 
@@ -162,26 +166,37 @@ def show_popup(data):
         "industry","sector","website","country","city"]])
     tk.Label(scrollable_frame, text=stock_text, font=("Arial", 11), justify="left", wraplength=480).pack(pady=(5,10))
 
-
+# --- watchdog handler ---
 class TradeFileHandler(FileSystemEventHandler):
     def __init__(self):
         self.seen = set()
+        self.last_event_time = 0
 
     def on_modified(self, event):
-        if event.src_path.endswith("trade.txt"):
-            with open(TRADE_FILE, "r") as f:
-                symbols = [line.strip().upper() for line in f if line.strip()]
-            
-            new_symbols = [s for s in symbols if s not in self.seen]
-            for symbol in new_symbols:
-                info = scrape(symbol)
-                if info:
-                    save_to_md(info)
-                    print(f"✅ Scraped & saved {symbol}")
-                    popup_queue.put(info)  # додаємо в чергу для головного потоку
-                self.seen.add(symbol)
+        if not event.src_path.endswith(os.path.basename(TRADE_FILE)):
+            return
 
+        now = time.time()
+        if now - self.last_event_time < 1:
+            return
+        self.last_event_time = now
 
+        with open(TRADE_FILE, "r") as f:
+            symbols = [line.strip().upper() for line in f if line.strip()]
+
+        new_symbols = [s for s in symbols if s not in self.seen]
+        for symbol in new_symbols:
+            executor.submit(self.process_symbol, symbol)
+            self.seen.add(symbol)
+
+    def process_symbol(self, symbol):
+        info = scrape(symbol)
+        if info:
+            save_to_csv(info)
+            print(f"✅ Scraped & saved {symbol}")
+            popup_queue.put(symbol)
+
+# --- start watchdog ---
 def start_watchdog():
     event_handler = TradeFileHandler()
     observer = Observer()
@@ -189,26 +204,27 @@ def start_watchdog():
     observer.start()
     try:
         while True:
-            pass
+            time.sleep(1)
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
 
-
+# --- main ---
 if __name__ == "__main__":
-    print("🚀 Watching trade.txt for new symbols (Ctrl+C to stop)...")
+    print(f"🚀 Watching {TRADE_FILE} for new symbols (Ctrl+C to stop)...")
 
     threading.Thread(target=start_watchdog, daemon=True).start()
 
-    def check_queue():
-        while not popup_queue.empty():
-            data = popup_queue.get()
-            show_popup(data)
-        root.after(1000, check_queue)
-
     root = tk.Tk()
     root.withdraw()
-    root.after(1000, check_queue)
+
+    def check_queue():
+        while not popup_queue.empty():
+            symbol = popup_queue.get()
+            show_popup(symbol)
+        root.after(500, check_queue)
+
+    root.after(500, check_queue)
     try:
         root.mainloop()
     except KeyboardInterrupt:
