@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmallCapGirl — Live Dashboard</title>
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: '#0b0f14',
+            card: '#131a22',
+            soft: '#1b2430',
+            accent: '#0ea5e9',
+            green: '#22c55e',
+            red: '#ef4444',
+            text: '#e5e7eb'
+          },
+          boxShadow: {
+            soft: '0 6px 24px rgba(0,0,0,0.25)'
+          },
+          borderRadius: {
+            xl2: '1rem'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- TradingView -->
+  <script src="https://s3.tradingview.com/tv.js"></script>
+
+  <style>
+    /* Scrollbars */
+    .thin-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+    .thin-scroll::-webkit-scrollbar-thumb { background: #2a3442; border-radius: 8px; }
+    .btn {
+      @apply px-3 py-1.5 rounded-lg border border-slate-600 text-slate-200 hover:bg-soft transition;
+    }
+    .btn-active {
+      @apply bg-accent/20 border-accent text-accent;
+    }
+    .card {
+      @apply bg-card rounded-2xl p-4 shadow-soft border border-slate-800;
+    }
+    .badge {
+      @apply text-xs px-2 py-0.5 rounded-full border border-slate-700 text-slate-300;
+    }
+    .list-item {
+      @apply flex items-center justify-between gap-3 px-3 py-2 rounded-lg hover:bg-soft cursor-pointer transition;
+    }
+  </style>
+</head>
+
+<body class="h-full bg-bg text-text">
+  <div class="max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+    <header class="mb-6 flex items-center justify-between">
+      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">SmallCapGirl — Live Dashboard</h1>
+      <div class="text-sm text-slate-400">
+        Backend: <span id="backend-url" class="text-slate-200">http://127.0.0.1:8000</span>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
+      <!-- Left column: Flashing + HOD -->
+      <section class="xl:col-span-1 space-y-5">
+        <!-- Card 1: Flashing -->
+        <div class="card">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-lg font-semibold">Flashing (Signals)</h2>
+            <span id="flash-updated" class="text-xs text-slate-400">–</span>
+          </div>
+          <div id="flashing-list" class="thin-scroll max-h-80 overflow-auto space-y-1">
+            <div class="text-slate-400 text-sm">Waiting for signals…</div>
+          </div>
+        </div>
+
+        <!-- Card 2: HOD -->
+        <div class="card">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-lg font-semibold">High of Day (HOD)</h2>
+            <span id="hod-updated" class="text-xs text-slate-400">–</span>
+          </div>
+          <div id="hod-list" class="thin-scroll max-h-80 overflow-auto space-y-1">
+            <div class="text-slate-400 text-sm">Loading…</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right column: Overview + News + Chart -->
+      <section class="xl:col-span-2 space-y-5">
+        <!-- Card 3: Stock Overview -->
+        <div class="card">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold">Stock Overview</h2>
+            <div class="text-sm text-slate-400">
+              Selected: <span id="selected-symbol" class="text-slate-200 font-medium">—</span>
+            </div>
+          </div>
+          <div id="overview" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="text-slate-400 text-sm col-span-full">Select a symbol from Flashing or HOD to load overview.</div>
+          </div>
+        </div>
+
+        <!-- Card 4: News -->
+        <div class="card">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold">News</h2>
+            <div class="flex items-center gap-2">
+              <span class="badge">Latest</span>
+            </div>
+          </div>
+          <div id="news" class="space-y-3 thin-scroll max-h-72 overflow-auto">
+            <div class="text-slate-400 text-sm">Select a symbol to load news.</div>
+          </div>
+        </div>
+
+        <!-- Card 5: Chart -->
+        <div class="card">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-lg font-semibold">Chart</h2>
+            <div class="flex items-center gap-2">
+              <button id="btn-1m" class="btn btn-active" data-interval="1">1m</button>
+              <button id="btn-5m" class="btn" data-interval="5">5m</button>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-slate-800">
+            <div id="tv_chart" style="height: 520px;"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // ======= CONFIG =======
+    const BACKEND = 'http://127.0.0.1:8000';
+    const FLASH_INTERVAL_MS = 1000;  // 1s
+    const HOD_INTERVAL_MS   = 3000;  // 3s
+
+    // ======= STATE =======
+    let selectedSymbol = null;
+    let currentInterval = '1'; // '1' for 1m, '5' for 5m
+    let tvWidget = null;
+
+    // ======= HELPERS =======
+    const fmtTime = () => new Date().toLocaleTimeString();
+    const byId = (id) => document.getElementById(id);
+
+    async function fetchJSON(url, { timeout = 4500 } = {}) {
+      const ctrl = new AbortController();
+      const to = setTimeout(() => ctrl.abort(), timeout);
+      try {
+        const resp = await fetch(url, { signal: ctrl.signal });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return await resp.json();
+      } finally {
+        clearTimeout(to);
+      }
+    }
+
+    function renderList(container, items, emptyText = 'No data') {
+      container.innerHTML = '';
+      if (!items || items.length === 0) {
+        container.innerHTML = `<div class="text-slate-400 text-sm">${emptyText}</div>`;
+        return;
+      }
+      items.forEach(sym => {
+        const el = document.createElement('div');
+        el.className = 'list-item';
+        el.innerHTML = `
+          <div class="flex items-center gap-2">
+            <span class="badge">${sym}</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+        `;
+        el.addEventListener('click', () => onSelectSymbol(sym));
+        container.appendChild(el);
+      });
+    }
+
+    function setIntervalButtons(active) {
+      const btn1 = byId('btn-1m');
+      const btn5 = byId('btn-5m');
+      [btn1, btn5].forEach(b => b.classList.remove('btn-active'));
+      if (active === '1') btn1.classList.add('btn-active');
+      if (active === '5') btn5.classList.add('btn-active');
+    }
+
+    function renderOverview(data) {
+      const container = byId('overview');
+      if (!data) {
+        container.innerHTML = `<div class="text-slate-400 text-sm col-span-full">No overview.</div>`;
+        return;
+      }
+      container.innerHTML = `
+        <div class="bg-soft rounded-xl p-4 border border-slate-800">
+          <div class="text-xs text-slate-400 mb-1">Symbol</div>
+          <div class="text-lg font-semibold">${data.symbol}</div>
+        </div>
+        <div class="bg-soft rounded-xl p-4 border border-slate-800">
+          <div class="text-xs text-slate-400 mb-1">Float</div>
+          <div class="text-base">${data.float ?? '—'}</div>
+        </div>
+        <div class="bg-soft rounded-xl p-4 border border-slate-800">
+          <div class="text-xs text-slate-400 mb-1">Volume</div>
+          <div class="text-base">${data.volume ?? '—'}</div>
+        </div>
+        <div class="bg-soft rounded-xl p-4 border border-slate-800">
+          <div class="text-xs text-slate-400 mb-1">Price</div>
+          <div class="text-base">$${data.price ?? '—'}</div>
+        </div>
+      `;
+    }
+
+    function renderNews(data) {
+      const container = byId('news');
+      container.innerHTML = '';
+      if (!data || !data.headlines || data.headlines.length === 0) {
+        container.innerHTML = `<div class="text-slate-400 text-sm">No headlines.</div>`;
+        return;
+      }
+      data.headlines.forEach((h) => {
+        const item = document.createElement('div');
+        item.className = 'p-3 rounded-xl border border-slate-800 bg-soft';
+        item.innerHTML = `
+          <div class="text-sm">${h}</div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    // ======= TRADINGVIEW =======
+    function renderTradingView(symbol, interval = '1') {
+      // Destroy previous widget instance safely (TradingView doesn't expose a "destroy", so just replace container)
+      const chartContainer = byId('tv_chart');
+      const parent = chartContainer.parentNode;
+      const newDiv = document.createElement('div');
+      newDiv.id = 'tv_chart';
+      newDiv.style.height = '520px';
+      parent.replaceChild(newDiv, chartContainer);
+
+      // eslint-disable-next-line no-undef
+      tvWidget = new TradingView.widget({
+        autosize: true,
+        symbol: symbol || 'AAPL',
+        interval: interval, // '1' or '5'
+        container_id: 'tv_chart',
+        timezone: 'Etc/UTC',
+        theme: 'dark',
+        style: '1',
+        locale: 'en',
+        hide_side_toolbar: false,
+        allow_symbol_change: false,
+        save_image: false,
+        studies: [],
+        withdateranges: true,
+        hide_top_toolbar: false,
+        hide_legend: false,
+        details: true,
+        hotlist: false,
+        calendar: false
+      });
+    }
+
+    // ======= EVENT HANDLERS =======
+    async function onSelectSymbol(sym) {
+      selectedSymbol = sym;
+      byId('selected-symbol').textContent = sym;
+
+      // Overview & News fetch
+      try {
+        const [ov, nw] = await Promise.all([
+          fetchJSON(`${BACKEND}/overview/${encodeURIComponent(sym)}`),
+          fetchJSON(`${BACKEND}/news/${encodeURIComponent(sym)}`)
+        ]);
+        renderOverview(ov);
+        renderNews(nw);
+      } catch (e) {
+        console.error('Overview/News error:', e);
+        renderOverview(null);
+        byId('news').innerHTML = `<div class="text-slate-400 text-sm">Failed to load news.</div>`;
+      }
+
+      // Chart
+      renderTradingView(sym, currentInterval);
+    }
+
+    byId('btn-1m').addEventListener('click', () => {
+      currentInterval = '1';
+      setIntervalButtons('1');
+      renderTradingView(selectedSymbol, currentInterval);
+    });
+
+    byId('btn-5m').addEventListener('click', () => {
+      currentInterval = '5';
+      setIntervalButtons('5');
+      renderTradingView(selectedSymbol, currentInterval);
+    });
+
+    // ======= POLLING =======
+    async function pollFlashing() {
+      try {
+        const data = await fetchJSON(`${BACKEND}/flashing`);
+        const list = data?.symbols ?? [];
+        renderList(byId('flashing-list'), list, 'No signals yet.');
+        byId('flash-updated').textContent = `Updated ${fmtTime()}`;
+
+        // If nothing selected and flashing has items, auto-select first for instant chart
+        if (!selectedSymbol && list.length > 0) {
+          onSelectSymbol(list[0]);
+        }
+      } catch (e) {
+        console.error('Flashing fetch error', e);
+        byId('flashing-list').innerHTML = `<div class="text-slate-400 text-sm">Error loading signals.</div>`;
+      }
+    }
+
+    async function pollHOD() {
+      try {
+        const data = await fetchJSON(`${BACKEND}/hod`);
+        const list = data?.hod ?? [];
+        renderList(byId('hod-list'), list, 'No HOD symbols.');
+        byId('hod-updated').textContent = `Updated ${fmtTime()}`;
+      } catch (e) {
+        console.error('HOD fetch error', e);
+        byId('hod-list').innerHTML = `<div class="text-slate-400 text-sm">Error loading HOD.</div>`;
+      }
+    }
+
+    // ======= INIT =======
+    (function init() {
+      // Boot chart with placeholder so the card isn't empty
+      renderTradingView('AAPL', currentInterval);
+      setIntervalButtons(currentInterval);
+
+      // Start polling
+      pollFlashing();
+      pollHOD();
+      setInterval(pollFlashing, FLASH_INTERVAL_MS);
+      setInterval(pollHOD, HOD_INTERVAL_MS);
+    })();
+  </script>
+</body>
+</html>

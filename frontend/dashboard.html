@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trading Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f8f9fa; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .full { grid-column: span 2; }
+  </style>
+</head>
+<body>
+
+  <h1>Trading Dashboard</h1>
+  <div class="grid">
+    <div class="card" id="flashing"><h3>Flashing Stocks</h3><ul id="flash-list"></ul></div>
+    <div class="card" id="hod"><h3>HOD Stocks</h3><ul id="hod-list"></ul></div>
+    <div class="card" id="overview"><h3>Stock Overview</h3><div id="overview-data"></div></div>
+    <div class="card" id="news"><h3>News</h3><ul id="news-list"></ul></div>
+    <div class="card full" id="graph">
+      <h3>Graph</h3>
+      <button onclick="loadGraph('1m')">1m</button>
+      <button onclick="loadGraph('5m')">5m</button>
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script>
+    async function loadFlashing() {
+      const res = await fetch("http://localhost:8000/flashing");
+      const data = await res.json();
+      const list = document.getElementById("flash-list");
+      list.innerHTML = data.symbols.map(s => `<li>${s}</li>`).join("");
+    }
+
+    async function loadHod() {
+      const res = await fetch("http://localhost:8000/hod");
+      const data = await res.json();
+      const list = document.getElementById("hod-list");
+      list.innerHTML = data.hod.map(s => `<li>${s}</li>`).join("");
+    }
+
+    let chart;
+    function loadGraph(interval) {
+      const ctx = document.getElementById('chart').getContext('2d');
+      if (chart) chart.destroy();
+      chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["T-5", "T-4", "T-3", "T-2", "Now"],
+          datasets: [{
+            label: `Price (${interval})`,
+            data: [2.1, 2.3, 2.5, 2.7, 2.8]
+          }]
+        }
+      });
+    }
+
+    loadFlashing();
+    loadHod();
+    loadGraph("1m");
+    setInterval(loadFlashing, 5000); // auto refresh
+  </script>
+</body>
+</html>

@@ -121,7 +121,7 @@ def load_symbols():
         try:
             bar = rest.get_latest_trade(sym)
             price = bar.price
-            if 0.70 <= price <= 9:
+            if 0.50 <= price <= 6:
                 # Перевірка float < 10 млн
                 try:
                     url = f"https://financialmodelingprep.com/api/v4/shares_float?symbol={sym}&apikey={FMP_API_KEY}"
@@ -130,7 +130,7 @@ def load_symbols():
                         data = resp.json()
                         if isinstance(data, list) and data:
                             float_val = data[0].get("floatShares")
-                            if float_val is not None and float_val > 9_000_000:
+                            if float_val is not None and float_val > 4_000_000:
                                 return None
                     else:
                         return None

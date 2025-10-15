@@ -3,3 +3,4 @@ xxhash
 pytz
 alpaca_trade_api
 certifi
+python-dotenv
