@@ -776,3 +776,1658 @@
 2025-10-15 22:24:08,534 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 2025-10-15 22:24:10,543 - Quote queue size: 0
 2025-10-15 22:24:10,544 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:12,549 - Quote queue size: 0
+2025-10-15 22:24:12,550 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:14,555 - Quote queue size: 0
+2025-10-15 22:24:14,556 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:16,564 - Quote queue size: 0
+2025-10-15 22:24:16,564 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:18,568 - Quote queue size: 0
+2025-10-15 22:24:18,569 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:20,577 - Quote queue size: 0
+2025-10-15 22:24:20,577 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:22,581 - Quote queue size: 0
+2025-10-15 22:24:22,583 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:24,596 - Quote queue size: 0
+2025-10-15 22:24:24,598 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:26,612 - Quote queue size: 0
+2025-10-15 22:24:26,612 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:28,613 - Quote queue size: 0
+2025-10-15 22:24:28,614 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:30,625 - Quote queue size: 0
+2025-10-15 22:24:30,626 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:32,631 - Quote queue size: 0
+2025-10-15 22:24:32,632 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:34,289 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:24:34,638 - Quote queue size: 0
+2025-10-15 22:24:34,639 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:36,640 - Quote queue size: 0
+2025-10-15 22:24:36,640 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:38,641 - Quote queue size: 0
+2025-10-15 22:24:38,641 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:40,650 - Quote queue size: 0
+2025-10-15 22:24:40,650 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:42,665 - Quote queue size: 0
+2025-10-15 22:24:42,666 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:44,669 - Quote queue size: 0
+2025-10-15 22:24:44,669 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:46,678 - Quote queue size: 0
+2025-10-15 22:24:46,679 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:48,680 - Quote queue size: 0
+2025-10-15 22:24:48,680 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:50,697 - Quote queue size: 0
+2025-10-15 22:24:50,698 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:52,710 - Quote queue size: 0
+2025-10-15 22:24:52,711 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:54,719 - Quote queue size: 0
+2025-10-15 22:24:54,720 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:56,721 - Quote queue size: 0
+2025-10-15 22:24:56,721 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:24:58,736 - Quote queue size: 0
+2025-10-15 22:24:58,736 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:00,751 - Quote queue size: 0
+2025-10-15 22:25:00,751 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:02,758 - Quote queue size: 0
+2025-10-15 22:25:02,759 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:04,766 - Quote queue size: 0
+2025-10-15 22:25:04,766 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:06,778 - Quote queue size: 0
+2025-10-15 22:25:06,779 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:08,780 - Quote queue size: 0
+2025-10-15 22:25:08,780 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:10,792 - Quote queue size: 0
+2025-10-15 22:25:10,793 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:12,807 - Quote queue size: 0
+2025-10-15 22:25:12,808 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:14,821 - Quote queue size: 0
+2025-10-15 22:25:14,822 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:16,822 - Quote queue size: 0
+2025-10-15 22:25:16,823 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:18,837 - Quote queue size: 0
+2025-10-15 22:25:18,838 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:20,850 - Quote queue size: 0
+2025-10-15 22:25:20,850 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:22,851 - Quote queue size: 0
+2025-10-15 22:25:22,851 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:24,863 - Quote queue size: 0
+2025-10-15 22:25:24,864 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:26,878 - Quote queue size: 0
+2025-10-15 22:25:26,879 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:28,893 - Quote queue size: 0
+2025-10-15 22:25:28,894 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:30,908 - Quote queue size: 0
+2025-10-15 22:25:30,909 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:32,924 - Quote queue size: 0
+2025-10-15 22:25:32,926 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:34,939 - Quote queue size: 0
+2025-10-15 22:25:34,939 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:36,954 - Quote queue size: 0
+2025-10-15 22:25:36,955 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:38,955 - Quote queue size: 0
+2025-10-15 22:25:38,956 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:40,967 - Quote queue size: 0
+2025-10-15 22:25:40,967 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:42,982 - Quote queue size: 0
+2025-10-15 22:25:42,983 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:44,998 - Quote queue size: 0
+2025-10-15 22:25:44,998 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:47,009 - Quote queue size: 0
+2025-10-15 22:25:47,009 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:49,011 - Quote queue size: 0
+2025-10-15 22:25:49,012 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:51,026 - Quote queue size: 0
+2025-10-15 22:25:51,026 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:52,049 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:25:53,027 - Quote queue size: 0
+2025-10-15 22:25:53,028 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:55,039 - Quote queue size: 0
+2025-10-15 22:25:55,040 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:57,042 - Quote queue size: 0
+2025-10-15 22:25:57,042 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:25:59,053 - Quote queue size: 0
+2025-10-15 22:25:59,054 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:01,068 - Quote queue size: 0
+2025-10-15 22:26:01,068 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:03,082 - Quote queue size: 0
+2025-10-15 22:26:03,082 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:05,095 - Quote queue size: 0
+2025-10-15 22:26:05,096 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:07,096 - Quote queue size: 0
+2025-10-15 22:26:07,098 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:09,101 - Quote queue size: 0
+2025-10-15 22:26:09,102 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:11,118 - Quote queue size: 0
+2025-10-15 22:26:11,118 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:13,121 - Quote queue size: 0
+2025-10-15 22:26:13,122 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:15,124 - Quote queue size: 0
+2025-10-15 22:26:15,124 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:17,130 - Quote queue size: 0
+2025-10-15 22:26:17,131 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:19,135 - Quote queue size: 0
+2025-10-15 22:26:19,136 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:21,147 - Quote queue size: 0
+2025-10-15 22:26:21,148 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:23,149 - Quote queue size: 0
+2025-10-15 22:26:23,149 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:25,150 - Quote queue size: 0
+2025-10-15 22:26:25,150 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:27,161 - Quote queue size: 0
+2025-10-15 22:26:27,161 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:29,162 - Quote queue size: 0
+2025-10-15 22:26:29,162 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:31,175 - Quote queue size: 0
+2025-10-15 22:26:31,176 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:32,053 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:26:33,180 - Quote queue size: 0
+2025-10-15 22:26:33,181 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:35,190 - Quote queue size: 0
+2025-10-15 22:26:35,190 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:37,205 - Quote queue size: 0
+2025-10-15 22:26:37,205 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:39,219 - Quote queue size: 0
+2025-10-15 22:26:39,220 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:41,233 - Quote queue size: 0
+2025-10-15 22:26:41,234 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:42,667 - Running periodic volume checker...
+2025-10-15 22:26:43,241 - Quote queue size: 0
+2025-10-15 22:26:43,241 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:45,247 - Quote queue size: 0
+2025-10-15 22:26:45,247 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:47,262 - Quote queue size: 0
+2025-10-15 22:26:47,263 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:49,277 - Quote queue size: 0
+2025-10-15 22:26:49,278 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:51,293 - Quote queue size: 0
+2025-10-15 22:26:51,294 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:53,307 - Quote queue size: 0
+2025-10-15 22:26:53,308 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:55,322 - Quote queue size: 0
+2025-10-15 22:26:55,323 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:57,338 - Quote queue size: 0
+2025-10-15 22:26:57,339 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:26:59,351 - Quote queue size: 0
+2025-10-15 22:26:59,352 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:01,367 - Quote queue size: 0
+2025-10-15 22:27:01,367 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:03,383 - Quote queue size: 0
+2025-10-15 22:27:03,385 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:05,397 - Quote queue size: 0
+2025-10-15 22:27:05,397 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:07,398 - Quote queue size: 0
+2025-10-15 22:27:07,398 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:09,410 - Quote queue size: 0
+2025-10-15 22:27:09,411 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:11,426 - Quote queue size: 0
+2025-10-15 22:27:11,426 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:13,440 - Quote queue size: 0
+2025-10-15 22:27:13,441 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:15,441 - Quote queue size: 0
+2025-10-15 22:27:15,455 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:17,455 - Quote queue size: 0
+2025-10-15 22:27:17,470 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:19,468 - Quote queue size: 0
+2025-10-15 22:27:19,485 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:21,472 - Quote queue size: 0
+2025-10-15 22:27:21,500 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:23,483 - Quote queue size: 0
+2025-10-15 22:27:23,515 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:25,497 - Quote queue size: 0
+2025-10-15 22:27:25,529 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:27,512 - Quote queue size: 0
+2025-10-15 22:27:27,544 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:29,527 - Quote queue size: 0
+2025-10-15 22:27:29,546 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:31,542 - Quote queue size: 0
+2025-10-15 22:27:31,560 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:33,557 - Quote queue size: 0
+2025-10-15 22:27:33,573 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:35,563 - Quote queue size: 0
+2025-10-15 22:27:35,589 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:37,571 - Quote queue size: 0
+2025-10-15 22:27:37,605 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:39,586 - Quote queue size: 0
+2025-10-15 22:27:39,611 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:41,591 - Quote queue size: 0
+2025-10-15 22:27:41,621 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:43,598 - Quote queue size: 0
+2025-10-15 22:27:43,634 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:45,601 - Quote queue size: 0
+2025-10-15 22:27:45,646 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:47,609 - Quote queue size: 0
+2025-10-15 22:27:47,658 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:49,612 - Quote queue size: 0
+2025-10-15 22:27:49,706 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:51,626 - Quote queue size: 0
+2025-10-15 22:27:51,726 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:53,640 - Quote queue size: 0
+2025-10-15 22:27:53,740 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:55,654 - Quote queue size: 0
+2025-10-15 22:27:55,753 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:57,656 - Quote queue size: 0
+2025-10-15 22:27:57,755 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:27:59,666 - Quote queue size: 0
+2025-10-15 22:27:59,769 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:01,668 - Quote queue size: 0
+2025-10-15 22:28:01,785 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:03,669 - Quote queue size: 0
+2025-10-15 22:28:03,800 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:05,680 - Quote queue size: 0
+2025-10-15 22:28:05,815 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:07,681 - Quote queue size: 0
+2025-10-15 22:28:07,830 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:09,694 - Quote queue size: 0
+2025-10-15 22:28:09,844 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:11,710 - Quote queue size: 0
+2025-10-15 22:28:11,846 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:13,713 - Quote queue size: 0
+2025-10-15 22:28:13,858 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:15,723 - Quote queue size: 0
+2025-10-15 22:28:15,872 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:17,739 - Quote queue size: 0
+2025-10-15 22:28:17,888 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:19,740 - Quote queue size: 0
+2025-10-15 22:28:19,904 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:21,751 - Quote queue size: 0
+2025-10-15 22:28:21,918 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:23,765 - Quote queue size: 0
+2025-10-15 22:28:23,932 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:25,772 - Quote queue size: 0
+2025-10-15 22:28:25,933 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:27,778 - Quote queue size: 0
+2025-10-15 22:28:27,945 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:29,795 - Quote queue size: 0
+2025-10-15 22:28:29,948 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:31,809 - Quote queue size: 0
+2025-10-15 22:28:31,951 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:33,813 - Quote queue size: 0
+2025-10-15 22:28:33,956 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:35,823 - Quote queue size: 0
+2025-10-15 22:28:35,973 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:37,826 - Quote queue size: 0
+2025-10-15 22:28:37,986 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:39,828 - Quote queue size: 0
+2025-10-15 22:28:40,000 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:41,834 - Quote queue size: 0
+2025-10-15 22:28:42,003 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:43,850 - Quote queue size: 0
+2025-10-15 22:28:44,023 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:45,851 - Quote queue size: 0
+2025-10-15 22:28:46,039 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:47,864 - Quote queue size: 0
+2025-10-15 22:28:48,048 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:49,879 - Quote queue size: 0
+2025-10-15 22:28:50,062 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:51,892 - Quote queue size: 0
+2025-10-15 22:28:52,063 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:52,156 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:28:53,894 - Quote queue size: 0
+2025-10-15 22:28:54,077 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:55,909 - Quote queue size: 0
+2025-10-15 22:28:56,089 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:57,922 - Quote queue size: 0
+2025-10-15 22:28:58,095 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:28:59,935 - Quote queue size: 0
+2025-10-15 22:29:00,103 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:01,938 - Quote queue size: 0
+2025-10-15 22:29:02,119 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:03,951 - Quote queue size: 0
+2025-10-15 22:29:04,134 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:05,958 - Quote queue size: 0
+2025-10-15 22:29:06,138 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:06,882 - UTSI: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:29:06,883 - UTSI: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:29:07,973 - Quote queue size: 0
+2025-10-15 22:29:08,145 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:09,981 - Quote queue size: 0
+2025-10-15 22:29:10,152 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:11,996 - Quote queue size: 0
+2025-10-15 22:29:12,163 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:14,009 - Quote queue size: 0
+2025-10-15 22:29:14,177 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:16,021 - Quote queue size: 0
+2025-10-15 22:29:16,191 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:18,028 - Quote queue size: 0
+2025-10-15 22:29:18,194 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:20,036 - Quote queue size: 0
+2025-10-15 22:29:20,206 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:22,049 - Quote queue size: 0
+2025-10-15 22:29:22,214 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:24,052 - Quote queue size: 0
+2025-10-15 22:29:24,220 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:26,066 - Quote queue size: 0
+2025-10-15 22:29:26,225 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:28,083 - Quote queue size: 0
+2025-10-15 22:29:28,231 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:30,093 - Quote queue size: 0
+2025-10-15 22:29:30,239 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:32,097 - Quote queue size: 0
+2025-10-15 22:29:32,247 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:34,108 - Quote queue size: 0
+2025-10-15 22:29:34,259 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:36,124 - Quote queue size: 0
+2025-10-15 22:29:36,274 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:38,140 - Quote queue size: 0
+2025-10-15 22:29:38,291 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:40,155 - Quote queue size: 0
+2025-10-15 22:29:40,305 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:42,161 - Quote queue size: 0
+2025-10-15 22:29:42,319 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:44,168 - Quote queue size: 0
+2025-10-15 22:29:44,321 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:46,182 - Quote queue size: 0
+2025-10-15 22:29:46,324 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:48,197 - Quote queue size: 0
+2025-10-15 22:29:48,332 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:50,202 - Quote queue size: 0
+2025-10-15 22:29:50,333 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:52,216 - Quote queue size: 0
+2025-10-15 22:29:52,342 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:54,227 - Quote queue size: 0
+2025-10-15 22:29:54,349 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:56,241 - Quote queue size: 0
+2025-10-15 22:29:56,353 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:29:58,255 - Quote queue size: 0
+2025-10-15 22:29:58,355 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:00,270 - Quote queue size: 0
+2025-10-15 22:30:00,356 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:02,271 - Quote queue size: 0
+2025-10-15 22:30:02,367 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:04,273 - Quote queue size: 0
+2025-10-15 22:30:04,382 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:06,280 - Quote queue size: 0
+2025-10-15 22:30:06,384 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:08,296 - Quote queue size: 0
+2025-10-15 22:30:08,401 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:10,305 - Quote queue size: 0
+2025-10-15 22:30:10,411 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:12,309 - Quote queue size: 0
+2025-10-15 22:30:12,427 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:14,313 - Quote queue size: 0
+2025-10-15 22:30:14,442 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:16,325 - Quote queue size: 0
+2025-10-15 22:30:16,443 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:18,339 - Quote queue size: 0
+2025-10-15 22:30:18,449 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:20,034 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:30:20,034 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:30:20,344 - Quote queue size: 0
+2025-10-15 22:30:20,455 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:22,354 - Quote queue size: 0
+2025-10-15 22:30:22,469 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:24,356 - Quote queue size: 0
+2025-10-15 22:30:24,487 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:26,359 - Quote queue size: 0
+2025-10-15 22:30:26,499 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:28,365 - Quote queue size: 0
+2025-10-15 22:30:28,514 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:30,377 - Quote queue size: 0
+2025-10-15 22:30:30,516 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:32,380 - Quote queue size: 0
+2025-10-15 22:30:32,517 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:34,393 - Quote queue size: 0
+2025-10-15 22:30:34,525 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:36,405 - Quote queue size: 0
+2025-10-15 22:30:36,526 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:38,414 - Quote queue size: 0
+2025-10-15 22:30:38,542 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:40,420 - Quote queue size: 0
+2025-10-15 22:30:40,554 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:42,433 - Quote queue size: 0
+2025-10-15 22:30:42,565 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:44,435 - Quote queue size: 0
+2025-10-15 22:30:44,567 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:46,442 - Quote queue size: 0
+2025-10-15 22:30:46,576 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:48,444 - Quote queue size: 0
+2025-10-15 22:30:48,577 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:50,459 - Quote queue size: 0
+2025-10-15 22:30:50,589 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:52,460 - Quote queue size: 0
+2025-10-15 22:30:52,592 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:54,476 - Quote queue size: 0
+2025-10-15 22:30:54,611 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:56,491 - Quote queue size: 0
+2025-10-15 22:30:56,624 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:30:58,507 - Quote queue size: 0
+2025-10-15 22:30:58,639 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:00,510 - Quote queue size: 0
+2025-10-15 22:31:00,654 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:02,521 - Quote queue size: 0
+2025-10-15 22:31:02,657 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:04,536 - Quote queue size: 0
+2025-10-15 22:31:04,668 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:06,539 - Quote queue size: 0
+2025-10-15 22:31:06,683 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:08,548 - Quote queue size: 0
+2025-10-15 22:31:08,687 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:10,563 - Quote queue size: 0
+2025-10-15 22:31:10,696 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:12,565 - Quote queue size: 0
+2025-10-15 22:31:12,712 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:14,575 - Quote queue size: 0
+2025-10-15 22:31:14,726 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:16,591 - Quote queue size: 0
+2025-10-15 22:31:16,727 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:18,605 - Quote queue size: 0
+2025-10-15 22:31:18,739 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:20,616 - Quote queue size: 0
+2025-10-15 22:31:20,740 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:22,619 - Quote queue size: 0
+2025-10-15 22:31:22,756 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:24,636 - Quote queue size: 0
+2025-10-15 22:31:24,764 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:26,650 - Quote queue size: 0
+2025-10-15 22:31:26,785 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:28,652 - Quote queue size: 0
+2025-10-15 22:31:28,789 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:30,663 - Quote queue size: 0
+2025-10-15 22:31:30,797 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:32,678 - Quote queue size: 0
+2025-10-15 22:31:32,801 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:34,692 - Quote queue size: 0
+2025-10-15 22:31:34,815 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:36,699 - Quote queue size: 0
+2025-10-15 22:31:36,826 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:38,705 - Quote queue size: 0
+2025-10-15 22:31:38,842 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:40,708 - Quote queue size: 0
+2025-10-15 22:31:40,870 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:42,688 - Running periodic volume checker...
+2025-10-15 22:31:42,723 - Quote queue size: 0
+2025-10-15 22:31:42,877 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:44,734 - Quote queue size: 0
+2025-10-15 22:31:44,886 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:46,750 - Quote queue size: 0
+2025-10-15 22:31:46,900 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:48,765 - Quote queue size: 0
+2025-10-15 22:31:48,913 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:50,779 - Quote queue size: 0
+2025-10-15 22:31:50,929 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:52,794 - Quote queue size: 0
+2025-10-15 22:31:52,939 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:54,809 - Quote queue size: 0
+2025-10-15 22:31:54,944 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:56,825 - Quote queue size: 0
+2025-10-15 22:31:56,960 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:31:58,825 - Quote queue size: 0
+2025-10-15 22:31:58,971 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:00,838 - Quote queue size: 0
+2025-10-15 22:32:00,972 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:02,853 - Quote queue size: 0
+2025-10-15 22:32:02,976 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:04,860 - Quote queue size: 0
+2025-10-15 22:32:04,990 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:06,866 - Quote queue size: 0
+2025-10-15 22:32:06,999 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:08,868 - Quote queue size: 0
+2025-10-15 22:32:09,013 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:10,881 - Quote queue size: 0
+2025-10-15 22:32:11,030 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:12,892 - Quote queue size: 0
+2025-10-15 22:32:13,044 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:14,893 - Quote queue size: 0
+2025-10-15 22:32:15,061 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:16,896 - Quote queue size: 0
+2025-10-15 22:32:17,075 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:18,907 - Quote queue size: 0
+2025-10-15 22:32:19,078 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:20,924 - Quote queue size: 0
+2025-10-15 22:32:21,087 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:22,937 - Quote queue size: 0
+2025-10-15 22:32:23,089 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:24,942 - Quote queue size: 0
+2025-10-15 22:32:25,103 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:26,955 - Quote queue size: 0
+2025-10-15 22:32:27,115 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:28,965 - Quote queue size: 0
+2025-10-15 22:32:29,117 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:30,978 - Quote queue size: 0
+2025-10-15 22:32:31,121 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:32,980 - Quote queue size: 0
+2025-10-15 22:32:33,129 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:34,993 - Quote queue size: 0
+2025-10-15 22:32:35,142 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:37,006 - Quote queue size: 0
+2025-10-15 22:32:37,143 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:39,022 - Quote queue size: 0
+2025-10-15 22:32:39,156 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:41,026 - Quote queue size: 0
+2025-10-15 22:32:41,157 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:43,027 - Quote queue size: 0
+2025-10-15 22:32:43,172 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:45,034 - Quote queue size: 0
+2025-10-15 22:32:45,185 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:47,049 - Quote queue size: 0
+2025-10-15 22:32:47,200 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:49,051 - Quote queue size: 0
+2025-10-15 22:32:49,205 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:51,054 - Quote queue size: 0
+2025-10-15 22:32:51,215 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:53,064 - Quote queue size: 0
+2025-10-15 22:32:53,229 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:55,075 - Quote queue size: 0
+2025-10-15 22:32:55,241 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:57,078 - Quote queue size: 0
+2025-10-15 22:32:57,252 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:32:59,080 - Quote queue size: 0
+2025-10-15 22:32:59,258 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:01,089 - Quote queue size: 0
+2025-10-15 22:33:01,274 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:03,107 - Quote queue size: 0
+2025-10-15 22:33:03,286 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:05,118 - Quote queue size: 0
+2025-10-15 22:33:05,303 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:07,133 - Quote queue size: 0
+2025-10-15 22:33:07,317 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:09,149 - Quote queue size: 0
+2025-10-15 22:33:09,333 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:11,157 - Quote queue size: 0
+2025-10-15 22:33:11,337 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:13,160 - Quote queue size: 0
+2025-10-15 22:33:13,340 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:15,164 - Quote queue size: 0
+2025-10-15 22:33:15,342 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:17,175 - Quote queue size: 0
+2025-10-15 22:33:17,346 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:19,191 - Quote queue size: 0
+2025-10-15 22:33:19,358 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:21,205 - Quote queue size: 0
+2025-10-15 22:33:21,370 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:23,220 - Quote queue size: 0
+2025-10-15 22:33:23,371 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:25,236 - Quote queue size: 0
+2025-10-15 22:33:25,384 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:27,243 - Quote queue size: 0
+2025-10-15 22:33:27,397 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:29,246 - Quote queue size: 0
+2025-10-15 22:33:29,404 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:31,248 - Quote queue size: 0
+2025-10-15 22:33:31,407 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:33,262 - Quote queue size: 0
+2025-10-15 22:33:33,411 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:35,277 - Quote queue size: 0
+2025-10-15 22:33:35,425 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:37,294 - Quote queue size: 0
+2025-10-15 22:33:37,427 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:39,307 - Quote queue size: 0
+2025-10-15 22:33:39,440 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:41,323 - Quote queue size: 0
+2025-10-15 22:33:41,454 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:43,337 - Quote queue size: 0
+2025-10-15 22:33:43,469 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:45,352 - Quote queue size: 0
+2025-10-15 22:33:45,484 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:47,368 - Quote queue size: 0
+2025-10-15 22:33:47,487 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:49,383 - Quote queue size: 0
+2025-10-15 22:33:49,498 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:51,394 - Quote queue size: 0
+2025-10-15 22:33:51,512 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:53,398 - Quote queue size: 0
+2025-10-15 22:33:53,528 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:55,408 - Quote queue size: 0
+2025-10-15 22:33:55,530 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:57,410 - Quote queue size: 0
+2025-10-15 22:33:57,542 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:33:59,414 - Quote queue size: 0
+2025-10-15 22:33:59,547 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:01,421 - Quote queue size: 0
+2025-10-15 22:34:01,554 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:03,422 - Quote queue size: 0
+2025-10-15 22:34:03,555 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:05,435 - Quote queue size: 0
+2025-10-15 22:34:05,568 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:07,436 - Quote queue size: 0
+2025-10-15 22:34:07,582 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:09,438 - Quote queue size: 0
+2025-10-15 22:34:09,600 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:11,444 - Quote queue size: 0
+2025-10-15 22:34:11,613 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:13,452 - Quote queue size: 0
+2025-10-15 22:34:13,614 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:15,455 - Quote queue size: 0
+2025-10-15 22:34:15,629 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:17,459 - Quote queue size: 0
+2025-10-15 22:34:17,630 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:19,474 - Quote queue size: 0
+2025-10-15 22:34:19,633 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:21,476 - Quote queue size: 0
+2025-10-15 22:34:21,644 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:23,489 - Quote queue size: 0
+2025-10-15 22:34:23,660 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:25,501 - Quote queue size: 0
+2025-10-15 22:34:25,668 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:27,519 - Quote queue size: 0
+2025-10-15 22:34:27,681 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:29,531 - Quote queue size: 0
+2025-10-15 22:34:29,683 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:31,533 - Quote queue size: 0
+2025-10-15 22:34:31,688 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:33,544 - Quote queue size: 0
+2025-10-15 22:34:33,694 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:35,554 - Quote queue size: 0
+2025-10-15 22:34:35,696 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:37,558 - Quote queue size: 0
+2025-10-15 22:34:37,709 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:39,561 - Quote queue size: 0
+2025-10-15 22:34:39,716 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:41,573 - Quote queue size: 0
+2025-10-15 22:34:41,722 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:43,576 - Quote queue size: 0
+2025-10-15 22:34:43,725 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:45,586 - Quote queue size: 0
+2025-10-15 22:34:45,738 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:47,600 - Quote queue size: 0
+2025-10-15 22:34:47,750 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:49,607 - Quote queue size: 0
+2025-10-15 22:34:49,764 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:51,615 - Quote queue size: 0
+2025-10-15 22:34:51,778 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:53,629 - Quote queue size: 0
+2025-10-15 22:34:53,794 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:55,637 - Quote queue size: 0
+2025-10-15 22:34:55,809 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:57,644 - Quote queue size: 0
+2025-10-15 22:34:57,814 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:34:59,659 - Quote queue size: 0
+2025-10-15 22:34:59,823 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:01,672 - Quote queue size: 0
+2025-10-15 22:35:01,839 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:03,689 - Quote queue size: 0
+2025-10-15 22:35:03,856 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:05,704 - Quote queue size: 0
+2025-10-15 22:35:05,869 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:06,363 - AIFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:35:06,365 - AIFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:35:07,710 - Quote queue size: 0
+2025-10-15 22:35:07,885 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:09,716 - Quote queue size: 0
+2025-10-15 22:35:09,899 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:11,215 - AIFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:35:11,387 - AIFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:35:11,730 - Quote queue size: 0
+2025-10-15 22:35:11,902 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:13,746 - Quote queue size: 0
+2025-10-15 22:35:13,912 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:15,748 - Quote queue size: 0
+2025-10-15 22:35:15,927 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:17,753 - Quote queue size: 0
+2025-10-15 22:35:17,938 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:19,766 - Quote queue size: 0
+2025-10-15 22:35:19,939 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:21,768 - Quote queue size: 0
+2025-10-15 22:35:21,940 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:23,770 - Quote queue size: 0
+2025-10-15 22:35:23,953 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:25,786 - Quote queue size: 0
+2025-10-15 22:35:25,955 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:27,799 - Quote queue size: 0
+2025-10-15 22:35:27,960 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:29,812 - Quote queue size: 0
+2025-10-15 22:35:29,966 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:31,814 - Quote queue size: 0
+2025-10-15 22:35:31,979 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:33,824 - Quote queue size: 0
+2025-10-15 22:35:33,994 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:35,828 - Quote queue size: 0
+2025-10-15 22:35:35,996 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:37,841 - Quote queue size: 0
+2025-10-15 22:35:38,010 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:39,857 - Quote queue size: 0
+2025-10-15 22:35:40,022 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:41,871 - Quote queue size: 0
+2025-10-15 22:35:42,028 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:43,885 - Quote queue size: 0
+2025-10-15 22:35:44,032 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:45,887 - Quote queue size: 0
+2025-10-15 22:35:46,034 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:47,887 - Quote queue size: 0
+2025-10-15 22:35:48,037 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:49,894 - Quote queue size: 0
+2025-10-15 22:35:50,043 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:51,898 - Quote queue size: 0
+2025-10-15 22:35:52,047 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:53,913 - Quote queue size: 0
+2025-10-15 22:35:54,062 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:55,928 - Quote queue size: 0
+2025-10-15 22:35:56,078 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:57,941 - Quote queue size: 0
+2025-10-15 22:35:58,092 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:35:59,946 - Quote queue size: 0
+2025-10-15 22:36:00,105 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:01,961 - Quote queue size: 0
+2025-10-15 22:36:02,117 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:03,977 - Quote queue size: 0
+2025-10-15 22:36:04,132 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:05,978 - Quote queue size: 0
+2025-10-15 22:36:06,144 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:07,988 - Quote queue size: 0
+2025-10-15 22:36:08,159 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:09,996 - Quote queue size: 0
+2025-10-15 22:36:10,168 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:12,010 - Quote queue size: 0
+2025-10-15 22:36:12,182 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:14,011 - Quote queue size: 0
+2025-10-15 22:36:14,183 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:16,023 - Quote queue size: 0
+2025-10-15 22:36:16,193 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:18,027 - Quote queue size: 0
+2025-10-15 22:36:18,199 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:20,040 - Quote queue size: 0
+2025-10-15 22:36:20,212 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:22,046 - Quote queue size: 0
+2025-10-15 22:36:22,221 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:24,056 - Quote queue size: 0
+2025-10-15 22:36:24,223 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:26,069 - Quote queue size: 0
+2025-10-15 22:36:26,236 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:28,071 - Quote queue size: 0
+2025-10-15 22:36:28,240 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:30,076 - Quote queue size: 0
+2025-10-15 22:36:30,249 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:32,082 - Quote queue size: 0
+2025-10-15 22:36:32,265 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:34,097 - Quote queue size: 0
+2025-10-15 22:36:34,277 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:36,110 - Quote queue size: 0
+2025-10-15 22:36:36,279 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:38,126 - Quote queue size: 0
+2025-10-15 22:36:38,293 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:40,139 - Quote queue size: 0
+2025-10-15 22:36:40,306 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:42,140 - Quote queue size: 0
+2025-10-15 22:36:42,314 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:42,705 - Running periodic volume checker...
+2025-10-15 22:36:44,146 - Quote queue size: 0
+2025-10-15 22:36:44,321 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:46,152 - Quote queue size: 0
+2025-10-15 22:36:46,338 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:48,162 - Quote queue size: 0
+2025-10-15 22:36:48,351 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:50,165 - Quote queue size: 0
+2025-10-15 22:36:50,362 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:52,171 - Quote queue size: 0
+2025-10-15 22:36:52,370 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:54,172 - Quote queue size: 0
+2025-10-15 22:36:54,381 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:56,178 - Quote queue size: 0
+2025-10-15 22:36:56,398 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:36:58,183 - Quote queue size: 0
+2025-10-15 22:36:58,400 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:00,194 - Quote queue size: 0
+2025-10-15 22:37:00,407 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:02,206 - Quote queue size: 0
+2025-10-15 22:37:02,422 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:04,223 - Quote queue size: 0
+2025-10-15 22:37:04,437 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:06,235 - Quote queue size: 0
+2025-10-15 22:37:06,439 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:08,236 - Quote queue size: 0
+2025-10-15 22:37:08,442 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:10,251 - Quote queue size: 0
+2025-10-15 22:37:10,450 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:12,262 - Quote queue size: 0
+2025-10-15 22:37:12,462 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:14,281 - Quote queue size: 0
+2025-10-15 22:37:14,470 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:16,294 - Quote queue size: 0
+2025-10-15 22:37:16,478 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:18,295 - Quote queue size: 0
+2025-10-15 22:37:18,493 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:20,309 - Quote queue size: 0
+2025-10-15 22:37:20,507 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:22,313 - Quote queue size: 0
+2025-10-15 22:37:22,524 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:24,298 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:37:24,323 - Quote queue size: 0
+2025-10-15 22:37:24,540 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:26,326 - Quote queue size: 0
+2025-10-15 22:37:26,553 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:28,335 - Quote queue size: 0
+2025-10-15 22:37:28,569 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:30,348 - Quote queue size: 0
+2025-10-15 22:37:30,584 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:32,366 - Quote queue size: 0
+2025-10-15 22:37:32,599 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:34,379 - Quote queue size: 0
+2025-10-15 22:37:34,604 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:36,395 - Quote queue size: 0
+2025-10-15 22:37:36,613 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:38,411 - Quote queue size: 0
+2025-10-15 22:37:38,625 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:40,422 - Quote queue size: 0
+2025-10-15 22:37:40,628 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:42,425 - Quote queue size: 0
+2025-10-15 22:37:42,641 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:44,442 - Quote queue size: 0
+2025-10-15 22:37:44,654 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:46,454 - Quote queue size: 0
+2025-10-15 22:37:46,671 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:48,468 - Quote queue size: 0
+2025-10-15 22:37:48,686 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:49,425 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:37:50,482 - Quote queue size: 0
+2025-10-15 22:37:50,700 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:52,491 - Quote queue size: 0
+2025-10-15 22:37:52,702 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:54,508 - Quote queue size: 0
+2025-10-15 22:37:54,712 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:56,513 - Quote queue size: 0
+2025-10-15 22:37:56,728 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:37:58,517 - Quote queue size: 0
+2025-10-15 22:37:58,741 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:00,524 - Quote queue size: 0
+2025-10-15 22:38:00,744 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:02,527 - Quote queue size: 0
+2025-10-15 22:38:02,746 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:04,534 - Quote queue size: 0
+2025-10-15 22:38:04,755 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:06,546 - Quote queue size: 0
+2025-10-15 22:38:06,759 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:08,559 - Quote queue size: 0
+2025-10-15 22:38:08,766 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:10,560 - Quote queue size: 0
+2025-10-15 22:38:10,776 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:12,583 - Quote queue size: 0
+2025-10-15 22:38:12,782 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:14,588 - Quote queue size: 0
+2025-10-15 22:38:14,786 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:16,596 - Quote queue size: 0
+2025-10-15 22:38:16,795 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:18,599 - Quote queue size: 0
+2025-10-15 22:38:18,809 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:20,607 - Quote queue size: 0
+2025-10-15 22:38:20,825 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:22,619 - Quote queue size: 0
+2025-10-15 22:38:22,840 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:24,624 - Quote queue size: 0
+2025-10-15 22:38:24,855 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:26,638 - Quote queue size: 0
+2025-10-15 22:38:26,857 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:28,651 - Quote queue size: 0
+2025-10-15 22:38:28,868 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:30,666 - Quote queue size: 0
+2025-10-15 22:38:30,875 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:32,681 - Quote queue size: 0
+2025-10-15 22:38:32,881 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:34,686 - Quote queue size: 0
+2025-10-15 22:38:34,899 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:36,697 - Quote queue size: 0
+2025-10-15 22:38:36,911 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:38,699 - Quote queue size: 0
+2025-10-15 22:38:38,926 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:40,710 - Quote queue size: 0
+2025-10-15 22:38:40,940 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:42,724 - Quote queue size: 0
+2025-10-15 22:38:42,956 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:44,740 - Quote queue size: 0
+2025-10-15 22:38:44,972 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:46,743 - Quote queue size: 0
+2025-10-15 22:38:46,987 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:48,753 - Quote queue size: 0
+2025-10-15 22:38:49,002 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:50,766 - Quote queue size: 0
+2025-10-15 22:38:51,017 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:52,784 - Quote queue size: 0
+2025-10-15 22:38:53,021 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:54,798 - Quote queue size: 0
+2025-10-15 22:38:55,034 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:56,806 - Quote queue size: 0
+2025-10-15 22:38:57,044 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:38:58,813 - Quote queue size: 0
+2025-10-15 22:38:59,059 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:00,824 - Quote queue size: 0
+2025-10-15 22:39:01,076 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:02,840 - Quote queue size: 0
+2025-10-15 22:39:03,091 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:04,856 - Quote queue size: 0
+2025-10-15 22:39:05,103 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:06,869 - Quote queue size: 0
+2025-10-15 22:39:07,119 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:08,871 - Quote queue size: 0
+2025-10-15 22:39:09,134 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:10,878 - Quote queue size: 0
+2025-10-15 22:39:11,150 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:12,881 - Quote queue size: 0
+2025-10-15 22:39:13,166 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:14,895 - Quote queue size: 0
+2025-10-15 22:39:15,180 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:16,898 - Quote queue size: 0
+2025-10-15 22:39:17,194 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:18,910 - Quote queue size: 0
+2025-10-15 22:39:19,199 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:20,925 - Quote queue size: 0
+2025-10-15 22:39:21,209 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:22,936 - Quote queue size: 0
+2025-10-15 22:39:23,211 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:24,938 - Quote queue size: 0
+2025-10-15 22:39:25,216 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:26,950 - Quote queue size: 0
+2025-10-15 22:39:27,218 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:28,956 - Quote queue size: 0
+2025-10-15 22:39:29,221 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:30,967 - Quote queue size: 0
+2025-10-15 22:39:31,232 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:32,984 - Quote queue size: 0
+2025-10-15 22:39:33,233 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:34,988 - Quote queue size: 0
+2025-10-15 22:39:35,240 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:36,994 - Quote queue size: 0
+2025-10-15 22:39:37,244 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:38,997 - Quote queue size: 0
+2025-10-15 22:39:39,246 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:41,003 - Quote queue size: 0
+2025-10-15 22:39:41,261 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:43,005 - Quote queue size: 0
+2025-10-15 22:39:43,267 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:45,022 - Quote queue size: 0
+2025-10-15 22:39:45,272 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:47,038 - Quote queue size: 0
+2025-10-15 22:39:47,285 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:49,052 - Quote queue size: 0
+2025-10-15 22:39:49,286 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:51,065 - Quote queue size: 0
+2025-10-15 22:39:51,300 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:53,082 - Quote queue size: 0
+2025-10-15 22:39:53,313 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:55,098 - Quote queue size: 0
+2025-10-15 22:39:55,315 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:57,118 - Quote queue size: 0
+2025-10-15 22:39:57,328 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:39:59,129 - Quote queue size: 0
+2025-10-15 22:39:59,344 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:01,141 - Quote queue size: 0
+2025-10-15 22:40:01,361 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:03,157 - Quote queue size: 0
+2025-10-15 22:40:03,371 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:05,161 - Quote queue size: 0
+2025-10-15 22:40:05,373 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:07,172 - Quote queue size: 0
+2025-10-15 22:40:07,388 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:09,177 - Quote queue size: 0
+2025-10-15 22:40:09,402 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:11,184 - Quote queue size: 0
+2025-10-15 22:40:11,417 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:13,185 - Quote queue size: 0
+2025-10-15 22:40:13,422 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:15,196 - Quote queue size: 0
+2025-10-15 22:40:15,432 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:17,211 - Quote queue size: 0
+2025-10-15 22:40:17,446 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:19,228 - Quote queue size: 0
+2025-10-15 22:40:19,463 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:21,243 - Quote queue size: 0
+2025-10-15 22:40:21,475 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:23,257 - Quote queue size: 0
+2025-10-15 22:40:23,493 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:25,271 - Quote queue size: 0
+2025-10-15 22:40:25,502 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:27,274 - Quote queue size: 0
+2025-10-15 22:40:27,512 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:29,285 - Quote queue size: 0
+2025-10-15 22:40:29,519 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:31,299 - Quote queue size: 0
+2025-10-15 22:40:31,528 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:33,309 - Quote queue size: 0
+2025-10-15 22:40:33,532 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:35,312 - Quote queue size: 0
+2025-10-15 22:40:35,535 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:37,314 - Quote queue size: 0
+2025-10-15 22:40:37,547 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:39,326 - Quote queue size: 0
+2025-10-15 22:40:39,560 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:41,328 - Quote queue size: 0
+2025-10-15 22:40:41,562 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:43,341 - Quote queue size: 0
+2025-10-15 22:40:43,564 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:45,343 - Quote queue size: 0
+2025-10-15 22:40:45,567 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:47,348 - Quote queue size: 0
+2025-10-15 22:40:47,570 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:49,353 - Quote queue size: 0
+2025-10-15 22:40:49,584 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:51,367 - Quote queue size: 0
+2025-10-15 22:40:51,586 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:53,384 - Quote queue size: 0
+2025-10-15 22:40:53,601 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:55,400 - Quote queue size: 0
+2025-10-15 22:40:55,618 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:57,413 - Quote queue size: 0
+2025-10-15 22:40:57,631 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:40:59,415 - Quote queue size: 0
+2025-10-15 22:40:59,646 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:01,427 - Quote queue size: 0
+2025-10-15 22:41:01,660 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:03,440 - Quote queue size: 0
+2025-10-15 22:41:03,676 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:05,447 - Quote queue size: 0
+2025-10-15 22:41:05,689 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:07,454 - Quote queue size: 0
+2025-10-15 22:41:07,704 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:09,463 - Quote queue size: 0
+2025-10-15 22:41:09,719 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:11,467 - Quote queue size: 0
+2025-10-15 22:41:11,722 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:13,468 - Quote queue size: 0
+2025-10-15 22:41:13,734 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:15,471 - Quote queue size: 0
+2025-10-15 22:41:15,741 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:17,479 - Quote queue size: 0
+2025-10-15 22:41:17,746 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:19,488 - Quote queue size: 0
+2025-10-15 22:41:19,757 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:21,491 - Quote queue size: 0
+2025-10-15 22:41:21,761 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:23,508 - Quote queue size: 0
+2025-10-15 22:41:23,776 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:25,521 - Quote queue size: 0
+2025-10-15 22:41:25,787 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:27,536 - Quote queue size: 0
+2025-10-15 22:41:27,789 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:29,537 - Quote queue size: 0
+2025-10-15 22:41:29,795 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:31,550 - Quote queue size: 0
+2025-10-15 22:41:31,803 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:33,554 - Quote queue size: 0
+2025-10-15 22:41:33,816 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:35,567 - Quote queue size: 0
+2025-10-15 22:41:35,829 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:37,575 - Quote queue size: 0
+2025-10-15 22:41:37,844 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:39,577 - Quote queue size: 0
+2025-10-15 22:41:39,859 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:41,592 - Quote queue size: 0
+2025-10-15 22:41:41,861 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:42,710 - Running periodic volume checker...
+2025-10-15 22:41:43,603 - Quote queue size: 0
+2025-10-15 22:41:43,874 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:45,611 - Quote queue size: 0
+2025-10-15 22:41:45,878 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:47,621 - Quote queue size: 0
+2025-10-15 22:41:47,903 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:49,635 - Quote queue size: 0
+2025-10-15 22:41:49,904 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:51,650 - Quote queue size: 0
+2025-10-15 22:41:51,918 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:53,653 - Quote queue size: 0
+2025-10-15 22:41:53,934 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:55,664 - Quote queue size: 0
+2025-10-15 22:41:55,951 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:57,680 - Quote queue size: 0
+2025-10-15 22:41:57,964 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:41:59,688 - Quote queue size: 0
+2025-10-15 22:41:59,983 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:01,692 - Quote queue size: 0
+2025-10-15 22:42:01,992 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:03,706 - Quote queue size: 0
+2025-10-15 22:42:03,996 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:04,942 - XHG: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:42:05,722 - Quote queue size: 0
+2025-10-15 22:42:05,998 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:07,738 - Quote queue size: 0
+2025-10-15 22:42:08,004 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:09,741 - Quote queue size: 0
+2025-10-15 22:42:10,019 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:11,752 - Quote queue size: 0
+2025-10-15 22:42:12,033 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:13,755 - Quote queue size: 0
+2025-10-15 22:42:14,048 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:15,765 - Quote queue size: 0
+2025-10-15 22:42:16,063 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:17,768 - Quote queue size: 0
+2025-10-15 22:42:18,077 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:19,778 - Quote queue size: 0
+2025-10-15 22:42:20,090 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:21,794 - Quote queue size: 0
+2025-10-15 22:42:22,093 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:23,809 - Quote queue size: 0
+2025-10-15 22:42:24,107 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:25,823 - Quote queue size: 0
+2025-10-15 22:42:26,119 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:27,827 - Quote queue size: 0
+2025-10-15 22:42:28,135 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:29,836 - Quote queue size: 0
+2025-10-15 22:42:30,147 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:31,850 - Quote queue size: 0
+2025-10-15 22:42:32,150 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:33,864 - Quote queue size: 0
+2025-10-15 22:42:34,164 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:35,867 - Quote queue size: 0
+2025-10-15 22:42:36,178 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:37,879 - Quote queue size: 0
+2025-10-15 22:42:38,180 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:39,894 - Quote queue size: 0
+2025-10-15 22:42:40,194 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:41,898 - Quote queue size: 0
+2025-10-15 22:42:42,209 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:43,908 - Quote queue size: 0
+2025-10-15 22:42:44,223 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:45,922 - Quote queue size: 0
+2025-10-15 22:42:46,237 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:47,923 - Quote queue size: 0
+2025-10-15 22:42:48,253 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:49,936 - Quote queue size: 0
+2025-10-15 22:42:50,267 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:51,950 - Quote queue size: 0
+2025-10-15 22:42:52,282 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:53,952 - Quote queue size: 0
+2025-10-15 22:42:54,286 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:55,964 - Quote queue size: 0
+2025-10-15 22:42:56,297 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:57,965 - Quote queue size: 0
+2025-10-15 22:42:58,299 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:42:59,978 - Quote queue size: 0
+2025-10-15 22:43:00,310 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:01,992 - Quote queue size: 0
+2025-10-15 22:43:02,326 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:03,995 - Quote queue size: 0
+2025-10-15 22:43:04,341 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:05,997 - Quote queue size: 0
+2025-10-15 22:43:06,358 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:08,007 - Quote queue size: 0
+2025-10-15 22:43:08,371 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:10,019 - Quote queue size: 0
+2025-10-15 22:43:10,374 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:12,022 - Quote queue size: 0
+2025-10-15 22:43:12,385 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:14,034 - Quote queue size: 0
+2025-10-15 22:43:14,404 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:16,049 - Quote queue size: 0
+2025-10-15 22:43:16,414 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:18,063 - Quote queue size: 0
+2025-10-15 22:43:18,418 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:18,738 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:43:20,078 - Quote queue size: 0
+2025-10-15 22:43:20,427 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:22,086 - Quote queue size: 0
+2025-10-15 22:43:22,441 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:24,091 - Quote queue size: 0
+2025-10-15 22:43:24,442 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:26,092 - Quote queue size: 0
+2025-10-15 22:43:26,462 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:28,094 - Quote queue size: 0
+2025-10-15 22:43:28,468 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:30,102 - Quote queue size: 0
+2025-10-15 22:43:30,471 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:32,113 - Quote queue size: 0
+2025-10-15 22:43:32,485 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:34,117 - Quote queue size: 0
+2025-10-15 22:43:34,500 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:36,121 - Quote queue size: 0
+2025-10-15 22:43:36,508 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:38,132 - Quote queue size: 0
+2025-10-15 22:43:38,518 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:40,146 - Quote queue size: 0
+2025-10-15 22:43:40,534 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:42,150 - Quote queue size: 0
+2025-10-15 22:43:42,545 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:44,150 - Quote queue size: 0
+2025-10-15 22:43:44,558 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:46,158 - Quote queue size: 0
+2025-10-15 22:43:46,572 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:48,170 - Quote queue size: 0
+2025-10-15 22:43:48,585 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:50,174 - Quote queue size: 0
+2025-10-15 22:43:50,586 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:52,185 - Quote queue size: 0
+2025-10-15 22:43:52,592 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:54,201 - Quote queue size: 0
+2025-10-15 22:43:54,600 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:56,202 - Quote queue size: 0
+2025-10-15 22:43:56,615 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:43:58,097 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:43:58,209 - Quote queue size: 0
+2025-10-15 22:43:58,628 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:00,222 - Quote queue size: 0
+2025-10-15 22:44:00,644 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:02,226 - Quote queue size: 0
+2025-10-15 22:44:02,659 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:04,238 - Quote queue size: 0
+2025-10-15 22:44:04,666 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:06,251 - Quote queue size: 0
+2025-10-15 22:44:06,672 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:08,255 - Quote queue size: 0
+2025-10-15 22:44:08,675 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:10,268 - Quote queue size: 0
+2025-10-15 22:44:10,687 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:12,269 - Quote queue size: 0
+2025-10-15 22:44:12,701 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:14,282 - Quote queue size: 0
+2025-10-15 22:44:14,704 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:16,297 - Quote queue size: 0
+2025-10-15 22:44:16,715 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:18,313 - Quote queue size: 0
+2025-10-15 22:44:18,731 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:20,328 - Quote queue size: 0
+2025-10-15 22:44:20,744 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:22,342 - Quote queue size: 0
+2025-10-15 22:44:22,759 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:24,344 - Quote queue size: 0
+2025-10-15 22:44:24,761 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:26,348 - Quote queue size: 0
+2025-10-15 22:44:26,762 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:28,355 - Quote queue size: 0
+2025-10-15 22:44:28,771 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:30,368 - Quote queue size: 0
+2025-10-15 22:44:30,787 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:32,370 - Quote queue size: 0
+2025-10-15 22:44:32,800 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:34,383 - Quote queue size: 0
+2025-10-15 22:44:34,802 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:36,385 - Quote queue size: 0
+2025-10-15 22:44:36,805 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:38,398 - Quote queue size: 0
+2025-10-15 22:44:38,814 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:40,411 - Quote queue size: 0
+2025-10-15 22:44:40,828 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:42,424 - Quote queue size: 0
+2025-10-15 22:44:42,844 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:44,425 - Quote queue size: 0
+2025-10-15 22:44:44,859 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:46,429 - Quote queue size: 0
+2025-10-15 22:44:46,874 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:48,439 - Quote queue size: 0
+2025-10-15 22:44:48,889 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:50,455 - Quote queue size: 0
+2025-10-15 22:44:50,890 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:52,470 - Quote queue size: 0
+2025-10-15 22:44:52,901 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:54,480 - Quote queue size: 0
+2025-10-15 22:44:54,915 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:56,481 - Quote queue size: 0
+2025-10-15 22:44:56,917 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:44:58,497 - Quote queue size: 0
+2025-10-15 22:44:58,919 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:00,510 - Quote queue size: 0
+2025-10-15 22:45:00,928 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:02,514 - Quote queue size: 0
+2025-10-15 22:45:02,944 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:04,527 - Quote queue size: 0
+2025-10-15 22:45:04,959 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:06,541 - Quote queue size: 0
+2025-10-15 22:45:06,974 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:08,555 - Quote queue size: 0
+2025-10-15 22:45:08,976 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:09,740 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:45:09,742 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:45:10,564 - Quote queue size: 0
+2025-10-15 22:45:10,990 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:12,569 - Quote queue size: 0
+2025-10-15 22:45:13,001 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:14,582 - Quote queue size: 0
+2025-10-15 22:45:15,012 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:16,590 - Quote queue size: 0
+2025-10-15 22:45:17,015 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:18,612 - Quote queue size: 0
+2025-10-15 22:45:19,028 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:20,615 - Quote queue size: 0
+2025-10-15 22:45:21,033 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:22,627 - Quote queue size: 0
+2025-10-15 22:45:23,043 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:24,641 - Quote queue size: 0
+2025-10-15 22:45:25,058 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:26,657 - Quote queue size: 0
+2025-10-15 22:45:27,072 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:28,670 - Quote queue size: 0
+2025-10-15 22:45:29,087 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:30,672 - Quote queue size: 0
+2025-10-15 22:45:31,103 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:32,674 - Quote queue size: 0
+2025-10-15 22:45:33,118 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:34,686 - Quote queue size: 0
+2025-10-15 22:45:35,119 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:36,700 - Quote queue size: 0
+2025-10-15 22:45:37,133 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:38,714 - Quote queue size: 0
+2025-10-15 22:45:39,135 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:40,731 - Quote queue size: 0
+2025-10-15 22:45:41,143 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:42,746 - Quote queue size: 0
+2025-10-15 22:45:43,160 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:44,759 - Quote queue size: 0
+2025-10-15 22:45:45,165 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:46,774 - Quote queue size: 0
+2025-10-15 22:45:47,174 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:48,789 - Quote queue size: 0
+2025-10-15 22:45:49,191 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:50,803 - Quote queue size: 0
+2025-10-15 22:45:51,202 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:52,804 - Quote queue size: 0
+2025-10-15 22:45:53,204 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:53,970 - FOXX: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:45:54,817 - Quote queue size: 0
+2025-10-15 22:45:55,217 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:56,834 - Quote queue size: 0
+2025-10-15 22:45:57,233 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:45:58,850 - Quote queue size: 0
+2025-10-15 22:45:59,246 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:00,853 - Quote queue size: 0
+2025-10-15 22:46:01,256 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:02,859 - Quote queue size: 0
+2025-10-15 22:46:03,258 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:04,860 - Quote queue size: 0
+2025-10-15 22:46:05,260 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:06,877 - Quote queue size: 0
+2025-10-15 22:46:07,274 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:08,889 - Quote queue size: 0
+2025-10-15 22:46:09,289 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:10,893 - Quote queue size: 0
+2025-10-15 22:46:11,305 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:12,902 - Quote queue size: 0
+2025-10-15 22:46:13,320 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:14,917 - Quote queue size: 0
+2025-10-15 22:46:15,337 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:16,931 - Quote queue size: 0
+2025-10-15 22:46:17,348 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:18,936 - Quote queue size: 0
+2025-10-15 22:46:19,355 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:20,650 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:46:20,948 - Quote queue size: 0
+2025-10-15 22:46:21,361 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:22,958 - Quote queue size: 0
+2025-10-15 22:46:23,375 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:24,967 - Quote queue size: 0
+2025-10-15 22:46:25,390 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:26,975 - Quote queue size: 0
+2025-10-15 22:46:27,399 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:28,988 - Quote queue size: 0
+2025-10-15 22:46:29,404 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:30,998 - Quote queue size: 0
+2025-10-15 22:46:31,407 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:33,002 - Quote queue size: 0
+2025-10-15 22:46:33,418 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:35,004 - Quote queue size: 0
+2025-10-15 22:46:35,422 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:37,016 - Quote queue size: 0
+2025-10-15 22:46:37,432 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:39,029 - Quote queue size: 0
+2025-10-15 22:46:39,433 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:41,030 - Quote queue size: 0
+2025-10-15 22:46:41,445 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:42,727 - Running periodic volume checker...
+2025-10-15 22:46:43,043 - Quote queue size: 0
+2025-10-15 22:46:43,452 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:45,059 - Quote queue size: 0
+2025-10-15 22:46:45,457 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:47,073 - Quote queue size: 0
+2025-10-15 22:46:47,472 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:49,088 - Quote queue size: 0
+2025-10-15 22:46:49,474 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:51,104 - Quote queue size: 0
+2025-10-15 22:46:51,485 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:53,118 - Quote queue size: 0
+2025-10-15 22:46:53,501 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:55,132 - Quote queue size: 0
+2025-10-15 22:46:55,515 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:57,134 - Quote queue size: 0
+2025-10-15 22:46:57,531 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:46:59,146 - Quote queue size: 0
+2025-10-15 22:46:59,533 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:01,162 - Quote queue size: 0
+2025-10-15 22:47:01,535 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:03,177 - Quote queue size: 0
+2025-10-15 22:47:03,542 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:05,192 - Quote queue size: 0
+2025-10-15 22:47:05,558 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:07,208 - Quote queue size: 0
+2025-10-15 22:47:07,572 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:09,222 - Quote queue size: 0
+2025-10-15 22:47:09,586 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:11,228 - Quote queue size: 0
+2025-10-15 22:47:11,602 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:13,233 - Quote queue size: 0
+2025-10-15 22:47:13,605 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:15,235 - Quote queue size: 0
+2025-10-15 22:47:15,615 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:17,239 - Quote queue size: 0
+2025-10-15 22:47:17,617 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:19,246 - Quote queue size: 0
+2025-10-15 22:47:19,623 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:21,247 - Quote queue size: 0
+2025-10-15 22:47:21,628 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:23,255 - Quote queue size: 0
+2025-10-15 22:47:23,629 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:25,263 - Quote queue size: 0
+2025-10-15 22:47:25,634 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:27,275 - Quote queue size: 0
+2025-10-15 22:47:27,639 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:29,290 - Quote queue size: 0
+2025-10-15 22:47:29,655 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:31,305 - Quote queue size: 0
+2025-10-15 22:47:31,656 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:33,321 - Quote queue size: 0
+2025-10-15 22:47:33,670 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:35,334 - Quote queue size: 0
+2025-10-15 22:47:35,674 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:36,781 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:47:37,341 - Quote queue size: 0
+2025-10-15 22:47:37,677 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:39,351 - Quote queue size: 0
+2025-10-15 22:47:39,680 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:41,365 - Quote queue size: 0
+2025-10-15 22:47:41,695 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:43,377 - Quote queue size: 0
+2025-10-15 22:47:43,708 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:45,281 - UTSI: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:47:45,281 - UTSI: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:47:45,378 - Quote queue size: 0
+2025-10-15 22:47:45,709 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:47,390 - Quote queue size: 0
+2025-10-15 22:47:47,723 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:49,391 - Quote queue size: 0
+2025-10-15 22:47:49,739 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:51,406 - Quote queue size: 0
+2025-10-15 22:47:51,752 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:53,421 - Quote queue size: 0
+2025-10-15 22:47:53,754 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:55,436 - Quote queue size: 0
+2025-10-15 22:47:55,767 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:57,438 - Quote queue size: 0
+2025-10-15 22:47:57,768 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:47:59,447 - Quote queue size: 0
+2025-10-15 22:47:59,783 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:01,461 - Quote queue size: 0
+2025-10-15 22:48:01,795 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:03,463 - Quote queue size: 0
+2025-10-15 22:48:03,798 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:05,471 - Quote queue size: 0
+2025-10-15 22:48:05,809 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:07,477 - Quote queue size: 0
+2025-10-15 22:48:07,810 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:09,489 - Quote queue size: 0
+2025-10-15 22:48:09,822 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:11,504 - Quote queue size: 0
+2025-10-15 22:48:11,837 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:13,521 - Quote queue size: 0
+2025-10-15 22:48:13,851 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:15,525 - Quote queue size: 0
+2025-10-15 22:48:15,852 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:17,532 - Quote queue size: 0
+2025-10-15 22:48:17,859 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:19,548 - Quote queue size: 0
+2025-10-15 22:48:19,880 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:21,561 - Quote queue size: 0
+2025-10-15 22:48:21,881 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:23,575 - Quote queue size: 0
+2025-10-15 22:48:23,893 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:25,577 - Quote queue size: 0
+2025-10-15 22:48:25,900 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:27,591 - Quote queue size: 0
+2025-10-15 22:48:27,909 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:29,606 - Quote queue size: 0
+2025-10-15 22:48:29,921 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:31,620 - Quote queue size: 0
+2025-10-15 22:48:31,937 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:33,623 - Quote queue size: 0
+2025-10-15 22:48:33,952 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:35,635 - Quote queue size: 0
+2025-10-15 22:48:35,966 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:37,650 - Quote queue size: 0
+2025-10-15 22:48:37,968 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:39,663 - Quote queue size: 0
+2025-10-15 22:48:39,982 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:41,679 - Quote queue size: 0
+2025-10-15 22:48:41,989 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:43,692 - Quote queue size: 0
+2025-10-15 22:48:43,995 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:45,697 - Quote queue size: 0
+2025-10-15 22:48:46,006 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:47,701 - Quote queue size: 0
+2025-10-15 22:48:48,017 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:49,705 - Quote queue size: 0
+2025-10-15 22:48:50,035 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:51,706 - Quote queue size: 0
+2025-10-15 22:48:52,050 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:53,713 - Quote queue size: 0
+2025-10-15 22:48:54,059 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:54,495 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:48:55,718 - Quote queue size: 0
+2025-10-15 22:48:56,063 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:57,733 - Quote queue size: 0
+2025-10-15 22:48:58,067 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:48:59,749 - Quote queue size: 0
+2025-10-15 22:49:00,079 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:01,753 - Quote queue size: 0
+2025-10-15 22:49:02,096 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:03,761 - Quote queue size: 0
+2025-10-15 22:49:04,104 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:05,774 - Quote queue size: 0
+2025-10-15 22:49:06,113 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:07,782 - Quote queue size: 0
+2025-10-15 22:49:08,123 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:09,791 - Quote queue size: 0
+2025-10-15 22:49:10,140 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:11,806 - Quote queue size: 0
+2025-10-15 22:49:12,142 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:13,814 - Quote queue size: 0
+2025-10-15 22:49:14,150 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:15,820 - Quote queue size: 0
+2025-10-15 22:49:16,165 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:17,827 - Quote queue size: 0
+2025-10-15 22:49:18,166 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:19,832 - Quote queue size: 0
+2025-10-15 22:49:20,169 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:21,846 - Quote queue size: 0
+2025-10-15 22:49:22,177 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:23,859 - Quote queue size: 0
+2025-10-15 22:49:24,178 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:25,874 - Quote queue size: 0
+2025-10-15 22:49:26,193 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:27,875 - Quote queue size: 0
+2025-10-15 22:49:28,209 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:29,891 - Quote queue size: 0
+2025-10-15 22:49:30,240 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:31,901 - Quote queue size: 0
+2025-10-15 22:49:32,254 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:33,905 - Quote queue size: 0
+2025-10-15 22:49:34,266 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:35,917 - Quote queue size: 0
+2025-10-15 22:49:36,268 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:37,919 - Quote queue size: 0
+2025-10-15 22:49:38,284 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:39,925 - Quote queue size: 0
+2025-10-15 22:49:40,299 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:41,929 - Quote queue size: 0
+2025-10-15 22:49:42,311 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:43,943 - Quote queue size: 0
+2025-10-15 22:49:44,324 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:45,945 - Quote queue size: 0
+2025-10-15 22:49:46,339 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:47,956 - Quote queue size: 0
+2025-10-15 22:49:48,343 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:49,958 - Quote queue size: 0
+2025-10-15 22:49:50,347 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:51,971 - Quote queue size: 0
+2025-10-15 22:49:52,355 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:53,975 - Quote queue size: 0
+2025-10-15 22:49:54,358 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:55,985 - Quote queue size: 0
+2025-10-15 22:49:56,361 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:57,986 - Quote queue size: 0
+2025-10-15 22:49:58,367 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:49:59,999 - Quote queue size: 0
+2025-10-15 22:50:00,380 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:02,003 - Quote queue size: 0
+2025-10-15 22:50:02,381 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:04,012 - Quote queue size: 0
+2025-10-15 22:50:04,383 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:06,025 - Quote queue size: 0
+2025-10-15 22:50:06,393 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:08,041 - Quote queue size: 0
+2025-10-15 22:50:08,408 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:10,054 - Quote queue size: 0
+2025-10-15 22:50:10,421 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:11,814 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:50:11,815 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:50:12,055 - Quote queue size: 0
+2025-10-15 22:50:12,424 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:13,408 - CLRO: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:50:14,070 - Quote queue size: 0
+2025-10-15 22:50:14,434 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:16,086 - Quote queue size: 0
+2025-10-15 22:50:16,443 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:18,100 - Quote queue size: 0
+2025-10-15 22:50:18,448 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:20,103 - Quote queue size: 0
+2025-10-15 22:50:20,450 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:22,114 - Quote queue size: 0
+2025-10-15 22:50:22,465 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:24,127 - Quote queue size: 0
+2025-10-15 22:50:24,478 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:26,129 - Quote queue size: 0
+2025-10-15 22:50:26,493 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:28,132 - Quote queue size: 0
+2025-10-15 22:50:28,508 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:30,141 - Quote queue size: 0
+2025-10-15 22:50:30,510 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:32,151 - Quote queue size: 0
+2025-10-15 22:50:32,521 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:34,155 - Quote queue size: 0
+2025-10-15 22:50:34,523 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:36,168 - Quote queue size: 0
+2025-10-15 22:50:36,534 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:38,174 - Quote queue size: 0
+2025-10-15 22:50:38,548 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:40,182 - Quote queue size: 0
+2025-10-15 22:50:40,565 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:42,193 - Quote queue size: 0
+2025-10-15 22:50:42,598 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:44,196 - Quote queue size: 0
+2025-10-15 22:50:44,611 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:46,213 - Quote queue size: 0
+2025-10-15 22:50:46,617 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:48,219 - Quote queue size: 0
+2025-10-15 22:50:48,624 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:50,226 - Quote queue size: 0
+2025-10-15 22:50:50,639 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:52,240 - Quote queue size: 0
+2025-10-15 22:50:52,655 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:54,255 - Quote queue size: 0
+2025-10-15 22:50:54,660 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:56,261 - Quote queue size: 0
+2025-10-15 22:50:56,667 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:50:58,266 - Quote queue size: 0
+2025-10-15 22:50:58,671 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:00,280 - Quote queue size: 0
+2025-10-15 22:51:00,681 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:02,297 - Quote queue size: 0
+2025-10-15 22:51:02,683 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:04,303 - Quote queue size: 0
+2025-10-15 22:51:04,694 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:06,308 - Quote queue size: 0
+2025-10-15 22:51:06,700 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:08,309 - Quote queue size: 0
+2025-10-15 22:51:08,702 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:10,322 - Quote queue size: 0
+2025-10-15 22:51:10,706 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:12,337 - Quote queue size: 0
+2025-10-15 22:51:12,722 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:14,350 - Quote queue size: 0
+2025-10-15 22:51:14,736 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:16,353 - Quote queue size: 0
+2025-10-15 22:51:16,750 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:18,363 - Quote queue size: 0
+2025-10-15 22:51:18,760 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:20,366 - Quote queue size: 0
+2025-10-15 22:51:20,761 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
