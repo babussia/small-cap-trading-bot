@@ -2431,3 +2431,18 @@
 2025-10-15 22:51:18,760 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 2025-10-15 22:51:20,366 - Quote queue size: 0
 2025-10-15 22:51:20,761 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:22,369 - Quote queue size: 0
+2025-10-15 22:51:22,762 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:24,377 - Quote queue size: 0
+2025-10-15 22:51:24,763 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:26,392 - Quote queue size: 0
+2025-10-15 22:51:26,776 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:28,395 - Quote queue size: 0
+2025-10-15 22:51:28,776 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:28,933 - WAFU: Not enough recent trades (0) for flash spike detection.
+2025-10-15 22:51:30,409 - Quote queue size: 0
+2025-10-15 22:51:30,778 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:32,415 - Quote queue size: 0
+2025-10-15 22:51:32,786 - Trade queues: total=0, per_worker=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+2025-10-15 22:51:34,040 - Async tasks cancelled cleanly.
+2025-10-15 22:51:34,041 - Shutting down WebSocket connection...
