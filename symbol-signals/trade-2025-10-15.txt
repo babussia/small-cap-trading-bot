@@ -1,2 +1,4 @@
 AAPL
 AAPL
+AAPL
+{"symbol":"GME","price":2.45,"change_pct":14.2,"volume_intraday":1200000,"spread":0.03,"time":"09:47:15"}

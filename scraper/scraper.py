@@ -127,8 +127,8 @@ def show_popup(symbol):
 
     # place on second monitor if exists
     screens = screeninfo.get_monitors()
-    if len(screens) > 1:
-        second = screens[1]
+    if len(screens) > 0:
+        second = screens[0]
         x = second.x + 50
         y = second.y + 50
     else:

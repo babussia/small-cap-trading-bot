@@ -22,6 +22,9 @@ import alpaca_trade_api as tradeapi
 from collections import namedtuple
 import ssl, certifi
 
+from backend.hod_tracker import hod_tracker
+
+
 ssl_context = ssl.create_default_context(cafile=certifi.where())
 
 TradeEvent = namedtuple("TradeEvent", ["timestamp", "price", "size"])
@@ -231,6 +234,8 @@ def save_executed():
 
 
 symbols = load_symbols()
+
+
 # Стан для кожного символу
 in_position = {s: False for s in symbols}
 entry_price = {}
@@ -342,6 +347,24 @@ async def get_last_known_price(sym):
         logger.warning(f"{sym}: Failed trade: {e}")
 
     return None
+
+# === HOD baseline initializer: set previous close (or fallback) for every symbol ===
+async def initialize_base_prices():
+    logger.info("Fetching previous closes for HOD tracking...")
+    for sym in symbols:
+        try:
+            prev_close = await get_previous_day_close(sym)
+            if not prev_close or prev_close <= 0:
+                prev_close = await get_last_known_price(sym)
+
+            if prev_close and prev_close > 0:
+                hod_tracker.set_base_price(sym, prev_close)
+                logger.info(f"{sym}: base={prev_close}")
+            else:
+                logger.warning(f"{sym}: no valid baseline price found.")
+        except Exception as e:
+            logger.warning(f"{sym}: failed base price — {e}")
+    logger.info("✅ All base prices initialized.")
 
 
 def in_window():
@@ -522,60 +545,42 @@ async def process_quote(q):
         return
     processing_symbols.add(sym)
 
-    # Build dynamic filename
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    trade_file = os.path.join("symbol-signals", f"trade-{today_str}.txt")
-
-    # === NEW: Write symbol to trade-{date}.txt for AHK instead of Alpaca order
+    # === POST signal directly to FastAPI backend ===
     try:
-        # Ensure folder exists
-        os.makedirs("symbol-signals", exist_ok=True)
+        backend_url = "http://127.0.0.1:8000/signal"
+        signal_data = {
+            "symbol": sym,
+            "price": round(price, 2),
+            "change_pct": round(change_5min * 100, 2),
+            "volume_intraday": total_volume_since_4am.get(sym, 0),
+            "spread": round(spread, 2),
+            "time": ts.strftime("%H:%M:%S")
+        }
 
-        with open(trade_file, "a+") as f:
-            f.seek(0)  # Move cursor to beginning to read existing content
-            symbols_in_file = {line.strip() for line in f}
-            if sym not in symbols_in_file:
-                # ✅ Keep original behavior for AHK
-                f.write(f"{sym}\n")
+               # --- POST signal to backend ---
+        resp = requests.post(backend_url, json=signal_data, timeout=3)
+        if resp.status_code == 200:
+            logger.info(f"✅ Signal sent to backend: {signal_data}")
+            play_sound()
+        else:
+            logger.warning(f"⚠️ Failed to send signal for {sym}: {resp.status_code} {resp.text}")
 
-                # === 📌 ADD METADATA FOR FRONTEND (JSON LINE) ===
-                price_at_detection = price  # current ask price at detection
-                low_price_5min = lowest_price
-                price_jump = change_5min * 100
-                number_of_trades_1sec = len(recent_trades)
-                avg_vol_1sec = avg_volume
-                price_diff_1sec = price_move
-                intraday_volume = total_volume_since_4am.get(sym, 0)  # ✅ full volume from 4AM
-                spread_now = spread
-                timestamp_now = ts.strftime("%H:%M:%S")  # detection time
+        # --- HOD Logic ---
+        try:
+            new_high = hod_tracker.update(
+                symbol=sym,
+                price=price,
+                change_pct=signal_data["change_pct"]
+            )
+            if new_high:
+                logger.info(f"🚀 {sym} made new HOD at ${price:.2f}")
+        except Exception as e:
+            logger.warning(f"HOD update failed for {sym}: {e}")
 
-                extra = {
-                    "symbol": sym,
-                    "price": round(price_at_detection, 2),
-                    "change_pct": round(price_jump, 2),
-                    "volume_intraday": intraday_volume,
-                    "spread": round(spread_now, 2),
-                    "time": timestamp_now
-                }
-
-                # ✅ Append structured JSON data on its own line
-                f.write(json.dumps(extra) + "\n")
-
-                logger.info(
-                    f"{sym} written to {trade_file} for AHK | "
-                    f"price_at_detection={price_at_detection:.2f}, "
-                    f"low_price_5min={low_price_5min:.2f}, "
-                    f"price_jump={price_jump:.2f}%, "
-                    f"vol_5min={vol_5min}, "
-                    f"number_of_trades_1sec={number_of_trades_1sec}, "
-                    f"avg_vol_1sec={avg_vol_1sec:.0f}, "
-                    f"price_diff_1sec={price_diff_1sec:.2f}"
-                )
-                play_sound()
-            else:
-                logger.info(f"{sym} already exists in {trade_file} — skipping.")
     except Exception as e:
-        logger.error(f"Failed to write {sym} to {trade_file}: {e}")
+        logger.error(f"❌ Error posting signal for {sym}: {e}")
+
+
 
     processing_symbols.discard(sym)
 
@@ -621,6 +626,13 @@ async def process_trade(t):
     except Exception as e:
         logger.warning(f"{sym}: Failed quote for trade side check: {e}")
         trade_history[sym].append((current_time, False))
+
+        # --- HOD Tracker live update (price vs base -> % change, detect new highs) ---
+    try:
+        hod_tracker.update_price(sym, t.price)
+    except Exception as e:
+        logger.warning(f"HOD tracker update failed for {sym}: {e}")
+
 
     if not in_position.get(sym):
         return
@@ -738,6 +750,11 @@ async def log_trade_queues_size():
 
 async def main():
     logger.info("Bot initialized.")
+
+    # === NEW: Initialize HOD baseline prices (previous close / fallback) ===
+    await initialize_base_prices()
+
+    # === Existing logic ===
     for sym in symbols:
         initialize_total_volume(sym)
     for sym in symbols:

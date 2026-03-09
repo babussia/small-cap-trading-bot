@@ -17,15 +17,10 @@
             card: '#131a22',
             soft: '#1b2430',
             accent: '#0ea5e9',
-            green: '#22c55e',
-            red: '#ef4444',
             text: '#e5e7eb'
           },
           boxShadow: {
             soft: '0 6px 24px rgba(0,0,0,0.25)'
-          },
-          borderRadius: {
-            xl2: '1rem'
           }
         }
       }
@@ -36,24 +31,16 @@
   <script src="https://s3.tradingview.com/tv.js"></script>
 
   <style>
-    /* Scrollbars */
     .thin-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
     .thin-scroll::-webkit-scrollbar-thumb { background: #2a3442; border-radius: 8px; }
-    .btn {
-      @apply px-3 py-1.5 rounded-lg border border-slate-600 text-slate-200 hover:bg-soft transition;
-    }
-    .btn-active {
-      @apply bg-accent/20 border-accent text-accent;
-    }
-    .card {
-      @apply bg-card rounded-2xl p-4 shadow-soft border border-slate-800;
-    }
-    .badge {
-      @apply text-xs px-2 py-0.5 rounded-full border border-slate-700 text-slate-300;
-    }
-    .list-item {
-      @apply flex items-center justify-between gap-3 px-3 py-2 rounded-lg hover:bg-soft cursor-pointer transition;
-    }
+    .btn { padding: 0.375rem 0.75rem; border-radius: 0.5rem; border: 1px solid #334155; color: #e2e8f0; }
+    .btn:hover { background: #1b2430; transition: 0.15s; }
+    .btn-active { background: rgba(14,165,233,0.2); border-color: #0ea5e9; color: #0ea5e9; }
+    .card { background: #131a22; border-radius: 1rem; padding: 1rem; box-shadow: 0 6px 24px rgba(0,0,0,0.25); border: 1px solid #0f172a; }
+    .badge { font-size: 0.75rem; padding: 0.125rem 0.5rem; border-radius: 9999px; border: 1px solid #334155; color: #cbd5e1; }
+    table { border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #0b1220; }
+    tr:hover { background: #1b2430; }
   </style>
 </head>
 
@@ -66,22 +53,21 @@
       </div>
     </header>
 
-    <!-- Grid -->
     <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
-      <!-- Left column: Flashing + HOD -->
+      <!-- Left: Flashing + HOD -->
       <section class="xl:col-span-1 space-y-5">
-        <!-- Card 1: Flashing -->
+        <!-- Flashing -->
         <div class="card">
           <div class="flex items-center justify-between mb-3">
             <h2 class="text-lg font-semibold">Flashing (Signals)</h2>
             <span id="flash-updated" class="text-xs text-slate-400">–</span>
           </div>
-          <div id="flashing-list" class="thin-scroll max-h-80 overflow-auto space-y-1">
+          <div id="flashing-list" class="thin-scroll max-h-80 overflow-auto">
             <div class="text-slate-400 text-sm">Waiting for signals…</div>
           </div>
         </div>
 
-        <!-- Card 2: HOD -->
+        <!-- HOD -->
         <div class="card">
           <div class="flex items-center justify-between mb-3">
             <h2 class="text-lg font-semibold">High of Day (HOD)</h2>
@@ -93,9 +79,9 @@
         </div>
       </section>
 
-      <!-- Right column: Overview + News + Chart -->
+      <!-- Right: Overview + News + Chart -->
       <section class="xl:col-span-2 space-y-5">
-        <!-- Card 3: Stock Overview -->
+        <!-- Overview -->
         <div class="card">
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-lg font-semibold">Stock Overview</h2>
@@ -108,7 +94,7 @@
           </div>
         </div>
 
-        <!-- Card 4: News -->
+        <!-- News -->
         <div class="card">
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-lg font-semibold">News</h2>
@@ -121,7 +107,7 @@
           </div>
         </div>
 
-        <!-- Card 5: Chart -->
+        <!-- Chart -->
         <div class="card">
           <div class="flex items-center justify-between mb-3">
             <h2 class="text-lg font-semibold">Chart</h2>
@@ -138,6 +124,12 @@
     </div>
   </div>
 
+  <!-- Pop sound (URL-based for cloud). Provide two sources for compatibility. -->
+  <audio id="pop-sound" preload="auto">
+    <source src="https://actions.google.com/sounds/v1/cartoon/pop.ogg" type="audio/ogg">
+    <source src="https://www.myinstants.com/media/sounds/pop-up-off.mp3" type="audio/mpeg">
+  </audio>
+
   <script>
     // ======= CONFIG =======
     const BACKEND = 'http://127.0.0.1:8000';
@@ -146,12 +138,12 @@
 
     // ======= STATE =======
     let selectedSymbol = null;
-    let currentInterval = '1'; // '1' for 1m, '5' for 5m
+    let currentInterval = '1'; // '1' or '5'
     let tvWidget = null;
 
     // ======= HELPERS =======
-    const fmtTime = () => new Date().toLocaleTimeString();
     const byId = (id) => document.getElementById(id);
+    const fmtTime = () => new Date().toLocaleTimeString();
 
     async function fetchJSON(url, { timeout = 4500 } = {}) {
       const ctrl = new AbortController();
@@ -165,80 +157,214 @@
       }
     }
 
-    function renderList(container, items, emptyText = 'No data') {
-      container.innerHTML = '';
-      if (!items || items.length === 0) {
-        container.innerHTML = `<div class="text-slate-400 text-sm">${emptyText}</div>`;
-        return;
-      }
-      items.forEach(sym => {
-        const el = document.createElement('div');
-        el.className = 'list-item';
-        el.innerHTML = `
-          <div class="flex items-center gap-2">
-            <span class="badge">${sym}</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 111.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+    function formatVolumeShort(n) {
+      if (n == null || isNaN(n)) return '—';
+      if (n >= 1_000_000) return (n / 1_000_000).toFixed(n % 1_000_000 ? 1 : 0) + 'M';
+      if (n >= 1_000)     return (n / 1_000).toFixed(n % 1_000 ? 1 : 0) + 'K';
+      return String(n);
+    }
+
+    function formatPrice(p) {
+      if (p == null || isNaN(p)) return '—';
+      return `$${Number(p).toFixed(2)}`;
+    }
+
+    function formatChangePct(pct) {
+      if (pct == null || isNaN(pct)) return '—';
+      const sign = pct > 0 ? '+' : '';
+      return `${sign}${Number(pct).toFixed(2)}%`;
+    }
+
+    function formatSpread(s) {
+      if (s == null || isNaN(s)) return '—';
+      return Number(s).toFixed(2);
+    }
+
+    // ======= RENDERERS =======
+function renderFlashingTable(rows) {
+    const container = byId('flashing-list');
+
+    // If table doesn't exist, create it once
+    let table = container.querySelector('table');
+    if (!table) {
+        table = document.createElement('table');
+        table.className = 'w-full text-sm';
+        table.innerHTML = `
+        <thead>
+            <tr class="text-left text-slate-400 border-b border-slate-800">
+            <th class="py-2 pr-3">Symbol</th>
+            <th class="py-2 pr-3">Price</th>
+            <th class="py-2 pr-3">% Chg</th>
+            <th class="py-2 pr-3">Volume</th>
+            <th class="py-2 pr-3">Spread</th>
+            <th class="py-2">Time</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
         `;
-        el.addEventListener('click', () => onSelectSymbol(sym));
-        container.appendChild(el);
-      });
+        container.innerHTML = ''; // Clear placeholder
+        container.appendChild(table);
     }
 
-    function setIntervalButtons(active) {
-      const btn1 = byId('btn-1m');
-      const btn5 = byId('btn-5m');
-      [btn1, btn5].forEach(b => b.classList.remove('btn-active'));
-      if (active === '1') btn1.classList.add('btn-active');
-      if (active === '5') btn5.classList.add('btn-active');
-    }
+    const tbody = table.querySelector('tbody');
+    if (!rows || rows.length === 0) return;
 
-    function renderOverview(data) {
-      const container = byId('overview');
-      if (!data) {
-        container.innerHTML = `<div class="text-slate-400 text-sm col-span-full">No overview.</div>`;
-        return;
-      }
-      container.innerHTML = `
-        <div class="bg-soft rounded-xl p-4 border border-slate-800">
-          <div class="text-xs text-slate-400 mb-1">Symbol</div>
-          <div class="text-lg font-semibold">${data.symbol}</div>
-        </div>
-        <div class="bg-soft rounded-xl p-4 border border-slate-800">
-          <div class="text-xs text-slate-400 mb-1">Float</div>
-          <div class="text-base">${data.float ?? '—'}</div>
-        </div>
-        <div class="bg-soft rounded-xl p-4 border border-slate-800">
-          <div class="text-xs text-slate-400 mb-1">Volume</div>
-          <div class="text-base">${data.volume ?? '—'}</div>
-        </div>
-        <div class="bg-soft rounded-xl p-4 border border-slate-800">
-          <div class="text-xs text-slate-400 mb-1">Price</div>
-          <div class="text-base">$${data.price ?? '—'}</div>
-        </div>
-      `;
-    }
+    // 🚫 IMPORTANT: Do NOT reverse again — backend already sends newest-first
+    const sorted = rows; 
+
+    // Track existing rows
+    const existingRows = {};
+    Array.from(tbody.children).forEach(tr => {
+        existingRows[tr.dataset.key] = tr;
+    });
+
+    const seenKeys = new Set();
+
+    sorted.forEach(r => {
+        const key = `${r.symbol}|${r.time || ''}`;
+        seenKeys.add(key);
+
+        if (existingRows[key]) {
+            delete existingRows[key];
+        } else {
+            const tr = document.createElement('tr');
+            tr.dataset.key = key;
+            tr.className = 'border-b border-slate-900 hover:bg-soft cursor-pointer';
+            tr.innerHTML = `
+                <td class="py-2 pr-3"><span class="badge">${r.symbol}</span></td>
+                <td class="py-2 pr-3">${formatPrice(r.price)}</td>
+                <td class="py-2 pr-3">${formatChangePct(r.change_pct)}</td>
+                <td class="py-2 pr-3">${formatVolumeShort(r.volume_intraday)}</td>
+                <td class="py-2 pr-3">${formatSpread(r.spread)}</td>
+                <td class="py-2">${r.time ?? '—'}</td>
+            `;
+            tr.addEventListener('click', () => onSelectSymbol(r.symbol));
+            tbody.prepend(tr);  // Newest stays on top
+        }
+    });
+
+    // Remove stale rows
+    Object.values(existingRows).forEach(tr => tr.remove());
+}
+
+
+
+
+
+function renderList(container, items, emptyText = 'No data') {
+  container.innerHTML = '';
+  if (!items || items.length === 0) {
+    container.innerHTML = `<div class="text-slate-400 text-sm">${emptyText}</div>`;
+    return;
+  }
+
+  items.forEach(({ symbol, change_pct }) => {
+    const el = document.createElement('div');
+    el.className = 'flex items-center justify-between px-3 py-2 rounded-lg hover:bg-soft cursor-pointer transition';
+    el.innerHTML = `
+      <span class="badge">${symbol}</span>
+      <span class="text-sm ${change_pct >= 0 ? 'text-green-400' : 'text-red-400'} font-medium">
+        ${change_pct > 0 ? '+' : ''}${change_pct.toFixed(2)}%
+      </span>
+    `;
+    el.addEventListener('click', () => onSelectSymbol(symbol));
+    container.appendChild(el);
+  });
+}
+
+
+        function renderOverview(data) {
+            const container = document.getElementById('overview');
+
+            // If no data or "NO DATA" status
+            if (!data || data.status === "NO DATA") {
+            container.innerHTML = `<div class="text-slate-400 text-sm col-span-full">No overview data yet — run the scraper or wait for it to process this symbol.</div>`;
+            return;
+            }
+
+            // Helper to coalesce empty/undefined values
+            const show = (v) => (v && String(v).trim() !== "" ? v : "—");
+
+            // 2 rows x 4 columns grid
+            container.innerHTML = `
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Market Cap</div>
+                <div class="text-base">${show(data.market_cap)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Float</div>
+                <div class="text-base">${show(data.float)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Short %</div>
+                <div class="text-base">${show(data.short_percent)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Sector</div>
+                <div class="text-base">${show(data.sector)}</div>
+            </div>
+
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Insider Own</div>
+                <div class="text-base">${show(data.insiders_ownership)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Inst Own</div>
+                <div class="text-base">${show(data.institutions_ownership)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Industry</div>
+                <div class="text-base">${show(data.industry)}</div>
+            </div>
+            <div class="bg-soft rounded-xl p-4 border border-slate-800">
+                <div class="text-xs text-slate-400 mb-1">Country</div>
+                <div class="text-base">${show(data.country)}</div>
+            </div>
+
+            <div class="col-span-full mt-2 text-sm">
+                ${
+                data.website && String(data.website).trim() !== ""
+                    ? `<a href="${data.website}" class="text-sky-400 hover:underline" target="_blank" rel="noopener">🔗 ${data.website.replace(/^https?:\/\//, '')}</a>`
+                    : `<span class="text-slate-400">Website: —</span>`
+                }
+            </div>
+            `;
+        }
 
     function renderNews(data) {
-      const container = byId('news');
-      container.innerHTML = '';
-      if (!data || !data.headlines || data.headlines.length === 0) {
-        container.innerHTML = `<div class="text-slate-400 text-sm">No headlines.</div>`;
+    const container = document.getElementById('news');
+    container.innerHTML = '';
+
+    if (!data || !data.headlines || data.headlines.length === 0) {
+        container.innerHTML = `<div class="text-slate-400 text-sm">No news available.</div>`;
         return;
-      }
-      data.headlines.forEach((h) => {
+    }
+
+    data.headlines.forEach(h => {
         const item = document.createElement('div');
         item.className = 'p-3 rounded-xl border border-slate-800 bg-soft';
+
         item.innerHTML = `
-          <div class="text-sm">${h}</div>
+        <div class="text-sm font-medium text-sky-400">
+            ${h.title || 'Untitled'}
+        </div>
+        <div class="text-xs text-slate-500 mb-1">
+            ${h.date || ''} ${h.time || ''}
+        </div>
+        <div class="text-sm text-slate-300">
+            ${h.summary || ''}
+        </div>
         `;
+
         container.appendChild(item);
-      });
+    });
     }
+
+
 
     // ======= TRADINGVIEW =======
     function renderTradingView(symbol, interval = '1') {
-      // Destroy previous widget instance safely (TradingView doesn't expose a "destroy", so just replace container)
+      // Replace container to reset widget
       const chartContainer = byId('tv_chart');
       const parent = chartContainer.parentNode;
       const newDiv = document.createElement('div');
@@ -269,12 +395,10 @@
       });
     }
 
-    // ======= EVENT HANDLERS =======
+    // ======= EVENTS =======
     async function onSelectSymbol(sym) {
       selectedSymbol = sym;
       byId('selected-symbol').textContent = sym;
-
-      // Overview & News fetch
       try {
         const [ov, nw] = await Promise.all([
           fetchJSON(`${BACKEND}/overview/${encodeURIComponent(sym)}`),
@@ -287,40 +411,60 @@
         renderOverview(null);
         byId('news').innerHTML = `<div class="text-slate-400 text-sm">Failed to load news.</div>`;
       }
-
-      // Chart
       renderTradingView(sym, currentInterval);
     }
 
     byId('btn-1m').addEventListener('click', () => {
       currentInterval = '1';
-      setIntervalButtons('1');
+      document.getElementById('btn-1m').classList.add('btn-active');
+      document.getElementById('btn-5m').classList.remove('btn-active');
       renderTradingView(selectedSymbol, currentInterval);
     });
 
     byId('btn-5m').addEventListener('click', () => {
       currentInterval = '5';
-      setIntervalButtons('5');
+      document.getElementById('btn-5m').classList.add('btn-active');
+      document.getElementById('btn-1m').classList.remove('btn-active');
       renderTradingView(selectedSymbol, currentInterval);
     });
 
     // ======= POLLING =======
     async function pollFlashing() {
-      try {
+    try {
         const data = await fetchJSON(`${BACKEND}/flashing`);
-        const list = data?.symbols ?? [];
-        renderList(byId('flashing-list'), list, 'No signals yet.');
+        const rows = data?.signals ?? [];
+        renderFlashingTable(rows);
         byId('flash-updated').textContent = `Updated ${fmtTime()}`;
 
-        // If nothing selected and flashing has items, auto-select first for instant chart
-        if (!selectedSymbol && list.length > 0) {
-          onSelectSymbol(list[0]);
+        // ✅ Sound Logic: play on new symbol OR same symbol with new timestamp
+        window.prevEvents = window.prevEvents || [];  // stores ["SYMBOL|TIME", ...]
+
+        // Build current event keys
+        const currentEvents = rows.map(r => `${r.symbol}|${r.time || ''}`);
+
+        // Detect new entries or updated timestamps
+        const newEvents = currentEvents.filter(ev => !window.prevEvents.includes(ev));
+
+        if (newEvents.length > 0) {
+        const audio = byId('pop-sound');
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
         }
-      } catch (e) {
+
+        // Update reference for next refresh
+        window.prevEvents = currentEvents;
+
+        // Auto-select first symbol if none selected
+        if (!selectedSymbol && rows.length > 0) {
+        onSelectSymbol(rows[0].symbol);
+        }
+    } catch (e) {
         console.error('Flashing fetch error', e);
-        byId('flashing-list').innerHTML = `<div class="text-slate-400 text-sm">Error loading signals.</div>`;
-      }
+        byId('flashing-list').innerHTML =
+        `<div class="text-slate-400 text-sm">Error loading signals.</div>`;
     }
+    }
+
 
     async function pollHOD() {
       try {
@@ -336,11 +480,7 @@
 
     // ======= INIT =======
     (function init() {
-      // Boot chart with placeholder so the card isn't empty
       renderTradingView('AAPL', currentInterval);
-      setIntervalButtons(currentInterval);
-
-      // Start polling
       pollFlashing();
       pollHOD();
       setInterval(pollFlashing, FLASH_INTERVAL_MS);
